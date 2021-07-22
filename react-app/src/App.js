@@ -7,12 +7,18 @@ export default class App extends Component {
     alert("Clicked")
   }
 
+  mouseDown() {
+    alert("Mouse moved down")
+  }
+
+  
+
   render() {
-    const {post} = this.props
   return (
       <>
       <div>
-        <img onClick={this.picClick} src="/images/campus_map_half.png" alt="" />
+        <img onClick={this.picClick} onClick onMouseMove={this.mouseDown}
+        src="/images/campus_map_half.png" alt="" />
         
       </div>
     </>
