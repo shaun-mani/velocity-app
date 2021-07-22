@@ -1,11 +1,16 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 img {
   height: 1000px;
   position: absolute;
+ 
+  cursor: move;
   
-  
+}
+
+body{
+  background-color: rgb(78, 196, 250);
 }
 
 .App-logo {
