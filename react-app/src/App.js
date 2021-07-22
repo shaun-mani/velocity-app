@@ -1,15 +1,24 @@
 import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    
-    <div>
-      <>
-        <img src="/images/campus_map_half.png" alt="" />
-    </>
-    </div>
-  );
-}
+export default class App extends Component {
+  picClick(){
+    alert("Clicked")
+  }
 
-export default App;
+  render() {
+    const {post} = this.props
+  return (
+      <>
+      <div>
+        <img onClick={this.picClick} src="/images/campus_map_half.png" alt="" />
+        
+      </div>
+    </>
+    
+    
+  );
+  
+}
+}
