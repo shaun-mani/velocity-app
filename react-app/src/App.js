@@ -11,13 +11,11 @@ export default class App extends Component {
     alert("Mouse moved down")
   }
 
-  
-
   render() {
   return (
       <>
       <div>
-        <img onClick={this.picClick} onClick onMouseMove={this.mouseDown}
+        <img onClick={this.picClick} onDragStart={this.mouseDown}
         src="/images/campus_map_half.png" alt="" />
         
       </div>
