@@ -1,27 +1,27 @@
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-  function headerInput(variable) {
-    if (variable) {
-      return "Image was clicked";
-    } else {
-      return "Image has not been clicked";
-    }
+export default class App extends Component {
+  picClick(){
+    alert("Clicked")
   }
-  function imageClickHandle() {
-    return headerInput(true);
-  };
-  return (
-    
-    <div>
-      <>
-        <h2>{headerInput(false)}</h2>
-        <button onClick={imageClickHandle()}>
-        <img src="/images/campus_map_half.png" alt="" />
-        </button>
-    </>
-    </div>
-  );
-}
 
-export default App;
+  mouseDown() {
+    alert("Mouse moved down")
+  }
+
+  render() {
+  return (
+      <>
+      <div>
+        <img onClick={this.picClick()} onDragStart={this.mouseDown}
+        src="/images/campus_map_half.png" alt="" />
+        
+      </div>
+    </>
+    
+    
+  );
+  
+}
+}
