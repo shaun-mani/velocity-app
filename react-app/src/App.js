@@ -65,11 +65,13 @@ export default class App extends Component {
       <>
       <div>
         <h1>University of Waterloo Concept Web App</h1>
+        <viewport>
         <img style = {this.state.styles} 
         onDragStart={this.moveStart} 
         onDrag={this.whileMoving}
         onDragEnd={this.moveEnd}
         src="/images/campus_map_half.png" alt="" />
+        </viewport>
       </div>
     </>
     
