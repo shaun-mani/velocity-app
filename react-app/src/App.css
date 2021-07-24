@@ -6,6 +6,7 @@ img {
   position: absolute;
  
   cursor: move;
+  overflow: hidden;
   
 }
 
