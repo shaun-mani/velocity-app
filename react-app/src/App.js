@@ -50,9 +50,7 @@ export default class App extends Component {
     });
   }
    
-  picClick(){
-    alert("Clicked")
-  }
+ 
 
   /*dragStart() {
     alert("You have dragged the image")
@@ -71,10 +69,10 @@ export default class App extends Component {
       <div>
         <h1>University of Waterloo Concept Web App</h1>
         <img style = {this.state.styles} 
-        onClick={this.picClick} 
-        onMouseDown={this.moveStart} 
-        onMouseMove={this.whileMoving} 
-        onMouseUp = {this.moveEnd}
+        
+        onDragStart={this.moveStart} 
+        onDrag={this.whileMoving} 
+        onDragEnd = {this.moveEnd}
         src="/images/campus_map_half.png" alt="" />
         
       </div>
