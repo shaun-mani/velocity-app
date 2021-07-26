@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import React, { Component } from 'react';
 import './App.css';
 
@@ -49,8 +48,11 @@ export default class App extends Component {
       whileMoving: false
     });
   }
+<<<<<<< HEAD
    
  
+=======
+>>>>>>> 6b5e7361bedbfb2b5286b906b2b6503a24648fea
 
   /*dragStart() {
     alert("You have dragged the image")
@@ -68,13 +70,20 @@ export default class App extends Component {
       <>
       <div>
         <h1>University of Waterloo Concept Web App</h1>
+        <viewport>
         <img style = {this.state.styles} 
+<<<<<<< HEAD
         
         onDragStart={this.moveStart} 
         onDrag={this.whileMoving} 
         onDragEnd = {this.moveEnd}
+=======
+        onDragStart={this.moveStart} 
+        onDrag={this.whileMoving}
+        onDragEnd={this.moveEnd}
+>>>>>>> 6b5e7361bedbfb2b5286b906b2b6503a24648fea
         src="/images/campus_map_half.png" alt="" />
-        
+        </viewport>
       </div>
     </>
     
