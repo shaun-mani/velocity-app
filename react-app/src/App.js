@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import Experiments from './experiments/experiments.jsx';
+
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -61,22 +63,22 @@ export default class App extends Component {
 
 
   render() {
-  return (
-      <>
-      <div>
-        <h1>University of Waterloo Concept Web App</h1>
-        <viewport>
-        <img style = {this.state.styles} 
-        onDragStart={this.moveStart} 
-        onDrag={this.whileMoving}
-        onDragEnd={this.moveEnd}
-        src="/images/campus_map_half.png" alt="" />
-        </viewport>
-      </div>
-    </>
-    
-    
-  );
-  
-}
+    return (
+        <>
+        <div>
+          <h1>University of Waterloo Concept Web App</h1>
+          <viewport>
+            <img style = {this.state.styles}
+              onDragStart={this.moveStart}
+              onDrag={this.whileMoving}
+              onDragEnd={this.moveEnd}
+              src="/images/campus_map_half.png" alt="" />
+          </viewport>
+
+
+          <Experiments /> {/* Feel free to remove this, just showcasing */}
+        </div>
+      </>
+    );
+  }
 }
