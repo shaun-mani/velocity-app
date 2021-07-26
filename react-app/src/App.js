@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import { useState } from "react";
 import './App.css';
+  
 
 export default class App extends Component {
+  
   constructor(props) {
     super(props);
 
@@ -17,6 +20,7 @@ export default class App extends Component {
     this.moveEnd = this.moveEnd.bind(this);
 
   }
+  
 
   moveStart(e) {
     this.setState ({
@@ -30,15 +34,17 @@ export default class App extends Component {
   whileMoving(e) {
     if(this.state.whileMoving) {
 
+
       let left = e.screenX -  this.state.deltaX  ;
       let top = e.screenY - this.state.deltaY  ;
-  
+
       this.setState ({
         styles: {
           left: left,
           top: top
         }
       });
+         
     }
     
   }
@@ -48,42 +54,17 @@ export default class App extends Component {
       whileMoving: false
     });
   }
-<<<<<<< HEAD
-   
- 
-=======
->>>>>>> 6b5e7361bedbfb2b5286b906b2b6503a24648fea
-
-  /*dragStart() {
-    alert("You have dragged the image")
-  }
-  */
-/*
-  dragEnd() {
-    alert("You have finished dragging the image")
-  }
-  */
-
 
   render() {
   return (
       <>
       <div>
         <h1>University of Waterloo Concept Web App</h1>
-        <viewport>
-        <img style = {this.state.styles} 
-<<<<<<< HEAD
+        <viewportimg onMouseDown={this.moveStart} 
+        onMouseMove={this.whileMoving}
+        onMouseUp={this.moveEnd}> 
         
-        onDragStart={this.moveStart} 
-        onDrag={this.whileMoving} 
-        onDragEnd = {this.moveEnd}
-=======
-        onDragStart={this.moveStart} 
-        onDrag={this.whileMoving}
-        onDragEnd={this.moveEnd}
->>>>>>> 6b5e7361bedbfb2b5286b906b2b6503a24648fea
-        src="/images/campus_map_half.png" alt="" />
-        </viewport>
+        </viewportimg>
       </div>
     </>
     
