@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { useState } from "react";
 import './App.css';
+import Title from './Components/Title';
   
-
+// why are we using a class component instead of functional component here?? 
 export default class App extends Component {
   
   constructor(props) {
@@ -76,7 +77,7 @@ export default class App extends Component {
     return (
       <>
       <div>
-          <h1>University of Waterloo Concept Web App</h1>
+          <Title />
           <viewport>
           <img style={this.state.styles}
             onMouseDown={this.moveStart}
