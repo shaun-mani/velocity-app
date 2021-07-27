@@ -12,7 +12,6 @@ viewport {
   margin-top: 100px;
   overflow: hidden;
   display: block;
- 
 }
 
 /* img {
@@ -29,10 +28,9 @@ viewport img {
   height: 500px;
 }
 
-body{
+body {
   background-color: rgb(78, 196, 250);
 }
-
 
 .App-logo {
   height: 40vmin;
