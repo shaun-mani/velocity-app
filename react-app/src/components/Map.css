@@ -47,22 +47,16 @@
   color: white;
 }
 
-viewport img {
-  position: fixed;
-  width: 500px;
-  height: 500px;
-}
-
-.div {
-    position: absolute;
-}
-
-img {
+.Map img {
   width: 1000px;
   height: 1000px;
 }
 
-viewport {
+img {
+  position: absolute;
+}
+
+.Map {
   background-color: transparent;
   width: 80px;
   height: 80px;
@@ -70,8 +64,9 @@ viewport {
   padding: 300px;
   margin-left: 100px;
   margin-top: 100px;
-  overflow: hidden;
   display: block;
+  position: relative;
+  overflow: hidden;
 }
 >>>>>>> 79a9a7f552d78492e3b723df4f3572bfc68f6be1
 
