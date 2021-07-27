@@ -6,6 +6,7 @@ import Map from './components/Map';
 function App() {
   return (
     <>
+    <h1>University of Waterloo Concept Web App</h1>
       <Map />
     </>
   );

@@ -59,16 +59,13 @@ export default class Map extends Component {
       return (
         <> 
         <div>
-            <h1>University of Waterloo Concept Web App</h1>
-            <viewport>
-            <img style={this.state.styles}
+            <img 
+              style={this.state.styles}
               onMouseDown= {this.moveStart}
               onMouseMove={this.whileMoving}
               onMouseUp={this.moveEnd}
-              src="/images/campus_map_half.png" alt="" />
-            </viewport>
-            
-          </div>
+              src="/images/campus_map_half.png" alt=""/>
+        </div>
         </>
 
       );
