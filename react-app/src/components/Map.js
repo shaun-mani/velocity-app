@@ -57,15 +57,14 @@ export default class Map extends Component {
   
     render() {
       return (
-      
-        <div class='Map' 
-        onMouseDown= {this.moveStart}
-        onMouseMove={this.whileMoving}
-        onMouseUp={this.moveEnd}>
-            <img 
+        <viewport>
+                      <img 
             style={this.state.styles}
+            onMouseDown= {this.moveStart}
+            onMouseMove={this.whileMoving}
+            onMouseUp={this.moveEnd}
             src="/images/campus_map_half.png" alt=""/>
-        </div>
+        </viewport>
 
       );
   
