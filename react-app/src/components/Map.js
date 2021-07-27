@@ -64,7 +64,7 @@ export default class Map extends Component {
         onMouseMove={this.whileMoving}
         onMouseUp={this.moveEnd}>
             <img 
-              
+  
               src="/images/campus_map_half.png" alt=""/>
         </div>
 
