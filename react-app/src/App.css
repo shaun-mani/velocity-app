@@ -12,7 +12,6 @@ viewport {
   margin-top: 100px;
   overflow: hidden;
   display: block;
- 
 }
 
 /* img {
@@ -29,10 +28,10 @@ viewport img {
   height: 500px;
 }
 
-body{
-  background-color: rgb(78, 196, 250);
+body {
+  /* official UW color */
+  background-color: rgb(255, 213, 79);
 }
-
 
 .App-logo {
   height: 40vmin;
