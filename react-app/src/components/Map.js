@@ -67,6 +67,7 @@ export default class Map extends Component {
               onMouseUp={this.moveEnd}
               src="/images/campus_map_half.png" alt="" />
             </viewport>
+            
           </div>
         </>
 
