@@ -2,33 +2,21 @@
     text-align: center;
   }
 
-.Map-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
 
-viewport img {
+
+viewport .Map {
     position: fixed;
     width: 500px;
     height: 500px;
   }
 
-  .div {
-      position: absolute;
-  }
 
   img {
     width: 1000px;
     height: 1000px;
   }
 
-  .Map div {
+  .Map {
     background-color: transparent;
     width: 80px;
     height: 80px;
@@ -37,5 +25,6 @@ viewport img {
     margin-top: 100px;
     overflow: hidden;
     display: block;
+    position: absolute
   } 
 
