@@ -1,10 +1,10 @@
 .App {
-  text-align: left;
+  text-align: center;
 }
 
 body {
   /* official UW color */
-  background-color: rgb(255, 213, 79);
+  background: linear-gradient(1deg, #000000, rgb(255, 213, 79));;
 }
 
 .App-logo {

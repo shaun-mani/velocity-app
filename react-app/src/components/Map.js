@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { useState } from "react";
-import './Map.css' 
+import './Map.css';
 
 export default class Map extends Component {
   
