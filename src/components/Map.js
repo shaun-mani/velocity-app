@@ -27,10 +27,9 @@ const Map = () => {
      
       if (left > -300 && top > -200 ) { 
         setStyles({
-          styles: {
             left: left,
             top: top
-          }
+          
         });
       }
     }
@@ -42,7 +41,6 @@ const Map = () => {
 
 
     return (
-    
       <div class='Map' 
       onMouseDown= {moveStart}
       onMouseMove={whileMoves}
