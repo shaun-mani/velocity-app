@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { useState } from "react";
 import './Map.css';
+import ImageFollow from './image_follow.jsx';
+import './image_follow.css';
 
 export default class Map extends Component {
   
@@ -11,7 +13,7 @@ export default class Map extends Component {
         deltaX: 0,
         deltaY: 0,
         whileMoving: false,
-        styles: {}
+        styles: {},
       }
   
       this.moveStart = this.moveStart.bind(this);
@@ -57,8 +59,6 @@ export default class Map extends Component {
       this.setState({
         whileMoving: false
       });
-      
-      
     }
   //test
     render() {
@@ -70,6 +70,7 @@ export default class Map extends Component {
         onMouseUp={this.moveEnd}>
             <img style={this.state.styles}
             src="/images/campus_map_half.png" alt=""/>
+            <ImageFollow/>
         </div>
 
       );
