@@ -60,7 +60,7 @@ export default class Map extends Component {
       
       
     }
-  
+  //test
     render() {
       return (
       
