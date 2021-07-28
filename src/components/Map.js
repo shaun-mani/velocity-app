@@ -9,15 +9,15 @@ const Map = () => {
   const[deltaX, setDeltaX] = useState(0);
   const[deltaY, setDeltaY] = useState(0);
   const[whileMoving, setWhileMoving] = useState(false);
-  const[styles, setStyles] = useState(null);
+  const[styles, setStyles] = useState();
 
-  moveStart(e) {
+ const moveStart = (e) => {
     setDeltaX(e.screenX - e.currentTarget.getBoundingClientRect().left);
     setDeltaY(e.screenY - e.currentTarget.getBoundingClientRect().top);
     setWhileMoving(true);
   };
 
-  whileMoving(e) {
+  const whileMoves = (e) => {
     if (whileMoving) {
         
 
@@ -27,27 +27,26 @@ const Map = () => {
       console.log(left, top)
      
       if (left > -300 && top > -200 ) { 
-        setStyles({
-          styles: {
-            left: left
+        setStyles({{
+            left: left,
             top: top
-          }
+          };
         });
       }
     }
   };
 
-  moveEnd() {
+ const  moveEnd = () => {
     setWhileMoving(false);
   };
 
-  render() {
+
     return (
     
       <div class='Map' 
-      onMouseDown= {moveStart()}
-      onMouseMove={whileMoving()}
-      onMouseUp={moveEnd()}>
+      onMouseDown= {moveStart}
+      onMouseMove={whileMoves}
+      onMouseUp={moveEnd}>
           <img style={styles}
           src="/images/campus_map_half.png" alt=""/>
           <ImageFollow/>
@@ -57,7 +56,8 @@ const Map = () => {
 
   };
 
-};
+export default Map;
+
 
 // export default class Map extends Component {
   
