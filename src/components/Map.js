@@ -22,6 +22,8 @@ export default class Map extends Component {
     
     moveStart(e) {
       this.setState({
+        
+        
         deltaX: e.screenX - e.currentTarget.getBoundingClientRect().left,
         deltaY: e.screenY - e.currentTarget.getBoundingClientRect().top,
         whileMoving: true
@@ -31,19 +33,21 @@ export default class Map extends Component {
   
     whileMoving(e) {
       if (this.state.whileMoving) {
-  
+        
+
         let left = e.screenX - this.state.deltaX;
         let top = e.screenY - this.state.deltaY;
   
         console.log(left, top)
        
-        
-        this.setState({
+        if (left > -300 && top > -200 )
+        { this.setState({
           styles: {
             left: left,
             top: top
           }
-        });
+        });}
+       
       
       }
     
@@ -53,6 +57,8 @@ export default class Map extends Component {
       this.setState({
         whileMoving: false
       });
+      
+      
     }
   
     render() {
