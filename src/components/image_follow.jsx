@@ -41,11 +41,11 @@ const ImageFollow = ()=>{
 		x:{mousePos.x} | y:{mousePos.y}
 
 		<div className='msg' style={{left: msgPosition.x, top: msgPosition.y}}>
-			yo
+			marker1
 		</div>
 
 		<div className='always_half' style={{left: mousePos.x/2, top: mousePos.y/2}}>
-			always half
+			marker2
 		</div>
 
 	</div>

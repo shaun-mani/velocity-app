@@ -4,26 +4,22 @@ import './Map.css';
 import ImageFollow from './image_follow.jsx';
 import './image_follow.css';
 
-export default class Map extends Component {
+
+      // this.state = {
+      //   deltaX: 0,
+      //   deltaY: 0,
+      //   whileMoving: false,
+      //   styles: {},
+      // }
   
-    constructor(props) {
-      super(props);
+      // this.moveStart = this.moveStart.bind(this);
+      // this.whileMoving = this.whileMoving.bind(this);
+      // this.moveEnd = this.moveEnd.bind(this);
   
-      this.state = {
-        deltaX: 0,
-        deltaY: 0,
-        whileMoving: false,
-        styles: {},
-      }
-  
-      this.moveStart = this.moveStart.bind(this);
-      this.whileMoving = this.whileMoving.bind(this);
-      this.moveEnd = this.moveEnd.bind(this);
-  
-    }
     
-    moveStart(e) {
-      this.setState({
+    
+    const moveStart = (e) => {
+      this.useState({
         
         
         deltaX: e.screenX - e.currentTarget.getBoundingClientRect().left,
@@ -33,17 +29,16 @@ export default class Map extends Component {
       });
     }
   
-    whileMoving(e) {
+    const whileMoving = (e) => {
       if (this.state.whileMoving) {
         
-
         let left = e.screenX - this.state.deltaX;
         let top = e.screenY - this.state.deltaY;
   
         console.log(left, top)
        
         if (left > -300 && top > -200 )
-        { this.setState({
+        { this.useState({
           styles: {
             left: left,
             top: top
@@ -55,25 +50,28 @@ export default class Map extends Component {
     
     }
   
-    moveEnd() {
-      this.setState({
+    const moveEnd = () => {
+      this.useState({
         whileMoving: false
+
       });
     }
   //test
-    render() {
+  const Map = () => {
       return (
       
         <div class='Map' 
-        onMouseDown= {this.moveStart}
-        onMouseMove={this.whileMoving}
-        onMouseUp={this.moveEnd}>
+        onMouseDown= {moveStart}
+        onMouseMove={whileMoving}
+        onMouseUp={moveEnd}>
             <img style={this.state.styles}
             src="/images/campus_map_half.png" alt=""/>
             <ImageFollow/>
         </div>
 
       );
-  
-    }
   }
+  
+export default Map;
+    
+  
