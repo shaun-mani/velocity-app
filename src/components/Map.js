@@ -5,6 +5,7 @@ import ImageFollow from './image_follow.jsx';
 import './image_follow.css';
 
 const Map = () => {
+
   const[deltaX, setDeltaX] = useState(0);
   const[deltaY, setDeltaY] = useState(0);
   const[whileMoving, setWhileMoving] = useState(false);
@@ -44,10 +45,10 @@ const Map = () => {
     return (
     
       <div class='Map' 
-      onMouseDown= {this.moveStart}
-      onMouseMove={this.whileMoving}
-      onMouseUp={this.moveEnd}>
-          <img style={this.state.styles}
+      onMouseDown= {moveStart()}
+      onMouseMove={whileMoving()}
+      onMouseUp={moveEnd()}>
+          <img style={styles}
           src="/images/campus_map_half.png" alt=""/>
           <ImageFollow/>
       </div>
