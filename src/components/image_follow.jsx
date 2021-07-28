@@ -24,7 +24,7 @@ const ImageFollow = ()=>{
 	}
 
 
-	let msgPosition = {x : 20, y : 100};
+	let msgPosition = {x : 260, y : 200};
 
 	if(isMouseDown){
 		msgPosition = {

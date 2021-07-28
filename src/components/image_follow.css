@@ -14,7 +14,7 @@
 
  .ImageFollow{
 	position: relative;
-	background-color: white;
+	background-color: transparent;
 	width : 500px;
 	height : 200px;
 	user-select: none;
