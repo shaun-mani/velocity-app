@@ -10,42 +10,9 @@ const getCursorPositionInElement = (evt) => {
 	}
 };
 
-const ImageFollow = () => {
-	const [mousePos, setMousePos] = React.useState({x:0, y:0});
-	const [isMouseDown, setIsMouseDown] = React.useState(false);
-
-
-	const handleMouseDown = () => {
-		setIsMouseDown(true);
-	}
-
-	const handleMouseUp = () => {
-		setIsMouseDown(false);
-	}
-
-	const handleMouseMove = (evt) => {
-		setMousePos(getCursorPositionInElement(evt))
-	}
-
-	return <div className='ImageFollow'
-			onMouseMove={handleMouseMove}
-			onMouseDown={handleMouseDown}
-			onMouseUp={handleMouseUp}
-		>
-		x:{mousePos.x} | y:{mousePos.y}
-
-		<div className='msg' style={{left: mousePos.x - 100, top: mousePos.y - 100}}>
-			marker1
-		</div>
-
-		<div className='always_half' style={{left: mousePos.x, top: mousePos.y}}>
-			marker2
-		</div>
-
-	</div>
-};
-
 const Map = () => {
+
+  // map code
 
   const[deltaX, setDeltaX] = useState(0);
   const[deltaY, setDeltaY] = useState(0);
@@ -81,6 +48,26 @@ const Map = () => {
     setWhileMoving(false);
   };
 
+  // marker code
+
+    const [mousePos, setMousePos] = useState({x:0, y:0});
+    const [isMouseDown, setIsMouseDown] = useState(false);
+  
+  
+    const handleMouseDown = () => {
+      setIsMouseDown(true);
+    }
+  
+    const handleMouseUp = () => {
+      setIsMouseDown(false);
+    }
+  
+    const handleMouseMove = (evt) => {
+      if (whileMoving) {
+        setMousePos(getCursorPositionInElement(evt));
+      };
+    }
+
 
     return (
       <div class='Map' 
@@ -89,7 +76,23 @@ const Map = () => {
       onMouseUp={moveEnd}>
           <img style={styles}
           src="/images/campus_map_half.png" alt=""/>
-          <ImageFollow/>
+          
+      <div className='ImageFollow'
+			onMouseMove={handleMouseMove}
+			onMouseDown={handleMouseDown}
+			onMouseUp={handleMouseUp}
+		>
+		x:{mousePos.x} | y:{mousePos.y}
+
+		<div className='msg' style={{left: mousePos.x - 100, top: mousePos.y - 100}}>
+			marker1
+		</div>
+
+		<div className='always_half' style={{left: mousePos.x, top: mousePos.y}}>
+			marker2
+		</div>
+
+	</div>
       </div>
 
     );
