@@ -1,47 +1,56 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { useState } from "react";
 import './Map.css';
-//import ImageFollow from './image_follow.jsx';
 import './image_follow.css';
 
-const getCursorPositionInElement = (evt)=>{
+const getCursorPositionInElement = (evt) => {
 	return {
 		x : evt.clientX - evt.currentTarget.getBoundingClientRect().left,
 		y : evt.clientY - evt.currentTarget.getBoundingClientRect().top
 	}
 };
 
-const ImageFollow = ()=>{
+const ImageFollow = () => {
 	const [mousePos, setMousePos] = React.useState({x:0, y:0});
 	const [isMouseDown, setIsMouseDown] = React.useState(false);
 
 
-	const handleMouseDown = ()=>{
+	const handleMouseDown = () => {
 		setIsMouseDown(true);
 	}
-	const handleMouseUp = ()=>{
+
+	const handleMouseUp = () => {
 		setIsMouseDown(false);
 	}
 
-	const handleMouseMove = (evt)=>{
+	const handleMouseMove = (evt) => {
 		setMousePos(getCursorPositionInElement(evt))
 	}
 
+	return <div className='ImageFollow'
+			onMouseMove={handleMouseMove}
+			onMouseDown={handleMouseDown}
+			onMouseUp={handleMouseUp}
+		>
+		x:{mousePos.x} | y:{mousePos.y}
 
-	let msgPosition = {x : 260, y : 200};
+		<div className='msg' style={{left: mousePos.x - 100, top: mousePos.y - 100}}>
+			marker1
+		</div>
 
-	if(isMouseDown){
-		msgPosition = {
-			x : mousePos.x,
-			y : mousePos.y,
-		}
-	}
+		<div className='always_half' style={{left: mousePos.x, top: mousePos.y}}>
+			marker2
+		</div>
+
+	</div>
+};
 
 const Map = () => {
+
   const[deltaX, setDeltaX] = useState(0);
   const[deltaY, setDeltaY] = useState(0);
   const[whileMoving, setWhileMoving] = useState(false);
-  const[styles, setStyles] = useState(null);
+  const[styles, setStyles] = useState();
 
  const moveStart = (e) => {
     setDeltaX(e.screenX - e.currentTarget.getBoundingClientRect().left);
