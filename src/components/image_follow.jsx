@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-import React from 'react';
-import { useState } from "react";
-import Map from './Map.js';
-=======
 import React, { useState } from 'react';
->>>>>>> 2bd20394c53478e965293e49b7d4a6a6f664371b
 
 const getCursorPositionInElement = (evt) => {
 	return {
@@ -37,19 +31,11 @@ const ImageFollow = () => {
 		>
 		x:{mousePos.x} | y:{mousePos.y}
 
-<<<<<<< HEAD
-		<div className='msg' style={{left: mousePos.x, top: mousePos.y}}>
-			marker1
-		</div>
-
-		<div className='always_half' style={{left: mousePos.x-100, top: mousePos.y-100}}>
-=======
 		<div className='msg' style={{left: mousePos.x - 100, top: mousePos.y - 100}}>
 			marker1
 		</div>
 
 		<div className='always_half' style={{left: mousePos.x, top: mousePos.y}}>
->>>>>>> 2bd20394c53478e965293e49b7d4a6a6f664371b
 			marker2
 		</div>
 

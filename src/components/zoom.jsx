@@ -1,20 +1,22 @@
-import React, { useState } from 'react'; 
+import React from 'react';
 
 const Zoom = () => {
-    const [pos, setPos] = useState({ x: 0, y: 0, scale: 1 });
+const zoomElement = document.querySelector(".zoom")
   
-    const onScroll = (e) => {
-      const delta = e.deltaY * -0.01;
-      const newScale = pos.scale + delta;
-  
-      const ratio = 1 - newScale / pos.scale;
-  
-      setPos({
-        scale: newScale,
-        x: pos.x + (e.clientX - pos.x) * ratio,
-        y: pos.y + (e.clientY - pos.y) * ratio,
-      });
-    };
-};
+  let zoom = 1;
+  const ZOOM_SPEED = 0.1;
 
-export default Zoom;
+  document.addEventListener("wheel", function(e){
+
+    if(e.deltaY > 0) {
+      zoomElement.style.transform = `scale(${zoom += ZOOM_SPEED})`
+    }
+    else {
+      zoomElement.style.transform = `scale(${zoom -= ZOOM_SPEED})`
+    }
+  
+});
+
+}
+
+export default Zoom; 
