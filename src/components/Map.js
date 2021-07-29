@@ -4,14 +4,16 @@ import './Map.css';
 import './image_follow.css';
 import Zoom from './zoom.jsx';
 
-// const getCursorPositionInElement = (evt) => {
-// return {
-// x : evt.clientX - evt.currentTarget.getBoundingClientRect().left,
-// y : evt.clientY - evt.currentTarget.getBoundingClientRect().top
-// }
-// };
+const getCursorPositionInElement = (evt) => {
+	return {
+		x : evt.clientX - evt.currentTarget.getBoundingClientRect().left,
+		y : evt.clientY - evt.currentTarget.getBoundingClientRect().top
+	}
+};
 
 const Map = () => {
+  // mouse position
+  const [mousePos, setMousePos] = useState({x:0, y:0});
 
   // map code
 
@@ -32,6 +34,8 @@ const Map = () => {
 
 
   const whileMoves = (e) => {
+    setMousePos(getCursorPositionInElement(e));
+
     if (whileMoving) {
 
       //setMapPos(e.screenX - deltaX, e.screenY - deltaY)
@@ -57,8 +61,63 @@ const Map = () => {
 
   // marker code
 
-  //const [mousePos, setMousePos] = useState({x:0, y:0});
-  //const [isMouseDown, setIsMouseDown] = useState(false);
+    //const [mousePos, setMousePos] = useState({x:0, y:0});
+    //const [isMouseDown, setIsMouseDown] = useState(false);
+  
+  
+    //const handleMouseDown = () => {
+      //setIsMouseDown(true);
+    //}
+  
+    //const handleMouseUp = () => {
+      //setIsMouseDown(false);
+    //}
+  
+    // const handleMouseMove = (evt) => {
+    //   if (whileMoving) {
+    //     setMousePos(getCursorPositionInElement(evt));
+    //   };
+    // }
+
+    // const alertFunction = (num) => {
+    //   //console.log('clicked');
+    //   if (((styles.x + (100 * num) - 50 <= mousePos.x) && (mousePos.x <= styles.x + (100 * num) + 50))
+    //       && ((styles.y + (100 * num) - 50 <= mousePos.y) && (mousePos.y <= styles.y + (100 * num) + 50))) {
+    //      alert(`Marker ${num} has been clicked`);
+    //   };
+    // };
+
+
+
+    return (
+      <div>
+      <div class='Map' 
+      onMouseDown= {moveStart}
+      onMouseMove={whileMoves}
+      onMouseUp={moveEnd}>
+          <img style={styles}
+          src="/images/campus_map_half.png" alt=""/>
+
+      <div className='ImageFollow'
+			//onMouseMove={handleMouseMove}
+			//onMouseDown={handleMouseDown}
+			//onMouseUp={handleMouseUp}
+		>
+		x:{styles.left}, {mousePos.x} | y:{styles.top}, {mousePos.y}
+
+		<div className='msg' 
+         style={{left: styles.left + 100, top: styles.top + 100}}>
+			Marker1
+		</div>
+
+		<div className='always_half' 
+         style={{left: styles.left + 200, top: styles.top + 200}}>
+			Marker2
+		</div>
+
+	</div>
+      </div>
+      </div>
 
 
   //const handleMouseDown = () => {
