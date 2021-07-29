@@ -50,7 +50,7 @@ const Map = () => {
     setWhileMoving(false);
   };
 
-  // marker code
+  // marker 
 
     const [mousePos, setMousePos] = useState({x:0, y:0});
     const [isMouseDown, setIsMouseDown] = useState(false);
