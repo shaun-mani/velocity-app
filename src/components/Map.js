@@ -11,8 +11,6 @@ const getCursorPositionInElement = (evt) => {
  }
 };
 
-
-
 const Map = () => {
 
   // map code
@@ -98,8 +96,6 @@ const Map = () => {
 
 	</div>
       </div>
-    
-
     );
 
   };
