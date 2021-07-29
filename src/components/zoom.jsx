@@ -20,3 +20,4 @@ const zoomElement = document.querySelector(".zoom")
 }
 
 export default Zoom; 
+
