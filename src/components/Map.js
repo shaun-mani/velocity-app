@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from "react";
 import './Map.css';
-//import './image_follow.css';
+import './image_follow.css';
 import Zoom from './zoom.jsx';
 
 const getCursorPositionInElement = (evt) => {
@@ -95,7 +95,7 @@ const Map = () => {
       onMouseDown= {moveStart}
       onMouseMove={whileMoves}
       onMouseUp={moveEnd}>
-      <div class ="zoom" onWheelCapture={Zoom}></div>
+      <div class ="zoom" onWheelCapture={Zoom}>
           <img style={styles}
           src="/images/campus_map_half.png" alt=""/>
 
@@ -115,7 +115,7 @@ const Map = () => {
          style={{left: styles.left + 200, top: styles.top + 200}}>
 			Marker2
 		</div>
-
+    </div>
 	</div>
       </div>
       </div>
