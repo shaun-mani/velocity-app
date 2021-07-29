@@ -1,4 +1,6 @@
 import React from 'react';
+import { useState } from "react";
+import Map from './Map.js';
 
 const getCursorPositionInElement = (evt)=>{
 	return {
@@ -40,11 +42,11 @@ const ImageFollow = ()=>{
 		>
 		x:{mousePos.x} | y:{mousePos.y}
 
-		<div className='msg' style={{left: msgPosition.x, top: msgPosition.y}}>
+		<div className='msg' style={{left: mousePos.x, top: mousePos.y}}>
 			marker1
 		</div>
 
-		<div className='always_half' style={{left: mousePos.x/2, top: mousePos.y/2}}>
+		<div className='always_half' style={{left: mousePos.x-100, top: mousePos.y-100}}>
 			marker2
 		</div>
 

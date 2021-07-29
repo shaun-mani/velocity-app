@@ -1,8 +1,41 @@
 import React, { Component } from 'react';
 import { useState } from "react";
 import './Map.css';
-import ImageFollow from './image_follow.jsx';
+//import ImageFollow from './image_follow.jsx';
 import './image_follow.css';
+
+const getCursorPositionInElement = (evt)=>{
+	return {
+		x : evt.clientX - evt.currentTarget.getBoundingClientRect().left,
+		y : evt.clientY - evt.currentTarget.getBoundingClientRect().top
+	}
+};
+
+const ImageFollow = ()=>{
+	const [mousePos, setMousePos] = React.useState({x:0, y:0});
+	const [isMouseDown, setIsMouseDown] = React.useState(false);
+
+
+	const handleMouseDown = ()=>{
+		setIsMouseDown(true);
+	}
+	const handleMouseUp = ()=>{
+		setIsMouseDown(false);
+	}
+
+	const handleMouseMove = (evt)=>{
+		setMousePos(getCursorPositionInElement(evt))
+	}
+
+
+	let msgPosition = {x : 260, y : 200};
+
+	if(isMouseDown){
+		msgPosition = {
+			x : mousePos.x,
+			y : mousePos.y,
+		}
+	}
 
 const Map = () => {
   const[deltaX, setDeltaX] = useState(0);
@@ -19,7 +52,6 @@ const Map = () => {
   const whileMoves = (e) => {
     if (whileMoving) {
         
-
       let left = e.screenX - deltaX;
       let top = e.screenY - deltaY;
 
@@ -45,14 +77,25 @@ const Map = () => {
       onMouseDown= {moveStart}
       onMouseMove={whileMoves}
       onMouseUp={moveEnd}>
+        x:{mousePos.x} | y:{mousePos.y}
+
           <img style={styles}
           src="/images/campus_map_half.png" alt=""/>
-          <ImageFollow/>
+          <div className='msg' style={{left: mousePos.x, top: mousePos.y}}>
+			marker1
+		</div>
+
+		<div className='always_half' style={{left: mousePos.x-100, top: mousePos.y-100}}>
+			marker2
+		</div>
+
+        
       </div>
 
     );
 
   };
+}
 
 export default Map;
 
