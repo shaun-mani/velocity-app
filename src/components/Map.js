@@ -11,7 +11,6 @@ import './image_follow.css';
 // };
 
 const Map = () => {
-  //const [mapPos, setMapPos] = useState({x:0, y:0});
 
   // map code
 
