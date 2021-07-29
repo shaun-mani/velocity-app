@@ -1,36 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const getCursorPositionInElement = (evt)=>{
+const getCursorPositionInElement = (evt) => {
 	return {
 		x : evt.clientX - evt.currentTarget.getBoundingClientRect().left,
 		y : evt.clientY - evt.currentTarget.getBoundingClientRect().top
 	}
 };
 
-const ImageFollow = ()=>{
+const ImageFollow = () => {
 	const [mousePos, setMousePos] = React.useState({x:0, y:0});
 	const [isMouseDown, setIsMouseDown] = React.useState(false);
 
 
-	const handleMouseDown = ()=>{
+	const handleMouseDown = () => {
 		setIsMouseDown(true);
 	}
-	const handleMouseUp = ()=>{
+
+	const handleMouseUp = () => {
 		setIsMouseDown(false);
 	}
 
-	const handleMouseMove = (evt)=>{
+	const handleMouseMove = (evt) => {
 		setMousePos(getCursorPositionInElement(evt))
-	}
-
-
-	let msgPosition = {x : 260, y : 200};
-
-	if(isMouseDown){
-		msgPosition = {
-			x : mousePos.x,
-			y : mousePos.y,
-		}
 	}
 
 	return <div className='ImageFollow'
@@ -40,11 +31,11 @@ const ImageFollow = ()=>{
 		>
 		x:{mousePos.x} | y:{mousePos.y}
 
-		<div className='msg' style={{left: msgPosition.x, top: msgPosition.y}}>
+		<div className='msg' style={{left: mousePos.x - 100, top: mousePos.y - 100}}>
 			marker1
 		</div>
 
-		<div className='always_half' style={{left: mousePos.x/2, top: mousePos.y/2}}>
+		<div className='always_half' style={{left: mousePos.x, top: mousePos.y}}>
 			marker2
 		</div>
 
