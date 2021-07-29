@@ -3,14 +3,16 @@ import { useState } from "react";
 import './Map.css';
 import './image_follow.css';
 
-// const getCursorPositionInElement = (evt) => {
-// 	return {
-// 		x : evt.clientX - evt.currentTarget.getBoundingClientRect().left,
-// 		y : evt.clientY - evt.currentTarget.getBoundingClientRect().top
-// 	}
-// };
+const getCursorPositionInElement = (evt) => {
+	return {
+		x : evt.clientX - evt.currentTarget.getBoundingClientRect().left,
+		y : evt.clientY - evt.currentTarget.getBoundingClientRect().top
+	}
+};
 
 const Map = () => {
+  // mouse position
+  const [mousePos, setMousePos] = useState({x:0, y:0});
 
   // map code
 
@@ -26,6 +28,8 @@ const Map = () => {
   };
 
   const whileMoves = (e) => {
+    setMousePos(getCursorPositionInElement(e));
+
     if (whileMoving) {
         
       //setMapPos(e.screenX - deltaX, e.screenY - deltaY)
@@ -65,9 +69,18 @@ const Map = () => {
   
     // const handleMouseMove = (evt) => {
     //   if (whileMoving) {
-    //     setMapPos(getCursorPositionInElement(evt));
+    //     setMousePos(getCursorPositionInElement(evt));
     //   };
     // }
+
+    // const alertFunction = (num) => {
+    //   //console.log('clicked');
+    //   if (((styles.x + (100 * num) - 50 <= mousePos.x) && (mousePos.x <= styles.x + (100 * num) + 50))
+    //       && ((styles.y + (100 * num) - 50 <= mousePos.y) && (mousePos.y <= styles.y + (100 * num) + 50))) {
+    //      alert(`Marker ${num} has been clicked`);
+    //   };
+    // };
+
 
 
     return (
@@ -84,14 +97,16 @@ const Map = () => {
 			//onMouseDown={handleMouseDown}
 			//onMouseUp={handleMouseUp}
 		>
-		x:{styles.left} | y:{styles.top}
+		x:{styles.left}, {mousePos.x} | y:{styles.top}, {mousePos.y}
 
-		<div className='msg' style={{left: styles.left - 100, top: styles.top - 100}}>
-			marker1
+		<div className='msg' 
+         style={{left: styles.left + 100, top: styles.top + 100}}>
+			Marker1
 		</div>
 
-		<div className='always_half' style={{left: styles.left + 100, top: styles.top + 100}}>
-			marker2
+		<div className='always_half' 
+         style={{left: styles.left + 200, top: styles.top + 200}}>
+			Marker2
 		</div>
 
 	</div>
