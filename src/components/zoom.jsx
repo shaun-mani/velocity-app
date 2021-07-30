@@ -1,4 +1,5 @@
 import React from 'react';
+import './Map.css'
 
 const Zoom = () => {
 const zoomElement = document.querySelector(".zoom")
@@ -9,10 +10,10 @@ const zoomElement = document.querySelector(".zoom")
   document.addEventListener("wheel", function(e){
 
     if(e.deltaY > 0) {
-      zoomElement.style.transform = `scale(${zoom += ZOOM_SPEED})`
+      zoomElement.style.transform = `scale(${zoom -= ZOOM_SPEED})`
     }
     else {
-      zoomElement.style.transform = `scale(${zoom -= ZOOM_SPEED})`
+      zoomElement.style.transform = `scale(${zoom += ZOOM_SPEED})`
     }
   
 });
