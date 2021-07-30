@@ -1,0 +1,11 @@
+.Sidebar {
+    background-color: aliceblue;
+    width: 500px;
+    height: 800px;
+    border: 2px solid black;
+    right: 0px;
+    top: 0px;
+    overflow: hidden;
+    display: block;
+    position : absolute;
+  }
