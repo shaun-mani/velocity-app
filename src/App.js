@@ -9,8 +9,9 @@ function App() {
     <>
     <h1>University of Waterloo Concept Web App</h1> 
     <React.Fragment>
+    <div><Sidebar /></div>
         <div><Map /></div>
-        <div><Sidebar /></div>
+        
         </React.Fragment>
     </>
   );
