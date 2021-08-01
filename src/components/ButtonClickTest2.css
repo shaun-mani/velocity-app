@@ -1,0 +1,11 @@
+.border {
+    background-color: aliceblue;
+    width: 500px;
+    height: 800px;
+    border: 2px solid black;
+    right: 0px;
+    top: 200px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+  }
