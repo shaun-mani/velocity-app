@@ -4,7 +4,7 @@
   height: 800px;
   border: 2px solid black;
   right: 0px;
-  top: 0px;
+  top: 200px;
   overflow: hidden;
   display: block;
   position: absolute;
@@ -39,3 +39,4 @@ li a.active {
   background-color: #04aa6d;
   color: white;
 }
+
