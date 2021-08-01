@@ -7,7 +7,8 @@ const Sidebar = () => {
     
     return (
       <React.Fragment>
-      <div class='Sidebar'/>
+      
+      
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#map">Map</a></li>
