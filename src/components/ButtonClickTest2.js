@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import './ButtonClickTest2.css';
+
 
 // ****** This component is the three buttons that have a updated message displayed
 // based on the state changing. I was thinking we can use this to display
@@ -34,7 +36,7 @@ updateContent3 = () => {
     return (
       <div>
         <h2 className="h1 bg-secondary text-white text-center p-2">
-          { this.state.message }
+          <element class = 'border'>{ this.state.message }</element>
         </h2>
         <div className="text-center">
           <button className="btn btn-secondary" onClick={this.updateContent1}>
