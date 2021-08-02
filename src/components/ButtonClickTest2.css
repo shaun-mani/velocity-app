@@ -1,11 +1,14 @@
 .border {
-    background-color: aliceblue;
-    width: 500px;
-    height: 800px;
-    border: 2px solid black;
-    right: 0px;
-    top: 200px;
-    overflow: hidden;
-    display: block;
-    position: absolute;
-  }
+  background-color: aliceblue;
+  color: black;
+  margin-top: 475px;
+  margin-right: 31px;
+  width: 350px;
+  height: 700px;
+  border: 2px solid black;
+  right: 0px;
+  top: 200px;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+}

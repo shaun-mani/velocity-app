@@ -1,10 +1,11 @@
 .Map {
   background-color: transparent;
-  width: 1000px;
-  height: 700px;
+  width: 1300px;
+  height: 850px;
   border: 3px solid black;
   margin-left: 100px;
   margin-top: 100px;
+  margin-bottom: 100px;
   overflow: hidden;
   display: block;
   position: relative;

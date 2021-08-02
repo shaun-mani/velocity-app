@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+// bootstrap below
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 // Hello
 ReactDOM.render(
   <React.StrictMode>

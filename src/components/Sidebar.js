@@ -9,11 +9,11 @@ const Sidebar = () => {
       <React.Fragment>
       
       
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#map">Map</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
+      <ul className="sidebar-list">
+        <li className="sidebar-li"><a href="#home">Home</a></li>
+        <li className="sidebar-li"><a href="#map">Map</a></li>
+        <li className="sidebar-li"><a href="#contact">Contact</a></li>
+        <li className="sidebar-li"><a href="#about">About</a></li>
       </ul>
       </React.Fragment>
     );

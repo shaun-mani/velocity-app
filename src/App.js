@@ -8,21 +8,26 @@ import Functionclick from './components/Functionclick'
 // import Test from './components/Test'
 import ButtonClickTest2 from './components/ButtonClickTest2';
 // import ButtonClickTest1 from './components/ButtonClickTest1';
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <>
-    <Title />
-    <React.Fragment>
-    <div><Sidebar /></div>
-    <ButtonClickTest2 />
-    <Functionclick />
-    {/* <ButtonClickTest1 /> */}
-    {/* <Test /> */}
+    <div className="page-container">
+    <div className="content-wrap">
+
+        <Title />
+        <React.Fragment>
+        <div><Sidebar /></div>
+        <ButtonClickTest2 />
+        <Functionclick />
+        {/* <ButtonClickTest1 /> */}
+        {/* <Test /> */}
         <div><Map /></div>
-        
         </React.Fragment>
-    </>
+
+      </div>
+      <Footer />
+      </div>
   );
 }
 

@@ -15,28 +15,28 @@ class ButtonClickTest2 extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        message: "Default Content"
+        message: "SideBar Content, Click a Marker!"
     }
   }
  
   updateContent1 = () => {
-      this.setState({ message: "Updated Content button 1!"});
+      this.setState({ message: "Clicked Marker Test 1!" });
   }
  
   updateContent2 = () => {
-    this.setState({ message: "Updated Content button 2!"});
+    this.setState({ message: "Clicked Marker Test 2!"});
 }
 
 updateContent3 = () => {
-  this.setState({ message: "Updated Content button 3!"});
+  this.setState({ message: "Clicked Marker Test 3!"});
 }
 
 
   render() {
     return (
       <div>
-        <h2 className="h1 bg-secondary text-white text-center p-2">
-          <element class = 'border'>{ this.state.message }</element>
+        <h2 className="h2 bg-secondary text-white text-center p-2">
+          <element className = 'border'>{ this.state.message }</element>
         </h2>
         <div className="text-center">
           <button className="btn btn-secondary" onClick={this.updateContent1}>
