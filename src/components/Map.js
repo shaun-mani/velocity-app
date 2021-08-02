@@ -22,9 +22,6 @@ const Map = () => {
   const [whileMoving, setWhileMoving] = useState(false);
   const [styles, setStyles] = useState({ left: null, top: null });
 
-  
-
-
 
   const moveStart = (e) => {
     setDeltaX(e.screenX - e.currentTarget.getBoundingClientRect().left);
