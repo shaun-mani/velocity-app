@@ -1,0 +1,15 @@
+.border-timeline {
+  background-color: aliceblue;
+  color: black;
+  margin-top: 1525px;
+  margin-bottom: 1000px;
+  margin-right: 225px;
+  width: 1500px;
+  height: 300px;
+  border: 2px solid black;
+  right: 0px;
+  top: 200px;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+}

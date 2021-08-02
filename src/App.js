@@ -9,6 +9,7 @@ import Functionclick from './components/Functionclick'
 import ButtonClickTest2 from './components/ButtonClickTest2';
 // import ButtonClickTest1 from './components/ButtonClickTest1';
 import Footer from './components/Footer'
+import Timeline from './components/Timeline'
 
 function App() {
   return (
@@ -23,8 +24,8 @@ function App() {
         {/* <ButtonClickTest1 /> */}
         {/* <Test /> */}
         <div><Map /></div>
-        </React.Fragment>
-
+        </React.Fragment> 
+        <Timeline />
       </div>
       <Footer />
       </div>
