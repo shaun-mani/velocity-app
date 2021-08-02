@@ -17,11 +17,11 @@ const Footer = () => {
                     </div>
                     {/* Column 2 */}
                     <div className="col">
-                        <h4>Stuff</h4>
+                        <h4>Other Stuff</h4>
                         <ul className="list-unstyled">
-                            <li>dank memes</li>
-                            <li>other Stuff</li>
-                            <li>gud stuff</li>
+                            <li>UW Campus</li>
+                            <li>Other other stuff</li>
+                            <li>Testing stuff</li>
                         </ul>
                     </div>
                     {/* Column 3 */}
@@ -29,7 +29,7 @@ const Footer = () => {
                         <h4>well another column</h4>
                         <ul className="list-unstyled">
                             <li>lol</li>
-                            <li>lmaooo</li>
+                            <li>i am running out of ideas</li>
                             <li>bruh</li>
                         </ul>
                     </div>
