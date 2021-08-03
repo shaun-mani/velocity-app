@@ -12,14 +12,14 @@
 
 .Map img {
   position: absolute;
-  width: 1500px;
+  width: 2000px;
   height: 1500px;
 }
 
 .zoom{
-    height:100vh;  
+    height:200vh;  
     width:100%;
-    position:relative;  
+    position: relative;  
  
   
 }

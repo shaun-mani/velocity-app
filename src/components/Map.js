@@ -23,9 +23,6 @@ const Map = () => {
   const [styles, setStyles] = useState({ left: null, top: null });
 
   
-
-
-
   const moveStart = (e) => {
     setDeltaX(e.screenX - e.currentTarget.getBoundingClientRect().left);
     setDeltaY(e.screenY - e.currentTarget.getBoundingClientRect().top);
@@ -43,15 +40,15 @@ const Map = () => {
       let left = e.screenX - deltaX;
       let top = e.screenY - deltaY;
 
-      console.log(left, top)
-
-      //if (left > -300 && top > -200 ) { 
+     
+      if (left > 0 && top > 0 ) { 
+        console.log(left, top)
       setStyles({
         left: left,
         top: top
 
       });
-      //}
+      }
     }
   };
 
