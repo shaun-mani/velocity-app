@@ -22,7 +22,7 @@ const Map = () => {
   const [whileMoving, setWhileMoving] = useState(false);
   const [styles, setStyles] = useState({ left: null, top: null });
 
-
+  
   const moveStart = (e) => {
     setDeltaX(e.screenX - e.currentTarget.getBoundingClientRect().left);
     setDeltaY(e.screenY - e.currentTarget.getBoundingClientRect().top);
@@ -40,15 +40,15 @@ const Map = () => {
       let left = e.screenX - deltaX;
       let top = e.screenY - deltaY;
 
-      console.log(left, top)
-
-      //if (left > -300 && top > -200 ) { 
+     
+      if (left > 0 && top > 0 ) { 
+        console.log(left, top)
       setStyles({
         left: left,
         top: top
 
       });
-      //}
+      }
     }
   };
 
@@ -88,14 +88,15 @@ const Map = () => {
 
     return (
       <div>
+         
       <div class='Map' 
       onMouseDown= {moveStart}
       onMouseMove={whileMoves}
       onMouseUp={moveEnd}>
-      <div class ="zoom" onWheelCapture={Zoom}>
+         <div class ="zoom" onWheelCapture={Zoom}>
           <img style={styles}
           src="/images/campus_map_half.png" alt=""/>
-
+ 
       <div className='ImageFollow'
 			//onMouseMove={handleMouseMove}
 			//onMouseDown={handleMouseDown}
