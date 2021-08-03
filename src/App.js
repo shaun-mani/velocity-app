@@ -4,7 +4,7 @@ import './App.css';
 import Map from './components/Map';
 import NavBar from './components/NavBar';
 import Header from './components/Header';
-import FunctionClickTest0 from './components/FunctionClickTest0'
+// import FunctionClickTest0 from './components/FunctionClickTest0'
 // import Test from './components/Test'
 import MarkerClick from './components/MarkerClick';
 // import ButtonClickTest1 from './components/ButtonClickTest1';
@@ -20,7 +20,7 @@ function App() {
         <React.Fragment>
         <div><NavBar /></div>
         <MarkerClick />
-        <FunctionClickTest0 />
+        {/* <FunctionClickTest0 /> */}
         {/* <ButtonClickTest1 /> */}
         {/* <Test /> */}
         <div><Map /></div>
