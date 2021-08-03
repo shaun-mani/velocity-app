@@ -10,10 +10,10 @@ const Sidebar = () => {
       
       
       <ul className="sidebar-list">
-        <li className="sidebar-li"><a href="#home">Home</a></li>
-        <li className="sidebar-li"><a href="#map">Map</a></li>
-        <li className="sidebar-li"><a href="#contact">Contact</a></li>
-        <li className="sidebar-li"><a href="#about">About</a></li>
+        <li className="sidebar-li"><a href="#home"><h3>Home</h3></a></li>
+        <li className="sidebar-li"><a href="#map"><h3>Map</h3></a></li>
+        <li className="sidebar-li"><a href="#contact"><h3>Contact</h3></a></li>
+        <li className="sidebar-li"><a href="#about"><h3>About</h3></a></li>
       </ul>
       </React.Fragment>
     );
