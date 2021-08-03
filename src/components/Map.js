@@ -88,14 +88,15 @@ const Map = () => {
 
     return (
       <div>
+         
       <div class='Map' 
       onMouseDown= {moveStart}
       onMouseMove={whileMoves}
       onMouseUp={moveEnd}>
-      <div class ="zoom" onWheelCapture={Zoom}>
+         <div class ="zoom" onWheelCapture={Zoom}>
           <img style={styles}
           src="/images/campus_map_half.png" alt=""/>
-
+ 
       <div className='ImageFollow'
 			//onMouseMove={handleMouseMove}
 			//onMouseDown={handleMouseDown}
