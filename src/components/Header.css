@@ -1,0 +1,20 @@
+.Title {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 1em;
+  margin-bottom: 0;
+  background-color: black;
+  color: #fff;
+}
+
+.Title-Subtitle {
+  color: white;
+  align-items: baseline;
+}
+
+.uw-image {
+  margin-left: 31px;
+}
