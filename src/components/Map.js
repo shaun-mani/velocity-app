@@ -20,7 +20,7 @@ const Map = () => {
   const [deltaX, setDeltaX] = useState(0);
   const [deltaY, setDeltaY] = useState(0);
   const [whileMoving, setWhileMoving] = useState(false);
-  const [styles, setStyles] = useState({ left: null, top: null });
+  const [styles, setStyles] = useState({ left: 0, top: 0 });
 
   
   const moveStart = (e) => {
@@ -102,7 +102,7 @@ const Map = () => {
 			//onMouseDown={handleMouseDown}
 			//onMouseUp={handleMouseUp}
 		>
-		x:{styles.left}, {mousePos.x} | y:{styles.top}, {mousePos.y}
+		x:{styles.left}, {mousePos.x} | y:{styles.top}, {mousePos.y} | {deltaX}, {deltaY}
 
 		<div className='msg' 
          style={{left: styles.left + 100, top: styles.top + 100}}>
