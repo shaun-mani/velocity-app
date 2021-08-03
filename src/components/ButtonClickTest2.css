@@ -5,13 +5,10 @@
   margin-right: 31px;
   width: 350px;
   height: 700px;
-  border: 2px solid black;
+  border: 2px solid black !important;
   right: 0px;
   top: 200px;
   overflow: hidden;
   display: block;
   position: absolute;
 }
-
-/* why does the black border not work? I litteraly used this 
-copy paste for timeline and it worked */
