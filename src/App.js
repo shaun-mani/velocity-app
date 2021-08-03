@@ -3,7 +3,7 @@ import { useState } from "react";
 import './App.css';
 import Map from './components/Map';
 import Sidebar from './components/Sidebar';
-import Title from './components/Title';
+import Header from './components/Header';
 import Functionclick from './components/Functionclick'
 // import Test from './components/Test'
 import ButtonClickTest2 from './components/ButtonClickTest2';
@@ -16,7 +16,7 @@ function App() {
     <div className="page-container">
     <div className="content-wrap">
 
-        <Title />
+        <Header />
         <React.Fragment>
         <div><Sidebar /></div>
         <ButtonClickTest2 />
