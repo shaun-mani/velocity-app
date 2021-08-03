@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './MarkerClick.css';
+import MapMarkerIcon from '../MapMarkerIcon.png';
+import Button from 'react-bootstrap/Button';
 
 
 // ****** This component is the three buttons that have a updated message displayed
@@ -20,15 +22,15 @@ class MarkerClick extends Component {
   }
  
   updateContent1 = () => {
-      this.setState({ message: "Clicked Marker Test 1!" });
+      this.setState({ message: "Clicked Marker Test 1! (text marker)" });
   }
  
   updateContent2 = () => {
-    this.setState({ message: "Clicked Marker Test 2!"});
+    this.setState({ message: "Clicked Marker Test 2! (img marker without border)"});
 }
 
 updateContent3 = () => {
-  this.setState({ message: "Clicked Marker Test 3!"});
+  this.setState({ message: "Clicked Marker Test 3! (img marker with light transparent colour)"});
 }
 
 
@@ -40,15 +42,17 @@ updateContent3 = () => {
           <element className = 'border'>{ this.state.message }</element>
         </h2>
         <div className="text-center">
-          <button className="btn btn-dark" onClick={this.updateContent1}>
+          <Button variant="dark" onClick={this.updateContent1}>
             Marker Test 1
+          </Button>
+          <button className="btn outline" onClick={this.updateContent2} >
+            <img className="map-marker-icon" src={MapMarkerIcon}
+             width="21" height="21" alt="markericon" />
           </button>
-          <button className="btn btn-dark" onClick={this.updateContent2}>
-            Marker Test 2
-          </button>
-          <button className="btn btn-dark" onClick={this.updateContent3}>
-            Marker Test 3
-          </button>
+          <Button variant="outline-success" onClick={this.updateContent3} >
+            <img className="map-marker-icon" src={MapMarkerIcon}
+             width="21" height="21" alt="markericon" />
+          </Button>
         </div>
       </div>
     );
