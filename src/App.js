@@ -2,11 +2,11 @@ import React from 'react';
 import { useState } from "react";
 import './App.css';
 import Map from './components/Map';
-import Sidebar from './components/Sidebar';
+import NavBar from './components/NavBar';
 import Header from './components/Header';
 import Functionclick from './components/Functionclick'
 // import Test from './components/Test'
-import ButtonClickTest2 from './components/ButtonClickTest2';
+import MarkerClick from './components/MarkerClick';
 // import ButtonClickTest1 from './components/ButtonClickTest1';
 import Footer from './components/Footer'
 import Timeline from './components/Timeline'
@@ -18,8 +18,8 @@ function App() {
 
         <Header />
         <React.Fragment>
-        <div><Sidebar /></div>
-        <ButtonClickTest2 />
+        <div><NavBar /></div>
+        <MarkerClick />
         <Functionclick />
         {/* <ButtonClickTest1 /> */}
         {/* <Test /> */}

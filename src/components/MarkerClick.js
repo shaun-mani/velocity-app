@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './ButtonClickTest2.css';
+import './MarkerClick.css';
 
 
 // ****** This component is the three buttons that have a updated message displayed
@@ -11,7 +11,7 @@ import './ButtonClickTest2.css';
 // sure how to do yet. **********
 
 
-class ButtonClickTest2 extends Component {
+class MarkerClick extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -55,4 +55,4 @@ updateContent3 = () => {
   }
 }
  
-export default ButtonClickTest2;
+export default MarkerClick;

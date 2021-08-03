@@ -31,5 +31,5 @@ currently only shows the color while clicking
 */
 
 nav a:active {
-  background-color: rgb(238, 255, 0)
+  background-color: rgb(255, 234, 41);
 }
