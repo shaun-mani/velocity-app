@@ -2,29 +2,30 @@ import React from 'react';
 import { useState } from "react";
 import './App.css';
 import Map from './components/Map';
-import Sidebar from './components/Sidebar';
-import Title from './components/Title';
-import Functionclick from './components/Functionclick'
+import NavBar from './components/NavBar';
+import Header from './components/Header';
+// import FunctionClickTest0 from './components/FunctionClickTest0'
 // import Test from './components/Test'
-import ButtonClickTest2 from './components/ButtonClickTest2';
+import MarkerClick from './components/MarkerClick';
 // import ButtonClickTest1 from './components/ButtonClickTest1';
 import Footer from './components/Footer'
+import Timeline from './components/Timeline'
 
 function App() {
   return (
     <div className="page-container">
     <div className="content-wrap">
 
-        <Title />
+        <Header />
         <React.Fragment>
-        <div><Sidebar /></div>
-        <ButtonClickTest2 />
-        <Functionclick />
+        <div><NavBar /></div>
+        <MarkerClick />
+        {/* <FunctionClickTest0 /> */}
         {/* <ButtonClickTest1 /> */}
         {/* <Test /> */}
         <div><Map /></div>
-        </React.Fragment>
-
+        </React.Fragment> 
+        <Timeline />
       </div>
       <Footer />
       </div>

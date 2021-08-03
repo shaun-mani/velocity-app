@@ -3,6 +3,7 @@ import { useState } from "react";
 import './Map.css';
 import './image_follow.css';
 import Zoom from './zoom.jsx';
+import Image from 'react-bootstrap/Image'
 
 const getCursorPositionInElement = (evt) => {
 	return {
@@ -98,6 +99,15 @@ const Map = () => {
       <div class ="zoom" onWheelCapture={Zoom}>
           <img style={styles}
           src="/images/campus_map_half.png" alt=""/>
+         
+         {/* ** Just Me (leo) trying to use bootstrap to make img look nicer */}
+          {/* <Container>
+            <Row>
+              <Col xs={6} md={4}> */}
+          {/* <Image src="/images/campus_map_half.png" rounded /> */}
+              {/* </Col>
+            </Row>
+          </Container> */}
 
       <div className='ImageFollow'
 			//onMouseMove={handleMouseMove}
@@ -110,6 +120,7 @@ const Map = () => {
          style={{left: styles.left + 100, top: styles.top + 100}}>
 			Marker1
 		</div>
+
 
 		<div className='always_half' 
          style={{left: styles.left + 200, top: styles.top + 200}}>
