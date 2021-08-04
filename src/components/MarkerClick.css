@@ -12,24 +12,3 @@
   display: block;
   position: absolute;
 }
-
-/* 
-an attempt to enlarge the marker images; could be part of marker interactions
-image size is specified in .js file 
-I'm not sure how to add effects or change parameters in .js file
-*/
-
-.img {
-  width: 21px;
-  height: 21px;
-}
-
-.img:hover {
-  width: 40px;
-  height: 40px;
-}
-
-.img:active {
-  width: 40px;
-  height: 40px;
-}
