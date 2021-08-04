@@ -5,6 +5,9 @@ import './image_follow.css';
 import Zoom from './zoom.jsx';
 import Image from 'react-bootstrap/Image'
 
+
+
+
 const getCursorPositionInElement = (evt) => {
 	return {
 		x : evt.clientX - evt.currentTarget.getBoundingClientRect().left,
@@ -116,15 +119,15 @@ const Map = () => {
 		>
 		x:{styles.left}, {mousePos.x} | y:{styles.top}, {mousePos.y}
 
-		<div className='msg' 
+		<div className='msg'
          style={{left: styles.left + 100, top: styles.top + 100}}>
-			Marker1
+			<div class="marker"></div>
 		</div>
 
 
 		<div className='always_half' 
          style={{left: styles.left + 200, top: styles.top + 200}}>
-			Marker2
+			<div class="marker"></div>
 		</div>
     </div>
 	</div>
