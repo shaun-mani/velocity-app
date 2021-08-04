@@ -24,9 +24,6 @@ const Map = () => {
   const [styles, setStyles] = useState({ left: null, top: null });
 
   
-
-
-
   const moveStart = (e) => {
     setDeltaX(e.screenX - e.currentTarget.getBoundingClientRect().left);
     setDeltaY(e.screenY - e.currentTarget.getBoundingClientRect().top);
@@ -88,6 +85,16 @@ const Map = () => {
     //   };
     // };
 
+    const zoomPos = () => {
+     if ((mousePos.x > 0) && (mousePos.y > 0)) {
+        Zoom()
+     }
+
+    }
+
+    const stopZoom = () => {
+      Zoom(false);
+    };
 
 
     return (
@@ -96,8 +103,8 @@ const Map = () => {
       onMouseDown= {moveStart}
       onMouseMove={whileMoves}
       onMouseUp={moveEnd}>
-      <div class ="zoom" onWheelCapture={Zoom}>
-          <img style={styles}
+      
+          <img class = 'zoom' onWheelCapture={zoomPos} onMouseLeave= {stopZoom} style={styles}
           src="/images/campus_map_half.png" alt=""/>
          
          {/* ** Just Me (leo) trying to use bootstrap to make img look nicer */}
@@ -129,7 +136,7 @@ const Map = () => {
     </div>
 	</div>
       </div>
-      </div>
+      
 
 
   //const handleMouseDown = () => {
