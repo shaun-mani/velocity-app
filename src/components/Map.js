@@ -67,15 +67,24 @@ const Map = () => {
 
   function zoom(e) {
     var GFG = document.getElementById("Mapimg");
+    var Marker = document.getElementById("marker1");
+
+    var currWidth2 = Marker.clientWidth;
+    var currHeight2 = Marker.clientHeight;
+
     var currWidth = GFG.clientWidth;
     var currHeight = GFG.clientHeight;
     if(e.deltaY > 0) {
     GFG.style.width = (currWidth - 100) + "px";
     GFG.style.height = (currHeight - 100) + "px";
+    Marker.style.width = (currWidth2 - 100) + "px";
+    Marker.style.height = (currHeight2 - 100) + "px";
     }
     else{
-      GFG.style.width = (currWidth + 100) + "px";
+    GFG.style.width = (currWidth + 100) + "px";
     GFG.style.height = (currHeight + 100) + "px";
+    Marker.style.width = (currWidth2 + 100) + "px";
+    Marker.style.height = (currHeight2 + 100) + "px";
     }
   }
 
@@ -111,12 +120,11 @@ const Map = () => {
         <div className='ImageFollow'>
           x:{mousePos.x} , y:{mousePos.y} | x:{screenPos.x} , y:{screenPos.y}
 
-          <div className='msg'
-            style={{ left: styles.left + 100, top: styles.top + 100 }}>
-            Marker1
-          </div>
+          <img className='msg' id = "marker1" 
+             src="/images/pin.png" alt="" />
+          
 
-          <div className='always_half'
+          <div className='always_half' id = "marker2"
             style={{ left: styles.left + 200, top: styles.top + 200 }}>
             Marker2
           </div>

@@ -23,6 +23,21 @@
  
 }
 
+.msg {
+  position: absolute;
+  width: 2px;
+  height: 5px;
+
+}
+.always_half {
+  position: relative;
+  width: 20px;
+  height: 15px;
+}
+
+
+
+
 /* .Map .ImageFollow {
   width : 500px;
 	height : 200px;
