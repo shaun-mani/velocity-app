@@ -13,16 +13,16 @@ const getScreenPositionInElement = (evt) => {
 }
 
 const getCursorPositionInElement = (evt) => {
-	return {
-		x : evt.clientX - evt.currentTarget.getBoundingClientRect().left,
-		y : evt.clientY - evt.currentTarget.getBoundingClientRect().top
-	}
+  return {
+    x: evt.clientX - evt.currentTarget.getBoundingClientRect().left,
+    y: evt.clientY - evt.currentTarget.getBoundingClientRect().top
+  }
 };
 
 const Map = () => {
   // mouse position
-  const [mousePos, setMousePos] = useState({x:0, y:0});
-  const [screenPos, setScreenPos] = useState({x:0, y:0})
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [screenPos, setScreenPos] = useState({ x: 0, y: 0 })
 
   // map code
 
@@ -31,7 +31,7 @@ const Map = () => {
   const [whileMoving, setWhileMoving] = useState(false);
   const [styles, setStyles] = useState({ left: 0, top: 0 });
 
-  
+
   const moveStart = (e) => {
     setDeltaX(e.screenX - e.currentTarget.getBoundingClientRect().left);
     setDeltaY(e.screenY - e.currentTarget.getBoundingClientRect().top);
@@ -49,14 +49,14 @@ const Map = () => {
       let left = e.screenX - deltaX;
       let top = e.screenY - deltaY;
 
-     
-      if (left > 0 && top > 0 ) { 
-        console.log(left, top)
-      setStyles({
-        left: left,
-        top: top
 
-      });
+      if (left > 0 && top > 0) {
+        console.log(left, top)
+        setStyles({
+          left: left,
+          top: top
+
+        });
       }
     }
   };
@@ -65,112 +65,68 @@ const Map = () => {
     setWhileMoving(false);
   };
 
+  function zoom(e) {
+    var GFG = document.getElementById("Mapimg");
+    var currWidth = GFG.clientWidth;
+    var currHeight = GFG.clientHeight;
+    if(e.deltaY > 0) {
+    GFG.style.width = (currWidth - 100) + "px";
+    GFG.style.height = (currHeight - 100) + "px";
+    }
+    else{
+      GFG.style.width = (currWidth + 100) + "px";
+    GFG.style.height = (currHeight + 100) + "px";
+    }
+  }
+
+ 
+
   // marker code
 
-    //const [mousePos, setMousePos] = useState({x:0, y:0});
-    //const [isMouseDown, setIsMouseDown] = useState(false);
-  
-  
-    //const handleMouseDown = () => {
-      //setIsMouseDown(true);
-    //}
-  
-    //const handleMouseUp = () => {
-      //setIsMouseDown(false);
-    //}
-  
-    // const handleMouseMove = (evt) => {
-    //   if (whileMoving) {
-    //     setMousePos(getCursorPositionInElement(evt));
-    //   };
-    // }
-
-    // const alertFunction = (num) => {
-    //   console.log('marker clicked');
-    //   if (((styles.left + (100 * num) - 25 <= mousePos.x) && (mousePos.x <= styles.left + (100 * num) + 25))
-    //       && ((styles.top + (100 * num) - 25 <= mousePos.y) && (mousePos.y <= styles.top + (100 * num) + 25))) {
-    //      alert(`Marker ${num} has been clicked`);
-    //   };
-    // };
-
-
-    return (
-      <div class='Map' 
-      onMouseDown= {moveStart}
-      onMouseMove={whileMoves}
-      onMouseUp={moveEnd}>
-         <div class ="zoom" onWheelCapture={Zoom}>
-          <img  style={styles}
-          src="/images/campus_map_half.png" alt=""/>
- 
-      <div className='ImageFollow'
-			//onMouseMove={handleMouseMove}
-			//onMouseDown={handleMouseDown}
-			//onMouseUp={handleMouseUp}
-      >
-		x:{mousePos.x} , y:{mousePos.y} | x:{screenPos.x} , y:{screenPos.y}
-
-		<div className='msg' 
-         style={{left: styles.left + 100, top: styles.top + 100}}>
-			Marker1
-		</div>
-
-		<div className='always_half' 
-         style={{left: styles.left + 200, top: styles.top + 200}}>
-			Marker2
-		</div>
-    </div>
-    </div>
-	</div>
-      
-
-
-  //const handleMouseDown = () => {
-  //setIsMouseDown(true);
-  //}
-
-  //const handleMouseUp = () => {
-  //setIsMouseDown(false);
-  //}
-
-  // const handleMouseMove = (evt) => {
-  // if (whileMoving) {
-  // setMapPos(getCursorPositionInElement(evt));
+  // const alertFunction = (num) => {
+  //   console.log('marker clicked');
+  //   if (((styles.left + (100 * num) - 25 <= mousePos.x) && (mousePos.x <= styles.left + (100 * num) + 25))
+  //       && ((styles.top + (100 * num) - 25 <= mousePos.y) && (mousePos.y <= styles.top + (100 * num) + 25))) {
+  //      alert(`Marker ${num} has been clicked`);
+  //   };
   // };
-  // }
-  
-  // return (
-  //   <div>
-  //     <div class='Map'
-  //       onMouseDown={moveStart}
-  //       onMouseMove={whileMoves}
-  //       onMouseUp={moveEnd}>
-          
-  //      <div class ="zoom" onWheelCapture={Zoom}>
-  //       <img style={styles}
-  //         src="/images/campus_map_half.png" alt="" />
 
-  //       <div className='ImageFollow'
-  //       //onMouseMove={handleMouseMove}
-  //       //onMouseDown={handleMouseDown}
-  //       //onMouseUp={handleMouseUp}
-  //       >
-         
-         
-  //         x:{styles.left} | y:{styles.top}
 
-  //         <div className='msg' style={{ left: styles.left - 100, top: styles.top - 100 }}>
-  //           marker1
-  //         </div>
+  return (
+    <>
 
-  //         <div className='always_half' style={{ left: styles.left + 100, top: styles.top + 100 }}>
-  //           marker2
-  //         </div>
-  //         </div>
+    
 
-  //         </div>
-  //     </div>
-  //   </div>
+      <div class='Map'
+        onMouseDown={moveStart}
+        onMouseMove={whileMoves}
+        onMouseUp={moveEnd}
+        onWheelCapture = {zoom}>
+
+        
+
+        <img style={styles} id="Mapimg"
+          src="/images/campus_map_half.png" alt="" />
+
+        <div className='ImageFollow'>
+          x:{mousePos.x} , y:{mousePos.y} | x:{screenPos.x} , y:{screenPos.y}
+
+          <div className='msg'
+            style={{ left: styles.left + 100, top: styles.top + 100 }}>
+            Marker1
+          </div>
+
+          <div className='always_half'
+            style={{ left: styles.left + 200, top: styles.top + 200 }}>
+            Marker2
+          </div>
+
+        </div>
+
+        
+
+      </div>
+    </>
 
   );
 
