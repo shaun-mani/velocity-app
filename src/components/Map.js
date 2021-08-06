@@ -5,6 +5,13 @@ import './image_follow.css';
 import Zoom from './zoom.jsx';
 import zoomStop from './zoomStop.jsx';
 
+const getScreenPositionInElement = (evt) => {
+  return {
+    x: evt.clientX,
+    y: evt.clientY
+  }
+}
+
 const getCursorPositionInElement = (evt) => {
 	return {
 		x : evt.clientX - evt.currentTarget.getBoundingClientRect().left,
@@ -15,6 +22,7 @@ const getCursorPositionInElement = (evt) => {
 const Map = () => {
   // mouse position
   const [mousePos, setMousePos] = useState({x:0, y:0});
+  const [screenPos, setScreenPos] = useState({x:0, y:0})
 
   // map code
 
@@ -30,13 +38,13 @@ const Map = () => {
     setWhileMoving(true);
   };
 
-
   const whileMoves = (e) => {
     setMousePos(getCursorPositionInElement(e));
+    setScreenPos(getScreenPositionInElement(e));
+
 
     if (whileMoving) {
 
-      //setMapPos(e.screenX - deltaX, e.screenY - deltaY)
 
       let left = e.screenX - deltaX;
       let top = e.screenY - deltaY;
@@ -85,19 +93,13 @@ const Map = () => {
     //   };
     // };
 
-   
-
-    
-      
-    
-
 
     return (
-      <div class='Map'
+      <div class='Map' 
       onMouseDown= {moveStart}
       onMouseMove={whileMoves}
       onMouseUp={moveEnd}>
-      <div class= 'zoom'  onMouseDownCapture={Zoom} onMouseLeave = {zoomStop}>
+         <div class ="zoom" onWheelCapture={Zoom}>
           <img  style={styles}
           src="/images/campus_map_half.png" alt=""/>
  
@@ -105,8 +107,8 @@ const Map = () => {
 			//onMouseMove={handleMouseMove}
 			//onMouseDown={handleMouseDown}
 			//onMouseUp={handleMouseUp}
-		>
-		x:{styles.left}, {mousePos.x} | y:{styles.top}, {mousePos.y} | {deltaX}, {deltaY}
+      >
+		x:{mousePos.x} , y:{mousePos.y} | x:{screenPos.x} , y:{screenPos.y}
 
 		<div className='msg' 
          style={{left: styles.left + 100, top: styles.top + 100}}>
