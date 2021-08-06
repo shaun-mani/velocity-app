@@ -10,6 +10,7 @@ import MarkerClick from './components/MarkerClick';
 // import ButtonClickTest1 from './components/ButtonClickTest1';
 import Footer from './components/Footer'
 import Timeline from './components/Timeline'
+import Verticalmenu from './components/Verticalmenu'
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
         <Header />
         <React.Fragment>
         <div><NavBar /></div>
+        
         <MarkerClick />
+        <Verticalmenu/>
         {/* <FunctionClickTest0 /> */}
         {/* <ButtonClickTest1 /> */}
         {/* <Test /> */}
