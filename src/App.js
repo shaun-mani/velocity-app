@@ -12,7 +12,7 @@ function App() {
     <>
     <h1>University of Waterloo Concept Web App</h1>
     <Sidebar />
-       <Maptest />
+       <Map/>
     </>
   );
 }
