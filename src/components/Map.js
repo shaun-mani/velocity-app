@@ -109,7 +109,8 @@ const Map = () => {
         onMouseMove={whileMoves}
         onMouseUp={moveEnd}>
 
-        {/* <div class ="zoom" onWheelCapture={Zoom}> */}
+        <div class ="zoom" onWheelCapture={Zoom}>
+
         <img style={styles} id="Mapimg"
           src="/images/campus_map_half.png" alt="" />
 
@@ -125,6 +126,8 @@ const Map = () => {
             style={{ left: styles.left + 200, top: styles.top + 200 }}>
             Marker2
           </div>
+
+        </div>
 
         </div>
 
