@@ -87,3 +87,19 @@ Initial attempt to add marker class into the map
 
   border: 1px solid #881100;
 }
+
+.marker:active {
+  
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  background: yellow;
+
+  display: inline-block;
+  border-bottom-right-radius: 0;
+  position: relative;
+  transform: rotate(45deg);
+
+
+  border: 1px solid #881100;
+}
