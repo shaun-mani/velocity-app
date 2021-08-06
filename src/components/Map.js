@@ -3,6 +3,7 @@ import { useState } from "react";
 import './Map.css';
 import './image_follow.css';
 import Zoom from './zoom.jsx';
+import zoomStop from './zoomStop.jsx';
 
 const getCursorPositionInElement = (evt) => {
 	return {
@@ -20,7 +21,7 @@ const Map = () => {
   const [deltaX, setDeltaX] = useState(0);
   const [deltaY, setDeltaY] = useState(0);
   const [whileMoving, setWhileMoving] = useState(false);
-  const [styles, setStyles] = useState({ left: null, top: null });
+  const [styles, setStyles] = useState({ left: 0, top: 0 });
 
   
   const moveStart = (e) => {
@@ -77,24 +78,27 @@ const Map = () => {
     // }
 
     // const alertFunction = (num) => {
-    //   //console.log('clicked');
-    //   if (((styles.x + (100 * num) - 50 <= mousePos.x) && (mousePos.x <= styles.x + (100 * num) + 50))
-    //       && ((styles.y + (100 * num) - 50 <= mousePos.y) && (mousePos.y <= styles.y + (100 * num) + 50))) {
+    //   console.log('marker clicked');
+    //   if (((styles.left + (100 * num) - 25 <= mousePos.x) && (mousePos.x <= styles.left + (100 * num) + 25))
+    //       && ((styles.top + (100 * num) - 25 <= mousePos.y) && (mousePos.y <= styles.top + (100 * num) + 25))) {
     //      alert(`Marker ${num} has been clicked`);
     //   };
     // };
 
+   
+
+    
+      
     
 
+
     return (
-      <div>
-         
-      <div class='Map' 
+      <div class='Map'
       onMouseDown= {moveStart}
       onMouseMove={whileMoves}
       onMouseUp={moveEnd}>
-         <div class ="zoom" onWheelCapture={Zoom}>
-          <img style={styles}
+      <div class= 'zoom'  onMouseDownCapture={Zoom} onMouseLeave = {zoomStop}>
+          <img  style={styles}
           src="/images/campus_map_half.png" alt=""/>
  
       <div className='ImageFollow'
@@ -102,7 +106,7 @@ const Map = () => {
 			//onMouseDown={handleMouseDown}
 			//onMouseUp={handleMouseUp}
 		>
-		x:{styles.left}, {mousePos.x} | y:{styles.top}, {mousePos.y}
+		x:{styles.left}, {mousePos.x} | y:{styles.top}, {mousePos.y} | {deltaX}, {deltaY}
 
 		<div className='msg' 
          style={{left: styles.left + 100, top: styles.top + 100}}>
@@ -114,9 +118,9 @@ const Map = () => {
 			Marker2
 		</div>
     </div>
+    </div>
 	</div>
-      </div>
-      </div>
+      
 
 
   //const handleMouseDown = () => {
