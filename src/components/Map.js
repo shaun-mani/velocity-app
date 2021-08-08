@@ -68,23 +68,32 @@ const Map = () => {
   function zoom(e) {
     var GFG = document.getElementById("Mapimg");
     var Marker = document.getElementById("marker1");
+    var Marker2 = document.getElementById("marker2");
 
     var currWidth2 = Marker.clientWidth;
     var currHeight2 = Marker.clientHeight;
 
+    var currWidth3 = Marker.clientWidth;
+    var currHeight3 = Marker.clientHeight;
+
     var currWidth = GFG.clientWidth;
     var currHeight = GFG.clientHeight;
+
     if(e.deltaY > 0) {
     GFG.style.width = (currWidth - 100) + "px";
     GFG.style.height = (currHeight - 100) + "px";
-    Marker.style.width = (currWidth2 - 100) + "px";
-    Marker.style.height = (currHeight2 - 100) + "px";
+    Marker.style.width = (currWidth2 - 8) + "px";
+    Marker.style.height = (currHeight2 - 8) + "px";
+    Marker2.style.width = (currWidth3 - 8) + "px";
+    Marker2.style.height = (currHeight3 - 8) + "px";
     }
     else{
     GFG.style.width = (currWidth + 100) + "px";
     GFG.style.height = (currHeight + 100) + "px";
-    Marker.style.width = (currWidth2 + 100) + "px";
-    Marker.style.height = (currHeight2 + 100) + "px";
+    Marker.style.width = (currWidth2 + 8) + "px";
+    Marker.style.height = (currHeight2 + 8) + "px";
+    Marker2.style.width = (currWidth3 + 8) + "px";
+    Marker2.style.height = (currHeight3 + 8) + "px";
     }
   }
 
@@ -112,28 +121,24 @@ const Map = () => {
         onMouseUp={moveEnd}
         onWheelCapture = {zoom}>
 
-        
-
-        <img style={styles} id="Mapimg"
+      
+        <img className='background' style={styles} id="Mapimg"
           src="/images/campus_map_half.png" alt="" />
 
         <div className='ImageFollow'>
           x:{mousePos.x} , y:{mousePos.y} | x:{screenPos.x} , y:{screenPos.y}
 
-          <img className='msg' id = "marker1" 
-             src="/images/pin.png" alt="" />
+          <img className= 'marker1' id = "marker1"  style={{ left: styles.left + 20, top: styles.top + 20 }}
+             src="/images/pin.png" alt=""/>
           
-
-          <div className='always_half' id = "marker2"
-            style={{ left: styles.left + 200, top: styles.top + 200 }}>
-            Marker2
-          </div>
+          <img className= 'marker2' id = "marker2" style={{ left: styles.left + 50, top: styles.top + 50 }}
+             src="/images/pin2.png" alt=""/>
 
         </div>
 
-        
+        </div>
 
-      </div>
+      
     </>
 
   );

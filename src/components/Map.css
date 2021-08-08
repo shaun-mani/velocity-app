@@ -10,11 +10,25 @@
   position : relative;
 }
 
-.Map img {
+.background {
   position: absolute;
   width: 2000px;
   height: 1500px;
 }
+
+.marker1 {
+width: 20px;
+height: 30px;
+position: absolute;
+}
+
+.marker2 {
+  width: 20px;
+  height: 30px;
+  position: absolute;
+}
+
+
 
 .zoom {
     height:200vh;  
@@ -23,17 +37,7 @@
  
 }
 
-.msg {
-  position: absolute;
-  width: 2px;
-  height: 5px;
 
-}
-.always_half {
-  position: relative;
-  width: 20px;
-  height: 15px;
-}
 
 
 
