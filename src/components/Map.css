@@ -3,8 +3,8 @@
   width: 1300px;
   height: 850px;
   border: 3px solid black;
-  margin-left: 100px;
-  margin-top: 100px;
+  margin-left: 200px;
+  margin-top: 0px;
   margin-bottom: 100px;
   overflow: hidden;
   display: block;
@@ -21,4 +21,85 @@
   height: 100vh;
   width: 100%;
   position: relative;
+}
+
+/*
+Initial attempt to add marker class into the map
+*/
+
+.marker {
+  cursor:pointer;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  background: #aa3300;
+
+  display: inline-block;
+  border-bottom-right-radius: 0;
+  position: relative;
+  transform: rotate(45deg);
+
+
+  border: 1px solid #881100;
+}
+
+/* inner circle */
+.marker::before {
+  content: "";
+  background: white;
+  width: 50%;
+  height: 50%;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  
+  border: 1px solid #881100;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+/* shadow  */
+.marker::after {
+  content: "";
+  background: rgba(128, 128, 128, 0.2);
+  width: 75%;
+  height: 75%;
+  border-radius: 100%;
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  transform: translate(-50%, -50%) rotate(45deg) scaleX(0.5);
+}
+
+.marker:hover {
+  
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  background: yellow;
+
+  display: inline-block;
+  border-bottom-right-radius: 0;
+  position: relative;
+  transform: rotate(45deg);
+
+
+  border: 1px solid #881100;
+}
+
+.marker:active {
+  
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  background: yellow;
+
+  display: inline-block;
+  border-bottom-right-radius: 0;
+  position: relative;
+  transform: rotate(45deg);
+
+
+  border: 1px solid #881100;
 }
