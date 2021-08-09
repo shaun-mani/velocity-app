@@ -10,6 +10,9 @@ import MarkerClick from "./components/MarkerClick";
 // import ButtonClickTest1 from './components/ButtonClickTest1';
 import Footer from "./components/Footer";
 import Timeline from "./components/Timeline";
+import Verticalmenu from "./components/Verticalmenu";
+import Buildings from "./data/Buildings.json";
+
 import {
   GoogleMap,
   withScriptjs,
@@ -32,6 +35,7 @@ function Map() {
           position={{ lat: park.latitude, lng: park.longitude }}
           onClick={() => {
             setSelectedPark(park);
+            
           }}
         />
       ))}
@@ -53,6 +57,7 @@ function Map() {
   );
 }
 
+
 const WrappedMap = withScriptjs(withGoogleMap(Map));
 
 function App() {
@@ -61,10 +66,12 @@ function App() {
       <div className="content-wrap">
         <Header />
         <React.Fragment>
+       
           <div>
             <NavBar />
           </div>
           <MarkerClick />
+          
           {/* <FunctionClickTest0 /> */}
           {/* <ButtonClickTest1 /> */}
           {/* <Test /> */}
@@ -76,11 +83,16 @@ function App() {
               loadingElement={<div style={{ height: "100%" }} />}
               containerElement={<div style={{ height: "100%" }} />}
               mapElement={<div style={{ height: "100%" }} />}
+              
             />
           </div>
         </React.Fragment>
         <Timeline />
+        <Verticalmenu 
+        
+        />
       </div>
+      
       <Footer />
     </div>
   );

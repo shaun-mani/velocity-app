@@ -1,6 +1,8 @@
 .Verticalmenu {
     width: 200px;
     position: absolute;
+    top: 19%;
+    left: 70%;
   }
   
   .Verticalmenu a {
@@ -15,7 +17,8 @@
     background-color: #ccc;
   }
   
-  .Verticalmenu a.top {
-    background-color: yellow;
-    color: black;
+  .Verticalmenu h4 {
+    background-color: black;
+    color: white;
+    font-weight: bold;
   }

@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from "react";
 import './Verticalmenu.css';
 
+
 // **** This is just a test, did not really work out ********
 
 // changed from <li> to <nav> since the footer also uses <li> and they are aligned differently.
@@ -12,7 +13,7 @@ const Verticalmenu = () => {
       
       
       <div class="Verticalmenu">
-  <a href="#" class="top">Categories</a>
+  <h4  class="top">Categories</h4>
   <a href="#">Funding</a>
   <a href="#">Pitch Competitions</a>
   <a href="#">Skills Building</a>
