@@ -130,7 +130,6 @@ const Map = () => {
         </div>
 =======
 <div className='ImageFollow'
->>>>>>> 76e3244ce699122b05a5c4413f7602692a51cabd
 			//onMouseMove={handleMouseMove}
 			//onMouseDown={handleMouseDown}
 			//onMouseUp={handleMouseUp}
@@ -150,10 +149,6 @@ const Map = () => {
     </div>
 	</div>
       </div>
-<<<<<<< HEAD
-=======
->>>>>>> 5b8e8629f1654307cda276ab543e21347f1260fb
->>>>>>> 76e3244ce699122b05a5c4413f7602692a51cabd
       </div>
   
 

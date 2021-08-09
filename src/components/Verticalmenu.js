@@ -13,22 +13,22 @@ const Verticalmenu = () => {
       
       
       <div class="Verticalmenu">
-  <h4  class="top">Categories</h4>
-  <a href="#">Funding</a>
-  <a href="#">Pitch Competitions</a>
-  <a href="#">Skills Building</a>
-  <a href="#">Coaching/Mentorship</a>
-  <a href="#">Social Justice</a>
-  <a href="#">Environmental</a>
-  <a href="#">Small Business</a>
-  <a href="#">Intrapreneurship</a>
-  <a href="#">Linked to academics</a>
-  <a href="#">Networking</a>
-  <a href="#">Research</a>
-  <a href="#">Legal</a>
-  <a href="#">Community</a>
-  <a href="#">Events</a>
-  <a href="#">Awards</a>
+        <h4  class="top">Categories</h4>
+        <a href="#">Funding</a>
+        <a href="#">Pitch Competitions</a>
+        <a href="#">Skills Building</a>
+        <a href="#">Coaching/Mentorship</a>
+        <a href="#">Social Justice</a>
+        <a href="#">Environmental</a>
+        <a href="#">Small Business</a>
+        <a href="#">Intrapreneurship</a>
+        <a href="#">Linked to academics</a>
+        <a href="#">Networking</a>
+        <a href="#">Research</a>
+        <a href="#">Legal</a>
+        <a href="#">Community</a>
+        <a href="#">Events</a>
+        <a href="#">Awards</a>
       </div>
       </React.Fragment>
     );

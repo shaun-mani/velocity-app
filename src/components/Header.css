@@ -6,15 +6,16 @@
   align-items: baseline;
   padding: 1em;
   margin-bottom: 0;
-  background-color: black;
-  color: #fff;
+  background-color: white;
+  color: black;
 }
 
 .Title-Subtitle {
-  color: white;
+  color: black;
   align-items: baseline;
+  text-align: right;
 }
 
-.uw-image {
-  margin-left: 31px;
+.concept_v_uw_image {
+  margin-left: 0px;
 }
