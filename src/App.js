@@ -22,6 +22,7 @@ import {
 } from "react-google-maps";
 import * as parksData from "./data/Buildings.json";
 
+
 function Map() {
   const [selectedPark, setSelectedPark] = useState(null);
   return (
@@ -63,9 +64,26 @@ function Map() {
 const WrappedMap = withScriptjs(withGoogleMap(Map));
 
 function App() {
+  
+const [width, setWidth] = React.useState(window.innerWidth);
+const [height, setHeight] = React.useState(window.innerHeight);
+
+const updateWidthAndHeight = () => {
+  setWidth(window.innerWidth);
+  setHeight(window.innerHeight);
+};
+
+React.useEffect(() => {
+  window.addEventListener("resize", updateWidthAndHeight);
+  return () => window.removeEventListener("resize", updateWidthAndHeight);
+});
+
+
   return (
+    
     <div className="page-container">
       <div className="content-wrap">
+      
         <Header />
         <React.Fragment>
           {/* <NavBar /> */}
@@ -94,6 +112,7 @@ function App() {
       
       <Footer />
     </div>
+   
   );
 }
 
