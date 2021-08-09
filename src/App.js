@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from "react";
 import './App.css';
 //import Map from './components/Map';
-import Title from './components/Title';
+import Title from './components/Title.js';
 
 import {
   GoogleMap,
@@ -17,6 +17,7 @@ import * as parksData from "./data/Buildings.json";
 function Map() {
   const [selectedPark, setSelectedPark] = useState(null);
   return (
+    
     <GoogleMap
       defaultZoom={15}
       defaultCenter={{ lat: 43.469761, lng: -80.538811 }}
@@ -59,14 +60,18 @@ function App() {
           {/* <FunctionClickTest0 /> */}
           {/* <ButtonClickTest1 /> */}
           {/* <Test /> */}
-          <div style={{ width: "70vw", height: "80vh" }}>
+          <div Title style={{ width: "70vw", height: "80vh" }}>
+            
+          
             <WrappedMap
+              
               googleMapURL={
                 "https://maps.googleapis.com/maps/api/js?key=AIzaSyD0LW50_GtYuB0nlw5-YhW5i1uBCGNe3XA&v=3.exp&libraries=geometry,drawing,places"
               }
               loadingElement={<div style={{ height: "100%" }} />}
               containerElement={<div style={{ height: "100%" }} />}
               mapElement={<div style={{ height: "100%" }} />}
+              
             />
           </div>
       </div>
