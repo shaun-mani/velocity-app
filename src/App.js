@@ -48,7 +48,9 @@ function Map() {
           }}
         >
           <div>
-            <h2>{selectedPark.buildingName}</h2>
+            <h3>{selectedPark.resourceName}</h3>
+            <h6>Located at: {selectedPark.buildingName}</h6>
+            <h6>Presented by: {selectedPark.organizer}</h6>
             <p>{selectedPark.Description}</p>
           </div>
         </InfoWindow>
@@ -66,11 +68,8 @@ function App() {
       <div className="content-wrap">
         <Header />
         <React.Fragment>
-       
-          <div>
-            <NavBar />
-          </div>
-          <MarkerClick />
+          {/* <NavBar /> */}
+          {/* <MarkerClick /> */}
           
           {/* <FunctionClickTest0 /> */}
           {/* <ButtonClickTest1 /> */}
