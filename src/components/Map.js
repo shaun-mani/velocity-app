@@ -103,6 +103,7 @@ const Map = () => {
             </Row>
           </Container> */}
 
+<<<<<<< HEAD
           <div
             className="ImageFollow"
             //onMouseMove={handleMouseMove}
@@ -124,8 +125,30 @@ const Map = () => {
             </div>
           </div>
         </div>
-      </div>
+=======
+<div className='ImageFollow'
+			//onMouseMove={handleMouseMove}
+			//onMouseDown={handleMouseDown}
+			//onMouseUp={handleMouseUp}
+		>
+		x:{styles.left}, {mousePos.x} | y:{styles.top}, {mousePos.y}
+
+		<div className='msg'
+         style={{left: styles.left + 100, top: styles.top + 100}}>
+			<div class="marker"></div>
+		</div>
+
+
+		<div className='always_half' 
+         style={{left: styles.left + 200, top: styles.top + 200}}>
+			<div class="marker"></div>
+		</div>
     </div>
+	</div>
+      </div>
+>>>>>>> 5b8e8629f1654307cda276ab543e21347f1260fb
+      </div>
+  
 
     //const handleMouseDown = () => {
     //setIsMouseDown(true);
