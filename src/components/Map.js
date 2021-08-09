@@ -26,10 +26,6 @@ const Map = () => {
   const [whileMoving, setWhileMoving] = useState(false);
   const [styles, setStyles] = useState({ left: null, top: null });
 
-<<<<<<< HEAD
-  
-=======
->>>>>>> a629499251f8b6c2b2a9cf89d2ddc194d6babbe7
   const moveStart = (e) => {
     setDeltaX(e.screenX - e.currentTarget.getBoundingClientRect().left);
     setDeltaY(e.screenY - e.currentTarget.getBoundingClientRect().top);
@@ -73,24 +69,11 @@ const Map = () => {
   //setIsMouseDown(false);
   //}
 
-<<<<<<< HEAD
-    const zoomPos = () => {
-     if ((mousePos.x > 0) && (mousePos.y > 0)) {
-        Zoom()
-     }
-
-    }
-
-    const stopZoom = () => {
-      Zoom(false);
-    };
-=======
   // const handleMouseMove = (evt) => {
   //   if (whileMoving) {
   //     setMousePos(getCursorPositionInElement(evt));
   //   };
   // }
->>>>>>> a629499251f8b6c2b2a9cf89d2ddc194d6babbe7
 
   // const alertFunction = (num) => {
   //   //console.log('clicked');
@@ -100,19 +83,6 @@ const Map = () => {
   //   };
   // };
 
-<<<<<<< HEAD
-    return (
-      <div>
-      <div class='Map' 
-      onMouseDown= {moveStart}
-      onMouseMove={whileMoves}
-      onMouseUp={moveEnd}>
-      
-          <img class = 'zoom' onWheelCapture={zoomPos} onMouseLeave= {stopZoom} style={styles}
-          src="/images/campus_map_half.png" alt=""/>
-         
-         {/* ** Just Me (leo) trying to use bootstrap to make img look nicer */}
-=======
   return (
     <div>
       <div
@@ -125,7 +95,6 @@ const Map = () => {
           <img style={styles} src="/images/campus_map_half.png" alt="" />
 
           {/* ** Just Me (leo) trying to use bootstrap to make img look nicer */}
->>>>>>> a629499251f8b6c2b2a9cf89d2ddc194d6babbe7
           {/* <Container>
             <Row>
               <Col xs={6} md={4}> */}
@@ -134,7 +103,6 @@ const Map = () => {
             </Row>
           </Container> */}
 
-<<<<<<< HEAD
           <div
             className="ImageFollow"
             //onMouseMove={handleMouseMove}
@@ -156,34 +124,8 @@ const Map = () => {
             </div>
           </div>
         </div>
-=======
-      <div className='ImageFollow'
-			//onMouseMove={handleMouseMove}
-			//onMouseDown={handleMouseDown}
-			//onMouseUp={handleMouseUp}
-		>
-		x:{styles.left}, {mousePos.x} | y:{styles.top}, {mousePos.y}
-
-		<div className='msg'
-         style={{left: styles.left + 100, top: styles.top + 100}}>
-			<div class="marker"></div>
-		</div>
-
-
-		<div className='always_half' 
-         style={{left: styles.left + 200, top: styles.top + 200}}>
-			<div class="marker"></div>
-		</div>
-    </div>
-	</div>
-      </div>
-<<<<<<< HEAD
-      
-=======
->>>>>>> 954b527d7a8c2f2405ff589922c409a69fae2b99
       </div>
     </div>
->>>>>>> a629499251f8b6c2b2a9cf89d2ddc194d6babbe7
 
     //const handleMouseDown = () => {
     //setIsMouseDown(true);
