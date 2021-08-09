@@ -11,6 +11,7 @@ import {
   Marker,
   InfoWindow,
 } from "react-google-maps";
+
 import * as parksData from "./data/Buildings.json";
 
 function Map() {
