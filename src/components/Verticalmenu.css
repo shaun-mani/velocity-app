@@ -6,7 +6,7 @@
   }
   
   .Verticalmenu a {
-    background-color:black;
+    background-color:white;
     color:white;
     display: block;
     padding: 12px;
@@ -18,6 +18,6 @@
   }
   
   .Verticalmenu a.top {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
   }
