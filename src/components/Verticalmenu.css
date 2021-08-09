@@ -17,7 +17,8 @@
     background-color: #ccc;
   }
   
-  .Verticalmenu a.top {
-    background-color: white;
-    color: black;
+  .Verticalmenu h4 {
+    background-color: black;
+    color: white;
+    font-weight: bold;
   }
