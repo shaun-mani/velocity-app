@@ -1,0 +1,50 @@
+{
+    "buildings": [
+      {
+        "buildingId": "1",
+        "buildingName": "Dana Porter Arts Library",
+        "Description": "resources available to current Waterloo users that might support their entrepreneurship- and innovation-related research.",
+        "latitude": 43.46984437,
+        "longitude": -80.54242926
+      },
+      {
+        "buildingId": "2",
+        "buildingName": "William M. Tatham Centre for Co-operative Education & Career Action",
+        "Description": "The Centre for Career Action (CCA) supports all students, alumni and employees. Career Advisors can help with career planning, career management strategies, graduate and professional school preparation, work search methods and setting meaningful career goals.",
+        "latitude": 43.46904735,
+        "longitude": -80.5412835
+      },
+      {
+        "buildingId": "3",
+        "buildingName": "Engineering 7",
+        "Description": "The Norman Esch Entrepreneurship Award provides a minimum of six awards, ranging in value from $5,000-$10,000 each, for student teams enrolled in the Faculty of Engineering's Fourth-Year Capstone Design Project. The awards are open to student teams from all departments within the Faculty of Engineering.",
+        "latitude": 43.47293,
+        "longitude": -80.53958
+      },
+      {
+        "buildingId": "4",
+        "buildingName": "St. Paul's United College Main Building",
+        "Description": "Join GreenHouse's Innovators in Residence program, a community where student innovators receive mentorship, training, community and funding to solve social or environmental problems. Like a club at school, GreenHouse is a community for like-minded students who want to create social or environmental problems.  ",
+        "latitude": 43.467762,
+        "longitude": -80.546404
+      },
+      {
+        "buildingId": "5",
+        "buildingName": "South Campus Hall",
+        "Description": "Attend Concept intro sessions to learn about entrepreneurship, get a glimpse into the world of startups, build new skills, and engage with the Concept community!",
+        "latitude": 43.4692188,
+        "longitude": -80.54021338
+      },
+      {
+        "buildingId": "6",
+        "buildingName": "Conrad Grebel University College",
+        "Description": "The PeaceTech Living-Learning Community is a cluster of students from diverse faculties interested in exploring the intersection of technology and peace in society. The community is made of students who are residents, virtual residents, or associates at Conrad Grebel University College. ",
+        "latitude": 43.46656,
+        "longitude": -80.54525
+      },
+      {
+        
+      }
+    ]
+  }
+  
