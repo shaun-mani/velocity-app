@@ -18,19 +18,19 @@ const Timeline = (props) => {
       <div>
 
         <div className="text-center">
-          <Button variant="outline-dark" onClick={timelineSet}>
+          <Button variant="outline-dark" onClick = {() => {timelineSet(1)}}>
             1. Getting Started
           </Button>
-          <Button variant="outline-dark" onClick={timelineSet}>
+          <Button variant="outline-dark" onClick={() => {timelineSet(2)}}>
             2. Early Stage & problem Identification
           </Button>
-          <Button variant="outline-dark" onClick={timelineSet}>
+          <Button variant="outline-dark" onClick={() => {timelineSet(3)}}>
             3. Building & Testing Your Idea
           </Button>
-          <Button variant="outline-dark" onClick={timelineSet}>
+          <Button variant="outline-dark" onClick={() => {timelineSet(4)}}>
             4. Funding & Competitions
           </Button>
-          <Button variant="outline-dark" onClick={timelineSet}>
+          <Button variant="outline-dark" onClick={() => {timelineSet(5)}}>
             5. Starting Up & Launching 
           </Button>
         </div>
