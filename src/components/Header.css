@@ -21,16 +21,15 @@
 
 .Title {
   margin-top: 80px;
-  margin-left: -150px;
   padding: 0em;
   color: #0072CE;
   font-family: "calibri";
   font-weight: 700;
   font-size: 60px;
   font-style: bold;
- 
-  
-  
+  align-items: center;
+  position: relative;
+
 }
 
 
