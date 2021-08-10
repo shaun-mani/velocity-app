@@ -25,7 +25,7 @@ const Verticalmenu = (props) => {
   ];
   return (
     <React.Fragment>
-      <div class="Verticalmenu">
+      <div className="Verticalmenu">
         <h4
           class="top"
           onClick={() => {
@@ -36,7 +36,7 @@ const Verticalmenu = (props) => {
         </h4>
         {words.map((word) => (
           <h1
-            class="top"
+            className="top"
             onClick={() => {
               if (props.currentKeyword === word) {
                 props.setKeyword(null);
