@@ -2,11 +2,11 @@ import React, { useState } from "react";
 //import { useState } from "react";
 import "./App.css";
 //import Map from "./components/Map";
-import NavBar from "./components/NavBar";
+//import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 // import FunctionClickTest0 from './components/FunctionClickTest0'
 // import Test from './components/Test'
-import MarkerClick from "./components/MarkerClick";
+import VerticalMenu from "./components/Verticalmenu";
 // import ButtonClickTest1 from './components/ButtonClickTest1';
 import Footer from "./components/Footer";
 import Timeline from "./components/Timeline";
@@ -22,24 +22,29 @@ import {
 } from "react-google-maps";
 import * as parksData from "./data/Buildings.json";
 
-
-function Map() {
+function Map(props) {
   const [selectedPark, setSelectedPark] = useState(null);
+  console.log(props.currentKeyword);
   return (
     <GoogleMap
       defaultZoom={15}
       defaultCenter={{ lat: 43.469761, lng: -80.538811 }}
     >
-      {parksData.buildings.map((park) => (
-        <Marker
-          key={park.buildingId}
-          position={{ lat: park.latitude, lng: park.longitude }}
-          onClick={() => {
-            setSelectedPark(park);
-            
-          }}
-        />
-      ))}
+      {parksData.buildings
+        .filter(
+          (building) =>
+            props.currentKeyword === null ||
+            building.keyword === props.currentKeyword
+        )
+        .map((park) => (
+          <Marker
+            key={park.buildingId}
+            position={{ lat: park.latitude, lng: park.longitude }}
+            onClick={() => {
+              setSelectedPark(park);
+            }}
+          />
+        ))}
 
       {selectedPark && (
         <InfoWindow
@@ -60,24 +65,9 @@ function Map() {
   );
 }
 
-
-const WrappedMap = withScriptjs(withGoogleMap(Map));
-
 function App() {
-  
-const [width, setWidth] = React.useState(window.innerWidth);
-const [height, setHeight] = React.useState(window.innerHeight);
-
-const updateWidthAndHeight = () => {
-  setWidth(window.innerWidth);
-  setHeight(window.innerHeight);
-};
-
-React.useEffect(() => {
-  window.addEventListener("resize", updateWidthAndHeight);
-  return () => window.removeEventListener("resize", updateWidthAndHeight);
-});
-
+  const [currentKeyword, setKeyword] = useState(null);
+  const WrappedMap = withScriptjs(withGoogleMap(Map));
 
   return (
     
@@ -88,28 +78,26 @@ React.useEffect(() => {
         <React.Fragment>
           {/* <NavBar /> */}
           {/* <MarkerClick /> */}
-          
+
           {/* <FunctionClickTest0 /> */}
           {/* <ButtonClickTest1 /> */}
           {/* <Test /> */}
           <div style={{ width: "70vw", height: "80vh" }}>
             <WrappedMap
+              currentKeyword={currentKeyword}
               googleMapURL={
                 "https://maps.googleapis.com/maps/api/js?key=AIzaSyD0LW50_GtYuB0nlw5-YhW5i1uBCGNe3XA&v=3.exp&libraries=geometry,drawing,places"
               }
               loadingElement={<div style={{ height: "100%" }} />}
               containerElement={<div style={{ height: "100%" }} />}
               mapElement={<div style={{ height: "100%" }} />}
-              
             />
           </div>
         </React.Fragment>
         <Timeline />
-        <Verticalmenu 
-        
-        />
+        <Verticalmenu setKeyword={setKeyword} currentKeyword={currentKeyword} />
       </div>
-      
+
       <Footer />
     </div>
    

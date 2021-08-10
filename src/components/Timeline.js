@@ -38,10 +38,7 @@ updateContent5 = () => {
   render() {
     return (
       <div>
-        <h2 className="h2 bg-dark text-white text-center p-2">
-            Follow your entrepreneurial journey with visual timeline!
-          <element className = 'border-timeline'>{ this.state.message }</element>
-        </h2>
+
         <div className="text-center">
           <Button variant="outline-dark" onClick={this.updateContent1}>
             1. Getting Started
