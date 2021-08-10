@@ -79,6 +79,8 @@ const [width, setWidth] = React.useState(window.innerWidth);
 const [height, setHeight] = React.useState(window.innerHeight);
 
   const [currentKeyword, setKeyword] = useState(null);
+  const [currentKeynum, setKeynum] = useState(null)
+  
   const WrappedMap = withScriptjs(withGoogleMap(Map));
   
   const updateWidthAndHeight = () => {

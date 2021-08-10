@@ -5,8 +5,8 @@ import Button from 'react-bootstrap/Button';
 
 // ****** This is just a test for now ***
 
-class Timeline extends Component {
-  constructor(props) {
+class extends Timeline Component {
+  constructor(props) {Timeli
     super(props);
     this.state = {
         //message: "Timeline Content!",
@@ -14,8 +14,13 @@ class Timeline extends Component {
     }
   }
 
+
+
+
+  render() {
     return (
-    
+      <div>
+
         <div className="text-center">
           <Button variant="outline-dark" onClick={ () => this.updateContent1}>
             1. Getting Started
@@ -33,8 +38,9 @@ class Timeline extends Component {
             5. Starting Up & Launching 
           </Button>
         </div>
-      
+      </div>
     );
+  }
 }
 
  
