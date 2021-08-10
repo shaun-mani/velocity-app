@@ -18,6 +18,7 @@ const Timeline = (props) => {
       <ButtonGroup size="lg" className="timeline-button-group" >
         {/* <div className="text-center"> */}
           <Button variant="success" onClick={() => {
+          window.scrollTo(0, 180);
             props.setKeyword(null);
             if (props.currentKeynum === 1) {
               props.setKeynum(null);
@@ -28,6 +29,7 @@ const Timeline = (props) => {
             1. Getting Started
           </Button>
           <Button variant="success" onClick={() => {
+              window.scrollTo(0, 180);
             props.setKeyword(null);
             if (props.currentKeynum === 2) {
               props.setKeynum(null);
@@ -38,6 +40,7 @@ const Timeline = (props) => {
             2. Early Stage & problem Identification
           </Button>
           <Button variant="success" onClick={() => {
+              window.scrollTo(0, 180);
             props.setKeyword(null);
             if (props.currentKeynum === 3) {
               props.setKeynum(null);
@@ -48,6 +51,7 @@ const Timeline = (props) => {
             3. Building & Testing Your Idea
           </Button>
           <Button variant="success" onClick={() => {
+              window.scrollTo(0, 180);
             props.setKeyword(null);
             if (props.currentKeynum === 4) {
               props.setKeynum(null);
@@ -58,6 +62,7 @@ const Timeline = (props) => {
             4. Funding & Competitions
           </Button>
           <Button variant="success" onClick={() => {
+              window.scrollTo(0, 180);
             props.setKeyword(null);
             if (props.currentKeynum === 5) {
               props.setKeynum(null);
