@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
 }
 
 body {
@@ -20,6 +22,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
   /* text-align: center; */
 }
 

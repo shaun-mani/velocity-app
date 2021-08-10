@@ -70,8 +70,10 @@ function App() {
   const WrappedMap = withScriptjs(withGoogleMap(Map));
 
   return (
+    
     <div className="page-container">
       <div className="content-wrap">
+      
         <Header />
         <React.Fragment>
           {/* <NavBar /> */}
@@ -98,6 +100,7 @@ function App() {
 
       <Footer />
     </div>
+   
   );
 }
 

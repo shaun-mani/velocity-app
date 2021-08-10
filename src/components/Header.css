@@ -8,14 +8,23 @@
   margin-bottom: 0;
   background-color: white;
   color: black;
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
 }
 
 .Title-Subtitle {
   color: black;
   align-items: baseline;
   text-align: right;
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
 }
 
 .concept_v_uw_image {
   margin-left: 0px;
+  
+}
+.Header h1 {
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
 }
