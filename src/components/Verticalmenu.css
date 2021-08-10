@@ -1,3 +1,5 @@
+/*********** NO LONGER USING THIS CSS FILE.  *************/
+
 .Verticalmenu {
   width: 280px;
   position: absolute;
@@ -18,6 +20,10 @@
   cursor: pointer;
   color: yellow;
 }
+
+/* .Categories {
+  text-align: left;
+} */
 
 /* .Verticalmenu h1 {
   background-color: yellow;

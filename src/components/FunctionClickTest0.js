@@ -1,3 +1,6 @@
+// ******** WE ARE NOT USING THIS FILE. BUT IT WORKS IN CASE WE NEED TO COME
+// BACK TO IT. *******
+
 import React from 'react'
 
 // **** This is the button that says 'Marker consolelog'. This marker shows a message
