@@ -11,50 +11,50 @@ const Timeline = (props) => {
       <div className="text-center">
         <Button variant="outline-dark" onClick={() => {
           props.setKeyword(null);
-          if (props.currentKeynum === null) {
-            props.setKeynum(1);
+          if (props.currentKeynum === 1) {
+            props.setKeynum(null);
           } else {
-            props.setKeynum(null)
+            props.setKeynum(1)
           }
         }}>
           1. Getting Started
         </Button>
         <Button variant="outline-dark" onClick={() => {
           props.setKeyword(null);
-          if (props.currentKeynum === null) {
-            props.setKeynum(1);
+          if (props.currentKeynum === 2) {
+            props.setKeynum(null);
           } else {
-            props.setKeynum(null)
+            props.setKeynum(2)
           }
         }}>
           2. Early Stage & problem Identification
         </Button>
         <Button variant="outline-dark" onClick={() => {
           props.setKeyword(null);
-          if (props.currentKeynum === null) {
-            props.setKeynum(1);
+          if (props.currentKeynum === 3) {
+            props.setKeynum(null);
           } else {
-            props.setKeynum(null)
+            props.setKeynum(3)
           }
         }}>
           3. Building & Testing Your Idea
         </Button>
         <Button variant="outline-dark" onClick={() => {
           props.setKeyword(null);
-          if (props.currentKeynum === null) {
-            props.setKeynum(1);
+          if (props.currentKeynum === 4) {
+            props.setKeynum(null);
           } else {
-            props.setKeynum(null)
+            props.setKeynum(4)
           }
         }}>
           4. Funding & Competitions
         </Button>
         <Button variant="outline-dark" onClick={() => {
           props.setKeyword(null);
-          if (props.currentKeynum === null) {
-            props.setKeynum(1);
+          if (props.currentKeynum === 5) {
+            props.setKeynum(null);
           } else {
-            props.setKeynum(null)
+            props.setKeynum(5)
           }
         }}>
           5. Starting Up & Launching
