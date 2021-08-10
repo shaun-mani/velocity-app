@@ -1,3 +1,7 @@
+// ******** WE ARE NOT USING THIS FILE. BUT IT WORKS IN CASE WE NEED TO COME
+// BACK TO IT. *******
+
+
 import React from "react";
 import { useState } from "react";
 import "./Map.css";

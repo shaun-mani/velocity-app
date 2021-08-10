@@ -4,6 +4,10 @@
   font-weight: bold;
 }
 
+.googlemap {
+  margin-left: 100px;
+}
+
 body {
   /* official UW color */
   background-color: rgb(255, 213, 79);
@@ -30,4 +34,3 @@ body {
 .content-wrap {
   flex: 1;
 }
-

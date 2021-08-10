@@ -1,16 +1,12 @@
+// ******** WE ARE NOT USING THIS FILE. BUT IT WORKS IN CASE WE NEED TO COME
+// BACK TO IT. *******
+
+
+
 import React, { Component } from 'react'
 import './MarkerClick.css';
 import MapMarkerIcon from '../MapMarkerIcon.png';
 import Button from 'react-bootstrap/Button';
-
-
-// ****** This component is the three buttons that have a updated message displayed
-// based on the state changing. I was thinking we can use this to display
-// the sidebar that pops up when clicking the markers. This is still very rough
-// draft, but I think it's the right path! 
-
-// We just need to move it to the side bar. Which I'm not quite
-// sure how to do yet. **********
 
 
 class MarkerClick extends Component {

@@ -1,3 +1,7 @@
+// ******** WE ARE NOT USING THIS FILE. BUT IT WORKS IN CASE WE NEED TO COME
+// BACK TO IT. *******
+
+
 import React, { useState } from 'react';
 
 const getCursorPositionInElement = (evt) => {

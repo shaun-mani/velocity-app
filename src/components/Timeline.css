@@ -1,14 +1,12 @@
-.border-timeline {
-  background-color: aliceblue;
-  color: black;
-  margin-top: 1440px;
-  margin-right: 225px;
-  width: 1500px;
-  height: 300px;
-  border: 2px solid black;
-  right: 0px;
-  top: 200px;
-  overflow: hidden;
-  display: block;
-  position: absolute;
+.Timeline-title {
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.timeline-button-group {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  margin-top: 25px;
 }

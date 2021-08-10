@@ -1,10 +1,12 @@
+// ******* THIS FILE WORKS PERFECTLY FINE! WE ARE SIMPLY NOT USING IT 
+// IN OUR APP.JS FILE *********
+
+
 import React from 'react';
 import { useState } from "react";
 import './NavBar.css';
 
-// **** This is just a test, did not really work out ********
 
-// changed from <li> to <nav> since the footer also uses <li> and they are aligned differently.
 const NavBar = () => {
     
     return (

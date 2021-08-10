@@ -1,10 +1,10 @@
+// ****** NO LONGER USING THIS FILE. FOR VERTICAL MENU GO TO
+// FILE: VERTICALMENU0.JS/CSS *********
+
+
 import React from "react";
 import { useState } from "react";
 import "./Verticalmenu.css";
-
-// **** This is just a test, did not really work out ********
-
-// changed from <li> to <nav> since the footer also uses <li> and they are aligned differently.
 
 
 const Verticalmenu = (props) => {
@@ -32,7 +32,6 @@ const Verticalmenu = (props) => {
   return (
     <React.Fragment>
     
-  
       <div className="Verticalmenu">
         <h4
           className="top"

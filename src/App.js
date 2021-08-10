@@ -9,7 +9,8 @@ import Header from "./components/Header";
 // import ButtonClickTest1 from './components/ButtonClickTest1';
 import Footer from "./components/Footer";
 import Timeline from "./components/Timeline";
-import Verticalmenu from "./components/Verticalmenu";
+import VerticalMenu0 from "./components/VerticalMenu0"
+
 
 import {
   GoogleMap,
@@ -106,14 +107,10 @@ const [height, setHeight] = React.useState(window.innerHeight);
       <div className="content-wrap">
       
         <Header />
-        <React.Fragment>
-          {/* <NavBar /> */}
-          {/* <MarkerClick /> */}
-
-          {/* <FunctionClickTest0 /> */}
-          {/* <ButtonClickTest1 /> */}
-          {/* <Test /> */}
-          <div style={{  width: "70vw", height: "80vh" }}>
+        <VerticalMenu0 setKeynum={setKeynum} currentKeynum={currentKeynum} 
+        setKeyword={setKeyword} currentKeyword={currentKeyword} />
+          <div style={{ marginBottom: "50px", marginTop: "-750px", marginLeft: "300px", width: "70vw", height: "85vh" }}>
+            
             <WrappedMap className="googlemap"
               currentKeyword={currentKeyword}
               currentKeynum={currentKeynum}
@@ -125,10 +122,7 @@ const [height, setHeight] = React.useState(window.innerHeight);
               mapElement={<div style={{ height: "100%" }} />}
             />
           </div>
-        </React.Fragment>
         <Timeline setKeynum={setKeynum} currentKeynum={currentKeynum}
-        setKeyword={setKeyword} currentKeyword={currentKeyword} />
-        <Verticalmenu setKeynum={setKeynum} currentKeynum={currentKeynum} 
         setKeyword={setKeyword} currentKeyword={currentKeyword} />
       </div>
 
