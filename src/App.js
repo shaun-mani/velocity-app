@@ -24,9 +24,7 @@ import * as parksData from "./data/Buildings.json";
 function Map(props, level) {
   const [selectedPark, setSelectedPark] = useState(null);
   console.log(props.currentKeyword);
-  console.log(level);
-  
-  
+  console.log(props.currentKeynum);
   return (
     <GoogleMap
       defaultZoom={16}
@@ -40,6 +38,14 @@ function Map(props, level) {
               building.keyword[i] === props.currentKeyword) {
                 return building;
               }
+            }
+          }
+        )
+        .filter(
+          (resource) => {
+            if ((props.currentKeynum === null) ||
+            resource.timeline === props.currentKeynum) {
+              return resource;
             }
           }
         )
@@ -79,8 +85,8 @@ const [width, setWidth] = React.useState(window.innerWidth);
 const [height, setHeight] = React.useState(window.innerHeight);
 
   const [currentKeyword, setKeyword] = useState(null);
-  const [currentKeynum, setKeynum] = useState(null)
-  
+  const [currentKeynum, setKeynum] = useState(null);
+
   const WrappedMap = withScriptjs(withGoogleMap(Map));
   
   const updateWidthAndHeight = () => {
@@ -108,9 +114,10 @@ const [height, setHeight] = React.useState(window.innerHeight);
           {/* <FunctionClickTest0 /> */}
           {/* <ButtonClickTest1 /> */}
           {/* <Test /> */}
-          <div style={{ width: "70vw", height: "80vh" }}>
-            <WrappedMap
+          <div style={{  width: "70vw", height: "80vh" }}>
+            <WrappedMap className="googlemap"
               currentKeyword={currentKeyword}
+              currentKeynum={currentKeynum}
               googleMapURL={
                 "https://maps.googleapis.com/maps/api/js?key=AIzaSyD0LW50_GtYuB0nlw5-YhW5i1uBCGNe3XA&v=3.exp&libraries=geometry,drawing,places"
               }
@@ -120,7 +127,7 @@ const [height, setHeight] = React.useState(window.innerHeight);
             />
           </div>
         </React.Fragment>
-        <Timeline />
+        <Timeline setKeynum={setKeynum} currentKeynum={currentKeynum} />
         <Verticalmenu setKeyword={setKeyword} currentKeyword={currentKeyword} />
       </div>
 
