@@ -4,25 +4,32 @@ import Button from 'react-bootstrap/Button';
 
 
 const Timeline = (props) => {
-  const numbers = [1, 2, 3, 4, 5];
+
+  function timelineSet(number) {
+    if (props.currentKeynum === null) {
+      props.setKeynum(number);
+    } else {
+      props.setKeynum(null);
+    }
+  };
 
     return (
       <div>
 
         <div className="text-center">
-          <Button variant="outline-dark" onClick={this.updateContent1}>
+          <Button variant="outline-dark" onClick={timelineSet(1)}>
             1. Getting Started
           </Button>
-          <Button variant="outline-dark" onClick={this.updateContent2}>
+          <Button variant="outline-dark" onClick={timelineSet(2)}>
             2. Early Stage & problem Identification
           </Button>
-          <Button variant="outline-dark" onClick={this.updateContent3}>
+          <Button variant="outline-dark" onClick={timelineSet(3)}>
             3. Building & Testing Your Idea
           </Button>
-          <Button variant="outline-dark" onClick={this.updateContent4}>
+          <Button variant="outline-dark" onClick={timelineSet(4)}>
             4. Funding & Competitions
           </Button>
-          <Button variant="outline-dark" onClick={this.updateContent5}>
+          <Button variant="outline-dark" onClick={timelineSet(5)}>
             5. Starting Up & Launching 
           </Button>
         </div>
