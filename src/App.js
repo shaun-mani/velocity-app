@@ -6,7 +6,6 @@ import "./App.css";
 import Header from "./components/Header";
 // import FunctionClickTest0 from './components/FunctionClickTest0'
 // import Test from './components/Test'
-import VerticalMenu from "./components/Verticalmenu";
 // import ButtonClickTest1 from './components/ButtonClickTest1';
 import Footer from "./components/Footer";
 import Timeline from "./components/Timeline";
@@ -127,8 +126,10 @@ const [height, setHeight] = React.useState(window.innerHeight);
             />
           </div>
         </React.Fragment>
-        <Timeline setKeynum={setKeynum} currentKeynum={currentKeynum} />
-        <Verticalmenu setKeyword={setKeyword} currentKeyword={currentKeyword} />
+        <Timeline setKeynum={setKeynum} currentKeynum={currentKeynum}
+        setKeyword={setKeyword} currentKeyword={currentKeyword} />
+        <Verticalmenu setKeynum={setKeynum} currentKeynum={currentKeynum} 
+        setKeyword={setKeyword} currentKeyword={currentKeyword} />
       </div>
 
       <Footer />

@@ -37,6 +37,7 @@ const Verticalmenu = (props) => {
         <h4
           className="top"
           onClick={() => {
+            props.setKeynum(null);
             props.setKeyword(null);
           }}
         >
@@ -46,6 +47,7 @@ const Verticalmenu = (props) => {
           <h1
             className="top"
             onClick={() => {
+              props.setKeynum(null);
               if (props.currentKeyword === word) {
                 props.setKeyword(null);
               } else {
