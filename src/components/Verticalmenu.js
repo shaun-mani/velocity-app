@@ -8,26 +8,27 @@ import "./Verticalmenu.css";
 const Verticalmenu = (props) => {
   const words = [
     "Funding",
-    "Pitch Competitions",
+    "Pitch Competition",
     "Skills Building",
     "Coaching/Mentorship",
     "Social Justice",
     "Environmental",
     "Small Business",
     "Intrapreneurship",
-    "Linked to academics",
+    "Linked to Academics",
     "Networking",
     "Research",
     "Legal",
     "Community",
     "Events",
-    "Awards",
+    "Competition",
+    "Award"
   ];
   return (
     <React.Fragment>
       <div className="Verticalmenu">
         <h4
-          class="top"
+          className="top"
           onClick={() => {
             props.setKeyword(null);
           }}

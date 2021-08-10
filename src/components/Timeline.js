@@ -3,39 +3,9 @@ import './Timeline.css';
 import Button from 'react-bootstrap/Button';
 
 
-// ****** This is just a test for now ***
+const Timeline = (props) => {
+  const numbers = [1, 2, 3, 4, 5];
 
-class ButtonClickTest2 extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-        message: "Timeline Content!"
-    }
-  }
- 
-  updateContent1 = () => {
-      this.setState({ message: "Phase 1 of Your Entrepreneurial Timeline!" });
-  }
- 
-  updateContent2 = () => {
-    this.setState({ message: "Phase 2 of Your Entrepreneurial Timeline!"});
-}
-
-updateContent3 = () => {
-  this.setState({ message: "Phase 3 of Your Entrepreneurial Timeline!"});
-}
-
-updateContent4 = () => {
-  this.setState({ message: "Phase 4 of Your Entrepreneurial Timeline!"});
-}
-
-updateContent5 = () => {
-  this.setState({ message: "Phase 5 of Your Entrepreneurial Timeline!"});
-}
-
-
-
-  render() {
     return (
       <div>
 
@@ -58,7 +28,7 @@ updateContent5 = () => {
         </div>
       </div>
     );
-  }
+
 }
  
-export default ButtonClickTest2;
+export default Timeline;

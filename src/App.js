@@ -21,13 +21,15 @@ import {
 } from "react-google-maps";
 import * as parksData from "./data/Buildings.json";
 
+
+
 function Map(props) {
   const [selectedPark, setSelectedPark] = useState(null);
   console.log(props.currentKeyword);
   return (
     <GoogleMap
       defaultZoom={16}
-      defaultCenter={{ lat: 43.47096427132252, lng: -80.5441679188489 }}
+      defaultCenter={{ lat: 43.47110427132252, lng: -80.5448679188489 }}
     >
       {parksData.buildings
         .filter(
@@ -70,8 +72,22 @@ function Map(props) {
 }
 
 function App() {
+
+const [width, setWidth] = React.useState(window.innerWidth);
+const [height, setHeight] = React.useState(window.innerHeight);
+
   const [currentKeyword, setKeyword] = useState(null);
   const WrappedMap = withScriptjs(withGoogleMap(Map));
+  
+  const updateWidthAndHeight = () => {
+    setWidth(window.innerWidth);
+    setHeight(window.innerHeight);
+  };
+
+  React.useEffect(() => {
+    window.addEventListener("resize", updateWidthAndHeight);
+    return () => window.removeEventListener("resize", updateWidthAndHeight);
+});
 
   return (
     

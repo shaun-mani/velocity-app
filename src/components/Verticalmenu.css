@@ -1,5 +1,5 @@
 .Verticalmenu {
-  width: 200px;
+  width: 280px;
   position: absolute;
   top: 19%;
   left: 72%;
@@ -14,6 +14,11 @@
   text-decoration: none;
 }
 
+.top:hover {
+  cursor: pointer;
+  color: yellow;
+}
+
 /* .Verticalmenu h1 {
   background-color: yellow;
   color: white;
@@ -22,6 +27,11 @@
   font-size: 25px;
   text-decoration: none;
 } */
+
+.top:hover {
+  cursor: pointer;
+  color: yellow;
+}
 
 .Verticalmenu a:hover {
   background-color: #ccc;
