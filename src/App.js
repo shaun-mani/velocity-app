@@ -86,8 +86,8 @@ function App() {
           {/* <FunctionClickTest0 /> */}
           {/* <ButtonClickTest1 /> */}
           {/* <Test /> */}
-          <div style={{ width: "70vw", height: "80vh" }}>
-            <WrappedMap
+          <div style={{  width: "70vw", height: "80vh" }}>
+            <WrappedMap className="googlemap"
               currentKeyword={currentKeyword}
               googleMapURL={
                 "https://maps.googleapis.com/maps/api/js?key=AIzaSyD0LW50_GtYuB0nlw5-YhW5i1uBCGNe3XA&v=3.exp&libraries=geometry,drawing,places"
