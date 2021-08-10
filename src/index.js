@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 // bootstrap below
-import { Navbar, Nav, NavDropdown, Button, Image, ButtonGroup } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Button, Image, ButtonGroup, Badge } from "react-bootstrap";
 // Hello
 ReactDOM.render(
   <React.StrictMode>

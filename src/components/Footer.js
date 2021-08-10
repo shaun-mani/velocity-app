@@ -10,14 +10,14 @@ const Footer = () => {
                     <div className="col">
                         <h4>Concept by Velocity</h4>
                         <ul className="list-unstyled">
-                            <li>342-420-6969</li>
+                            <li>South Campus Hall, 200 University Ave W 2nd Floor</li>
                             <li>Waterloo, Ontario</li>
-                            <li>123 Street South</li>
+                            <li>N2L 3G1</li>
                         </ul>
                     </div>
                     {/* Column 2 */}
                     <div className="col">
-                        <h4>Other Stuff</h4>
+                        <h4>University of Waterloo</h4>
                         <ul className="list-unstyled">
                             <li>UW Campus</li>
                             <li>Other other stuff</li>
@@ -26,11 +26,11 @@ const Footer = () => {
                     </div>
                     {/* Column 3 */}
                     <div className="col">
-                        <h4>well another column</h4>
+                        <h4>Resources</h4>
                         <ul className="list-unstyled">
-                            <li>lol</li>
-                            <li>i am running out of ideas</li>
-                            <li>bruh</li>
+                            <li>Contact Us</li>
+                            <li>Help</li>
+                            <li>Google Maps</li>
                         </ul>
                     </div>
                     <hr />

@@ -2,19 +2,22 @@ import React, { Component } from 'react'
 import './Timeline.css';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
+import Badge from 'react-bootstrap/Badge'
 
 const Timeline = (props) => {
 
   return (
     <div>
 
-      <h3 className="Timeline-title">
-        What stage are you in your entrepreneurial journey?
-      </h3>
+      <h2 className="Timeline-title">
+        <Badge bg="primary">
+          What stage are you in your entrepreneurial journey?
+        </Badge>
+      </h2>
 
       <ButtonGroup size="lg" className="timeline-button-group" >
         {/* <div className="text-center"> */}
-          <Button variant="outline-dark" onClick={() => {
+          <Button variant="success" onClick={() => {
             props.setKeyword(null);
             if (props.currentKeynum === 1) {
               props.setKeynum(null);
@@ -24,7 +27,7 @@ const Timeline = (props) => {
           }}>
             1. Getting Started
           </Button>
-          <Button variant="outline-dark" onClick={() => {
+          <Button variant="success" onClick={() => {
             props.setKeyword(null);
             if (props.currentKeynum === 2) {
               props.setKeynum(null);
@@ -34,7 +37,7 @@ const Timeline = (props) => {
           }}>
             2. Early Stage & problem Identification
           </Button>
-          <Button variant="outline-dark" onClick={() => {
+          <Button variant="success" onClick={() => {
             props.setKeyword(null);
             if (props.currentKeynum === 3) {
               props.setKeynum(null);
@@ -44,7 +47,7 @@ const Timeline = (props) => {
           }}>
             3. Building & Testing Your Idea
           </Button>
-          <Button variant="outline-dark" onClick={() => {
+          <Button variant="success" onClick={() => {
             props.setKeyword(null);
             if (props.currentKeynum === 4) {
               props.setKeynum(null);
@@ -54,7 +57,7 @@ const Timeline = (props) => {
           }}>
             4. Funding & Competitions
           </Button>
-          <Button variant="outline-dark" onClick={() => {
+          <Button variant="success" onClick={() => {
             props.setKeyword(null);
             if (props.currentKeynum === 5) {
               props.setKeynum(null);
