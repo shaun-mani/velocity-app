@@ -5,6 +5,8 @@ import "./Verticalmenu.css";
 // **** This is just a test, did not really work out ********
 
 // changed from <li> to <nav> since the footer also uses <li> and they are aligned differently.
+
+
 const Verticalmenu = (props) => {
   const words = [
     "Funding",
@@ -23,8 +25,13 @@ const Verticalmenu = (props) => {
     "Events",
     "Awards",
   ];
+
+
+
   return (
     <React.Fragment>
+    
+  
       <div className="Verticalmenu">
         <h4
           className="top"
@@ -63,9 +70,13 @@ const Verticalmenu = (props) => {
         <a href="#">Community</a>
         <a href="#">Events</a>
         <a href="#">Awards</a> */}
+      
       </div>
     </React.Fragment>
+    
   );
+  
 };
+
 
 export default Verticalmenu;

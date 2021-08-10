@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 //import { useState } from "react";
 import "./App.css";
 //import Map from "./components/Map";
@@ -21,11 +21,12 @@ import {
 } from "react-google-maps";
 import * as parksData from "./data/Buildings.json";
 
-
-
-function Map(props) {
+function Map(props, level) {
   const [selectedPark, setSelectedPark] = useState(null);
   console.log(props.currentKeyword);
+  console.log(level);
+  
+  
   return (
     <GoogleMap
       defaultZoom={16}
@@ -51,6 +52,7 @@ function Map(props) {
             }}
           />
         ))}
+        
 
       {selectedPark && (
         <InfoWindow
@@ -81,11 +83,13 @@ const [height, setHeight] = React.useState(window.innerHeight);
   
   const updateWidthAndHeight = () => {
     setWidth(window.innerWidth);
+    
     setHeight(window.innerHeight);
   };
 
   React.useEffect(() => {
     window.addEventListener("resize", updateWidthAndHeight);
+
     return () => window.removeEventListener("resize", updateWidthAndHeight);
 });
 
