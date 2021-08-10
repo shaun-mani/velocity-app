@@ -6,11 +6,34 @@ import "./Verticalmenu.css";
 
 // changed from <li> to <nav> since the footer also uses <li> and they are aligned differently.
 const Verticalmenu = (props) => {
-  const words = ["Funding", "Pitch Competitions","Skills Building", "Coaching/Mentorship", "Social Justice", "Environmental", "Small Business", "Intrapreneurship", "Linked to academics", "Networking", "Research", "Legal", "Community", "Events", "Awards"];
+  const words = [
+    "Funding",
+    "Pitch Competitions",
+    "Skills Building",
+    "Coaching/Mentorship",
+    "Social Justice",
+    "Environmental",
+    "Small Business",
+    "Intrapreneurship",
+    "Linked to academics",
+    "Networking",
+    "Research",
+    "Legal",
+    "Community",
+    "Events",
+    "Awards",
+  ];
   return (
     <React.Fragment>
       <div class="Verticalmenu">
-        <h4 class="top">Categories</h4>
+        <h4
+          class="top"
+          onClick={() => {
+            props.setKeyword(null);
+          }}
+        >
+          Categories
+        </h4>
         {words.map((word) => (
           <h1
             class="top"
