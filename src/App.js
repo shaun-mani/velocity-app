@@ -11,7 +11,6 @@ import VerticalMenu from "./components/Verticalmenu";
 import Footer from "./components/Footer";
 import Timeline from "./components/Timeline";
 import Verticalmenu from "./components/Verticalmenu";
-import Buildings from "./data/Buildings.json";
 
 import {
   GoogleMap,
@@ -32,9 +31,14 @@ function Map(props) {
     >
       {parksData.buildings
         .filter(
-          (building) =>
-            props.currentKeyword === null ||
-            building.keyword === props.currentKeyword
+          (building) => {
+            for (let i = 0; i < building.keyword.length; i++) {
+              if (props.currentKeyword === null ||
+              building.keyword[i] === props.currentKeyword) {
+                return building;
+              }
+            }
+          }
         )
         .map((park) => (
           <Marker
