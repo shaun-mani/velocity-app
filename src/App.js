@@ -109,7 +109,7 @@ const [height, setHeight] = React.useState(window.innerHeight);
         <Header />
         <VerticalMenu0 setKeynum={setKeynum} currentKeynum={currentKeynum} 
         setKeyword={setKeyword} currentKeyword={currentKeyword} />
-          <div style={{ marginBottom: "50px", marginTop: "-800px", marginLeft: "300px", width: "70vw", height: "85vh" }}>
+          <div style={{ marginBottom: "50px", marginTop: "-750px", marginLeft: "300px", width: "70vw", height: "85vh" }}>
             
             <WrappedMap className="googlemap"
               currentKeyword={currentKeyword}

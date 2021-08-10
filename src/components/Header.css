@@ -1,15 +1,14 @@
-.Title {
+.TitleBar {
   box-sizing: border-box;
   width: 100%;
   display: flex;
-  padding: 1em;
-  margin-bottom: 0;
+  padding: 0.5em;
+  margin-top: 0;
   background: url('../headerBackground.png');
+  background-position: 170px -570px ;
   color: rgba(10, 10, 10, 0.815);
   font-family: "Calibri", sans-serif;
   font-style: normal;
- 
- 
 }
 
 .concept_v_uw_image {
@@ -20,13 +19,18 @@
 
 }
 
-.heading {
-  margin-bottom: 0;
+.Title {
+  margin-top: 80px;
+  margin-left: -150px;
   padding: 0em;
-  color: black;
-  font-family: "Calibri", sans-serif;
-  font-size: 80px;
-  font-style: oblique;
+  color: #0072CE;
+  font-family: "calibri";
+  font-weight: 700;
+  font-size: 60px;
+  font-style: bold;
+ 
+  
+  
 }
 
 
