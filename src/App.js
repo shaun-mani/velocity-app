@@ -2,11 +2,11 @@ import React, { useState } from "react";
 //import { useState } from "react";
 import "./App.css";
 //import Map from "./components/Map";
-import NavBar from "./components/NavBar";
+//import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 // import FunctionClickTest0 from './components/FunctionClickTest0'
 // import Test from './components/Test'
-import MarkerClick from "./components/MarkerClick";
+import VerticalMenu from "./components/Verticalmenu";
 // import ButtonClickTest1 from './components/ButtonClickTest1';
 import Footer from "./components/Footer";
 import Timeline from "./components/Timeline";

@@ -103,8 +103,7 @@ const Map = () => {
             </Row>
           </Container> */}
 
-          <div
-            className="ImageFollow"
+      <div className='ImageFollow'
             //onMouseMove={handleMouseMove}
             //onMouseDown={handleMouseDown}
             //onMouseUp={handleMouseUp}
@@ -124,9 +123,9 @@ const Map = () => {
             </div>
           </div>
         </div>
-      </div>
-  
-</div>
+        </div>
+        </div>
+
     //const handleMouseDown = () => {
     //setIsMouseDown(true);
     //}
