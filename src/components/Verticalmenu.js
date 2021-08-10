@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import './Verticalmenu.css';
 
 
@@ -7,7 +7,24 @@ import './Verticalmenu.css';
 
 // changed from <li> to <nav> since the footer also uses <li> and they are aligned differently.
 const Verticalmenu = () => {
-    
+  const [button, setButton] = useState(true)
+
+  const showButton = () => {
+      if(window.innerWidth <=960) {
+          setButton(false);
+
+      }
+      else {
+          setButton(true);
+      }
+  };
+
+  useEffect(()=> {
+      showButton();
+
+  }, []);
+
+  window.addEventListener('resize', showButton);
     return (
       <React.Fragment>
       
