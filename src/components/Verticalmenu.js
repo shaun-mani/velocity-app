@@ -11,7 +11,6 @@ const Verticalmenu = () => {
     return (
       <React.Fragment>
       
-      
       <div class="Verticalmenu">
         <h4  class="top">Categories</h4>
         <a href="#">Funding</a>
