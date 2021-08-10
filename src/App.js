@@ -12,7 +12,6 @@ import Footer from "./components/Footer";
 import Timeline from "./components/Timeline";
 import Verticalmenu from "./components/Verticalmenu";
 
-
 import {
   GoogleMap,
   withScriptjs,
