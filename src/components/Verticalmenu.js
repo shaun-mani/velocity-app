@@ -27,7 +27,7 @@ const Verticalmenu = (props) => {
     <React.Fragment>
       <div className="Verticalmenu">
         <h4
-          class="top"
+          className="top"
           onClick={() => {
             props.setKeyword(null);
           }}
