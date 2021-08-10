@@ -5,9 +5,11 @@
   padding: 1em;
   margin-bottom: 0;
   background: url('../headerBackground.png');
-  color: black;
+  color: rgba(10, 10, 10, 0.815);
   font-family: "Calibri", sans-serif;
-  font-weight: 1000;
+  font-style: normal;
+ 
+ 
 }
 
 .concept_v_uw_image {
@@ -22,8 +24,8 @@
   margin-bottom: 0;
   padding: 0em;
   color: black;
-  font-family: "Bureau Grotesk", sans-serif;
-  font-size: large;
+  font-family: "Calibri", sans-serif;
+  font-size: 80px;
   font-style: oblique;
 }
 

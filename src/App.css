@@ -10,7 +10,8 @@
 
 body {
   /* official UW color */
-  background-color: #FED141;
+  background-color: rgb(255, 213, 79);
+  /* background-color: rgb(255, 255, 170); */
 }
 
 .App-logo {

@@ -27,7 +27,7 @@ const VerticalMenu0 = (props) => {
 
   return (
     <ButtonGroup size="lg" vertical className="vertical-menu-css" >
-      <Button variant="outline-danger" className="menu-categories"
+      <Button variant="primary" className="menu-categories"
           onClick={() => {
             props.setKeynum(null);
             props.setKeyword(null);
@@ -35,7 +35,7 @@ const VerticalMenu0 = (props) => {
           All Categories
       </Button>
       {words.map((word) => (
-        <Button variant="outline-dark" className="menu-words"
+        <Button variant="success" className="menu-words"
           onClick={() => {
             props.setKeynum(null);
             if (props.currentKeyword === word) {
