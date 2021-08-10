@@ -26,8 +26,8 @@ function Map(props) {
   console.log(props.currentKeyword);
   return (
     <GoogleMap
-      defaultZoom={15}
-      defaultCenter={{ lat: 43.469761, lng: -80.538811 }}
+      defaultZoom={16}
+      defaultCenter={{ lat: 43.47096427132252, lng: -80.5441679188489 }}
     >
       {parksData.buildings
         .filter(
@@ -59,8 +59,8 @@ function Map(props) {
         >
           <div>
             <h3>{selectedPark.resourceName}</h3>
-            <h6>Located at: {selectedPark.buildingName}</h6>
-            <h6>Presented by: {selectedPark.organizer}</h6>
+            <h6>Organizer: {selectedPark.organizer}</h6>
+            <h6>Location: {selectedPark.buildingName}</h6>
             <p>{selectedPark.Description}</p>
           </div>
         </InfoWindow>
