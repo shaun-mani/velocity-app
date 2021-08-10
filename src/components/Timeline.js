@@ -5,17 +5,6 @@ import Button from 'react-bootstrap/Button';
 
 const Timeline = (props) => {
 
-<<<<<<< HEAD
-class extends Timeline Component {
-  constructor(props) {Timeli
-    super(props);
-    this.state = {
-        //message: "Timeline Content!",
-        level: "Any"
-    }
-  }
-
-=======
   function timelineSet(number) {
     if (props.currentKeynum === null) {
       props.setKeynum(number);
@@ -24,17 +13,12 @@ class extends Timeline Component {
       props.setKeynum(null);
     }
   };
->>>>>>> c5b5a67534abf2a6b7a4a5e91603df5e6124a961
 
     return (
       <div>
 
         <div className="text-center">
-<<<<<<< HEAD
-          <Button variant="outline-dark" onClick={ () => this.updateContent1}>
-=======
           <Button variant="outline-dark" onClick={timelineSet(1)}>
->>>>>>> c5b5a67534abf2a6b7a4a5e91603df5e6124a961
             1. Getting Started
           </Button>
           <Button variant="outline-dark" onClick={timelineSet(2)}>
