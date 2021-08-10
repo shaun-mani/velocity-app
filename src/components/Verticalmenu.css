@@ -1,5 +1,5 @@
 .Verticalmenu {
-  width: 200px;
+  width: 280px;
   position: absolute;
   top: 19%;
   left: 72%;
@@ -12,6 +12,11 @@
   padding: 0px;
   font-size: 25px;
   text-decoration: none;
+}
+
+.top:hover {
+  cursor: pointer;
+  color: yellow;
 }
 
 /* .Verticalmenu h1 {
