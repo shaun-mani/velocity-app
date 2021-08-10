@@ -85,8 +85,8 @@
         "Community",
         "Events"
       ],
-      "latitude": 43.472420102677,
-      "longitude": -80.54551016137923
+      "latitude": 43.47162592653966,
+      "longitude": -80.54532777133099
     },
     {
       "buildingId": "7",
@@ -254,13 +254,13 @@
         "Competition",
         "Linked to Academics"
       ],
-      "latitude": 43.47295114121371, 
-      "longitude": -80.53975885932303
+      "latitude": 43.47277498478385,  
+      "longitude": -80.53974410749571
     },
     {
       "buildingId": "19",
       "resourceName": "HULT Prize",
-      "buildingName": "",
+      "buildingName": "Engineering 7 (E7)",
       "organizer": "Other",
       "Description": "The Hult Prize is a social entrepreneurship competition which challenges student teams around the globe to develop sustainable social ventures to address the world's most pressing issues—with a global grand prize of $1 million USD!",
       "keyword": [
@@ -269,8 +269,8 @@
         "Competition",
         "Award"
       ],
-      "latitude": null,
-      "longitude": null
+      "latitude": 43.47275498478385,  
+      "longitude": -80.53972410749571
     },
    
     {
@@ -284,8 +284,8 @@
         "Linked to Academics",
         "Intrapreneurship"
       ],
-      "latitude": 43.47293114121371, 
-      "longitude": -80.53973885932303
+      "latitude": 43.47279498478385,  
+      "longitude": -80.53976410749571
     },
     {
       "buildingId": "22",
@@ -313,8 +313,8 @@
         "Linked to Academics",
         "Small Business"
       ],
-      "latitude": 43.47297114121371, 
-      "longitude": -80.53977885932303
+      "latitude": 43.47273498478385,  
+      "longitude": -80.53970410749571
     },
     {
       "buildingId": "24",
@@ -325,8 +325,8 @@
       "keyword": [
         "Award"
       ],
-      "latitude": 43.47291114121371, 
-      "longitude": -80.53971885932303
+      "latitude": 43.47281498478385,  
+      "longitude": -80.53978410749571
     },
     {
       "buildingId": "25",
@@ -352,8 +352,8 @@
         "Skills Building",
         "Funding"
       ],
-      "latitude": 43.467928776390694,
-      "longitude": -80.54647374397837
+      "latitude": 43.47536448515866,
+      "longitude":  -80.54076567104693
     },
     {
       "buildingId": "27",
