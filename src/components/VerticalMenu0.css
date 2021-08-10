@@ -1,4 +1,21 @@
 .vertical-menu-css {
   text-align: right;
   justify-content: center;
+  background-color:#009CA6;
+  position: relative;
+  
+}
+.menu-categories{
+  color: white;
+  background-color:rgba(235, 31, 31, 0.877);
+  font-family: "Calibri", sans-serif;
+  font-weight: 700;
+  position: relative;
+}
+
+.menu-words{
+  color: white;
+  font-family: "Calibri", sans-serif;
+  font-weight: 700;
+  position: relative;
 }

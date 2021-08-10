@@ -19,12 +19,12 @@
 }
 
 .heading {
-  font-family: "Calibri", sans-serif;
   margin-bottom: 0;
   padding: 0em;
   color: black;
-  font-family: "Calibri", sans-serif;
-  font-weight: 1000;
+  font-family: "Bureau Grotesk", sans-serif;
+  font-size: large;
+  font-style: oblique;
 }
 
 

@@ -32,7 +32,7 @@ const VerticalMenu0 = (props) => {
             props.setKeynum(null);
             props.setKeyword(null);
           }}>
-          Categories (reset)
+          All Categories
       </Button>
       {words.map((word) => (
         <Button variant="outline-dark" className="menu-words"

@@ -2,6 +2,11 @@
   justify-content: center;
   text-align: center;
   margin-top: 50px;
+  position: relative;
+  font-family: "Calibri", sans-serif;
+  font-weight: 700;
+  color:black;
+font-size: 40px;
 }
 
 .timeline-button-group {
@@ -9,4 +14,7 @@
   text-align: center;
   display: flex;
   margin-top: 25px;
+  position: relative;
+  font-family: "Calibri", sans-serif;
+  font-weight: 700;
 }
