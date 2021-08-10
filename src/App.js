@@ -27,7 +27,7 @@ function Map(props) {
   return (
     <GoogleMap
       defaultZoom={16}
-      defaultCenter={{ lat: 43.47096427132252, lng: -80.5441679188489 }}
+      defaultCenter={{ lat: 43.47110427132252, lng: -80.5448679188489 }}
     >
       {parksData.buildings
         .filter(
