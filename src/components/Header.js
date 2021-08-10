@@ -9,9 +9,9 @@ function Header() {
     <div className="Title">
       <h1>
       <img className="concept_v_uw_image" src={concept_velocity_uw_img} width="492" height="100" alt="c-v-uw-logo" />
-          &nbsp; University of Waterloo Concept App
+           Entrepreneurship EcoSystem Map
         {/* <img className="uw-image" src={Uwlogo} width="100" height="100" alt="uwlogo" /> */}
-            <h4 className="Title-Subtitle">Presented by Velocity</h4>
+            <h4 className="Title-Subtitle">Concept by Velocity</h4>
     </h1>
     </div>
   )

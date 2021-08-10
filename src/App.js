@@ -11,7 +11,6 @@ import VerticalMenu from "./components/Verticalmenu";
 import Footer from "./components/Footer";
 import Timeline from "./components/Timeline";
 import Verticalmenu from "./components/Verticalmenu";
-import Buildings from "./data/Buildings.json";
 
 import {
   GoogleMap,
@@ -22,19 +21,26 @@ import {
 } from "react-google-maps";
 import * as parksData from "./data/Buildings.json";
 
+
+
 function Map(props) {
   const [selectedPark, setSelectedPark] = useState(null);
   console.log(props.currentKeyword);
   return (
     <GoogleMap
-      defaultZoom={15}
-      defaultCenter={{ lat: 43.469761, lng: -80.538811 }}
+      defaultZoom={16}
+      defaultCenter={{ lat: 43.47096427132252, lng: -80.5441679188489 }}
     >
       {parksData.buildings
         .filter(
-          (building) =>
-            props.currentKeyword === null ||
-            building.keyword === props.currentKeyword
+          (building) => {
+            for (let i = 0; i < building.keyword.length; i++) {
+              if (props.currentKeyword === null ||
+              building.keyword[i] === props.currentKeyword) {
+                return building;
+              }
+            }
+          }
         )
         .map((park) => (
           <Marker
@@ -55,8 +61,8 @@ function Map(props) {
         >
           <div>
             <h3>{selectedPark.resourceName}</h3>
-            <h6>Located at: {selectedPark.buildingName}</h6>
-            <h6>Presented by: {selectedPark.organizer}</h6>
+            <h6>Organizer: {selectedPark.organizer}</h6>
+            <h6>Location: {selectedPark.buildingName}</h6>
             <p>{selectedPark.Description}</p>
           </div>
         </InfoWindow>
@@ -66,8 +72,22 @@ function Map(props) {
 }
 
 function App() {
+
+const [width, setWidth] = React.useState(window.innerWidth);
+const [height, setHeight] = React.useState(window.innerHeight);
+
   const [currentKeyword, setKeyword] = useState(null);
   const WrappedMap = withScriptjs(withGoogleMap(Map));
+  
+  const updateWidthAndHeight = () => {
+    setWidth(window.innerWidth);
+    setHeight(window.innerHeight);
+  };
+
+  React.useEffect(() => {
+    window.addEventListener("resize", updateWidthAndHeight);
+    return () => window.removeEventListener("resize", updateWidthAndHeight);
+});
 
   return (
     
