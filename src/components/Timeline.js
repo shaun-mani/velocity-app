@@ -8,6 +8,7 @@ const Timeline = (props) => {
   function timelineSet(number) {
     if (props.currentKeynum === null) {
       props.setKeynum(number);
+      
     } else {
       props.setKeynum(null);
     }
