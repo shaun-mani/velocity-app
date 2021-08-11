@@ -37,7 +37,7 @@ const Timeline = (props) => {
               props.setKeynum(2)
             }
           }}>
-            2. Early Stage & problem Identification
+            2. Early Stage & Problem Identification
           </Button>
           <Button variant="success" onClick={() => {
               window.scrollTo(0, 180);

@@ -9,3 +9,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'BarlowCondensed';
+  src: local('BarlowCondensed'), url(./fonts/BarlowCondensed-Black.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'BarlowThin';
+  src: local('BarlowCondensed-Thin'), url(./fonts/BarlowCondensed-Thin.ttf) format('truetype');
+}
