@@ -13,6 +13,7 @@ const Footer = () => {
                             <li>South Campus Hall, 200 University Ave W 2nd Floor</li>
                             <li>Waterloo, Ontario</li>
                             <li>N2L 3G1</li>
+                            <a href="https://concept.uwaterloo.ca/"> Concept Website</a>
                         </ul>
                     </div>
                     {/* Column 2 */}
@@ -26,9 +27,9 @@ const Footer = () => {
                     <div className="col">
                         <h4>Resources</h4>
                         <ul className="list-unstyled">
-                            <li>Contact Us</li>
+                        <a href="https://concept.uwaterloo.ca/about-us/contact-concept/">Contact Us</a>
                             <li>Help</li>
-                            <li>Google Maps</li>
+                            <a href="http://maps.google.com">Google Maps</a>
                         </ul>
                     </div>
                     <hr />

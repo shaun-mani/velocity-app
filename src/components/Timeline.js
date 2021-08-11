@@ -21,7 +21,7 @@ const Timeline = (props) => {
           window.scrollTo(0, 180);
             props.setKeyword(null);
             if (props.currentKeynum === 1) {
-              props.setKeynum(null);
+              props.setKeynum(1);
             } else {
               props.setKeynum(1)
             }
@@ -32,7 +32,7 @@ const Timeline = (props) => {
               window.scrollTo(0, 180);
             props.setKeyword(null);
             if (props.currentKeynum === 2) {
-              props.setKeynum(null);
+              props.setKeynum(2);
             } else {
               props.setKeynum(2)
             }
@@ -43,7 +43,7 @@ const Timeline = (props) => {
               window.scrollTo(0, 180);
             props.setKeyword(null);
             if (props.currentKeynum === 3) {
-              props.setKeynum(null);
+              props.setKeynum(3);
             } else {
               props.setKeynum(3)
             }
@@ -54,7 +54,7 @@ const Timeline = (props) => {
               window.scrollTo(0, 180);
             props.setKeyword(null);
             if (props.currentKeynum === 4) {
-              props.setKeynum(null);
+              props.setKeynum(4);
             } else {
               props.setKeynum(4)
             }
@@ -65,7 +65,7 @@ const Timeline = (props) => {
               window.scrollTo(0, 180);
             props.setKeyword(null);
             if (props.currentKeynum === 5) {
-              props.setKeynum(null);
+              props.setKeynum(5);
             } else {
               props.setKeynum(5)
             }

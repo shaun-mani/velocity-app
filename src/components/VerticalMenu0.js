@@ -39,7 +39,7 @@ const VerticalMenu0 = (props) => {
           onClick={() => {
             props.setKeynum(null);
             if (props.currentKeyword === word) {
-              props.setKeyword(null);
+              props.setKeyword(word);
             } else {
               props.setKeyword(word);
             }
