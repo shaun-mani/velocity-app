@@ -1,0 +1,11 @@
+.main-footer {
+  color: white;
+  background-color: black;
+  padding-top: 3em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 200px;
+  font-family: "Verdana", sans-serif;
+  font-weight: 500;
+}

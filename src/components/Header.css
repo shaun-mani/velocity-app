@@ -1,0 +1,33 @@
+.TitleBar {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  padding: 0.5em;
+  margin-top: 0;
+  background: url('../headerBackground.png');
+  background-position: 170px -570px ;
+  color: rgba(10, 10, 10, 0.815);
+  font-family: "Calibri", sans-serif;
+  font-style: normal;
+}
+
+.concept_v_uw_image {
+  align-items: left;
+  justify-content: left;
+  margin-left: 0px;
+  text-align: left;
+
+}
+
+.Title {
+  margin-top: 80px;
+  padding: 0em;
+  color: #000000;
+  font-family: BarlowCondensed;
+  font-weight: 700;
+  font-size: 60px;
+  font-style: bold;
+  align-items: center;
+  position: relative;
+
+}

@@ -1,10 +1,13 @@
+/* ******** WE ARE NOT USING THIS FILE. BUT IT WORKS IN CASE WE NEED TO COME
+BACK TO IT. ******* */
+
 .Map {
   background-color: transparent;
   width: 1300px;
   height: 850px;
   border: 3px solid black;
-  margin-left: 100px;
-  margin-top: 100px;
+  margin-left: 200px;
+  margin-top: 0px;
   margin-bottom: 100px;
   overflow: hidden;
   display: block;
@@ -28,7 +31,7 @@ Initial attempt to add marker class into the map
 */
 
 .marker {
-  
+  cursor: pointer;
   width: 2rem;
   height: 2rem;
   border-radius: 2rem;
@@ -38,7 +41,6 @@ Initial attempt to add marker class into the map
   border-bottom-right-radius: 0;
   position: relative;
   transform: rotate(45deg);
-
 
   border: 1px solid #881100;
 }
@@ -55,7 +57,6 @@ Initial attempt to add marker class into the map
   top: 50%;
   transform: translate(-50%, -50%);
 
-  
   border: 1px solid #881100;
   box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.1);
 }
@@ -73,7 +74,6 @@ Initial attempt to add marker class into the map
 }
 
 .marker:hover {
-  
   width: 2rem;
   height: 2rem;
   border-radius: 2rem;
@@ -84,6 +84,19 @@ Initial attempt to add marker class into the map
   position: relative;
   transform: rotate(45deg);
 
+  border: 1px solid #881100;
+}
+
+.marker:active {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  background: yellow;
+
+  display: inline-block;
+  border-bottom-right-radius: 0;
+  position: relative;
+  transform: rotate(45deg);
 
   border: 1px solid #881100;
 }

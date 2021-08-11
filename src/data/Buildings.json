@@ -1,50 +1,443 @@
 {
-    "buildings": [
-      {
-        "buildingId": "1",
-        "buildingName": "Dana Porter Arts Library",
-        "Description": "resources available to current Waterloo users that might support their entrepreneurship- and innovation-related research.",
-        "latitude": 43.46984437,
-        "longitude": -80.54242926
-      },
-      {
-        "buildingId": "2",
-        "buildingName": "William M. Tatham Centre for Co-operative Education & Career Action",
-        "Description": "The Centre for Career Action (CCA) supports all students, alumni and employees. Career Advisors can help with career planning, career management strategies, graduate and professional school preparation, work search methods and setting meaningful career goals.",
-        "latitude": 43.46904735,
-        "longitude": -80.5412835
-      },
-      {
-        "buildingId": "3",
-        "buildingName": "Engineering 7",
-        "Description": "The Norman Esch Entrepreneurship Award provides a minimum of six awards, ranging in value from $5,000-$10,000 each, for student teams enrolled in the Faculty of Engineering's Fourth-Year Capstone Design Project. The awards are open to student teams from all departments within the Faculty of Engineering.",
-        "latitude": 43.47293,
-        "longitude": -80.53958
-      },
-      {
-        "buildingId": "4",
-        "buildingName": "St. Paul's United College Main Building",
-        "Description": "Join GreenHouse's Innovators in Residence program, a community where student innovators receive mentorship, training, community and funding to solve social or environmental problems. Like a club at school, GreenHouse is a community for like-minded students who want to create social or environmental problems.  ",
-        "latitude": 43.467762,
-        "longitude": -80.546404
-      },
-      {
-        "buildingId": "5",
-        "buildingName": "South Campus Hall",
-        "Description": "Attend Concept intro sessions to learn about entrepreneurship, get a glimpse into the world of startups, build new skills, and engage with the Concept community!",
-        "latitude": 43.4692188,
-        "longitude": -80.54021338
-      },
-      {
-        "buildingId": "6",
-        "buildingName": "Conrad Grebel University College",
-        "Description": "The PeaceTech Living-Learning Community is a cluster of students from diverse faculties interested in exploring the intersection of technology and peace in society. The community is made of students who are residents, virtual residents, or associates at Conrad Grebel University College. ",
-        "latitude": 43.46656,
-        "longitude": -80.54525
-      },
-      {
-        
-      }
-    ]
-  }
-  
+  "buildings": [
+    {
+      "buildingId": "1",
+      "resourceName": "Centre for Career Action",
+      "buildingName": "William M. Tatham Centre for Co-operative Education & Career Action",
+      "organizer": "University of Waterloo",
+      "Description": "The Centre for Career Action (CCA) supports all students, alumni and employees. Career Advisors can help with career planning, career management strategies, graduate and professional school preparation, work search methods and setting meaningful career goals.",
+      "keyword": [
+        "Coaching/Mentorship", 
+        "Skills Building",
+        "Intrapreneurship"
+      ],
+      "latitude": 43.46904735,
+      "longitude": -80.5412835,
+      "timeline": 1
+    },
+    {
+      "buildingId": "2",
+      "resourceName": "Conrad Grebel PeaceTech Living Learning Community",
+      "buildingName": "Conrad Grebel University College",
+      "organizer": "Kindred Credit Union Centre for Peace Advancement",
+      "Description": "The PeaceTech Living-Learning Community is a cluster of students from diverse faculties interested in exploring the intersection of technology and peace in society. The community is made of students who are residents, virtual residents, or associates at Conrad Grebel University College. ",
+      "keyword": [
+        "Networking",
+        "Social Justice",
+        "Community"
+      ],
+      "latitude": 43.466644934202805,
+      "longitude": -80.54513323048694,
+      "timeline": 1
+    },
+    {
+      "buildingId": "3",
+      "resourceName": "Entrepreneurship Library Collection",
+      "buildingName": "Dana Porter Arts Library",
+      "organizer": "University of Waterloo",
+      "Description": "resources available to current Waterloo users that might support their entrepreneurship- and innovation-related research.",
+      "keyword": [
+        "Research",
+        "Legal",
+        "Skills Building",
+        "Small Business"
+      ],
+      "latitude": 43.46984437,
+      "longitude": -80.54242926,
+      "timeline": 1
+    },
+    {
+      "buildingId": "4",
+      "resourceName": "Innovators in Residence",
+      "buildingName": "St. Paul's United College Main Building",
+      "organizer": "GreenHouse",
+      "Description": "Join GreenHouse's Innovators in Residence program, a community where student innovators receive mentorship, training, community and funding to solve social or environmental problems. Like a club at school, GreenHouse is a community for like-minded students who want to create social or environmental problems.  ",
+      "keyword": [
+        "Environmental",
+        "Social Justice",
+        "Community",
+        "Coaching/Mentorship",
+        "Skills Building"
+      ],
+      "latitude": 43.467888776390694,
+      "longitude": -80.54643374397837,
+      "timeline": 1
+    },
+    {
+      "buildingId": "5",
+      "resourceName": "Concept Intro Sessions",
+      "buildingName": "South Campus Hall",
+      "organizer": "Concept by Velocity",
+      "Description": "Attend Concept intro sessions to learn about entrepreneurship, get a glimpse into the world of startups, build new skills, and engage with the Concept community!",
+      "keyword": [
+        "Skills Building",
+        "Intrapreneurship",
+        "Networking",
+        "Events"
+      ],
+      "latitude": 43.469426992955704,
+      "longitude": -80.54035671699549,
+      "timeline": 1
+    },
+    {
+      "buildingId": "6",
+      "resourceName": "Entrepreneurship Society",
+      "buildingName": "Student Life Center (SLC)",
+      "organizer": "University of Waterloo",
+      "Description": "EntSoc aims to build inclusive innovation by exposing students of all faculties to Waterloo's entrepreneurial ecosystem",
+      "keyword": [
+        "Networking",
+        "Community",
+        "Events"
+      ],
+      "latitude": 43.47162592653966,
+      "longitude": -80.54532777133099,
+      "timeline": 1
+    },
+    {
+      "buildingId": "7",
+      "resourceName": "Problem Lab workshops",
+      "buildingName": "Mathematics 3 (M3)",
+      "organizer": "Problem Lab",
+      "Description": "Problem Lab runs workshops on how students can use problem analysis and research skills to advance their careers. Students are taught to be entrepreneurial employees by identifying high priority problems their employers have. This is open to both undergrad and graduate students.",
+      "keyword": [
+        "Skills Building",
+        "Research",
+        "Events",
+        "Networking"
+      ],
+      "latitude": 43.47333298125222,
+      "longitude": -80.54407061514196,
+      "timeline": 2
+    },
+    {
+      "buildingId": "8",
+      "resourceName": "Residence Problem Pitch",
+      "buildingName": "Mathematics 3 (M3)",
+      "organizer": "Problem Lab",
+      "Description": "First Year students in residence are invited to pitch an important industry problem under a designated theme (e.g., problems in recreation, problems in human-computer interactions) to compete for up to $10,000 in R&D funding.",
+      "keyword": [
+        "Funding",
+        "Research",
+        "Competition"
+      ],
+      "latitude": 43.4733344812522,
+      "longitude": -80.54404461514196,
+      "timeline": 2
+    },
+    {
+      "buildingId": "9",
+      "resourceName": "Discovery Lab",
+      "buildingName": "St. Paul's United College Main Building",
+      "organizer": "GreenHouse",
+      "Description": "Discovery Labs is where students, community members and a host organization identify problems and opportunity spaces based on a different theme. \n During the Discovery Lab, students identify opportunities for innovation based on the theme for the lab and Greenhouse teaches them skills in ethical design to address them.",
+      "keyword": [
+        "Events",
+        "Environmental",
+        "Networking",
+        "Intrapreneurship"
+      ],
+      "latitude": 43.467868776390694,
+      "longitude": -80.54641374397837,
+      "timeline": 2
+    },
+    {
+      "buildingId": "10",
+      "resourceName": "Co-op Problem Award",
+      "buildingName": "Mathematics 3 (M3)",
+      "organizer": "Problem Lab",
+      "Description": "Students who are in co-op can submit an analysis of an important problem relevant to a co-op employer or the employer’s industry for a tuition scholarship of $1,500 and $750. Students can choose a problem from any of their previous co-op terms.",
+      "keyword": [
+        "Award",
+        "Competition",
+        "Intrapreneurship"
+      ],
+      "latitude": 43.4733322812522,
+      "longitude": -80.54402261514196,
+      "timeline": 2
+    },
+    {
+      "buildingId": "11",
+      "resourceName": "The Zero Experience",
+      "buildingName": "Mathematics 3 (M3)",
+      "organizer": "Problem Lab",
+      "Description": "The Zero Experience differentiates you from the crowd. You’ll build a network of experts to support you, solve problems affecting millions of people, and learn how to make your visions a reality. \n You’ll try analyzing problems, interviewing industry mentors, designing new solution ideas, leading tightly knit teams of peers, and applying all these skills to your personal goals and growth. ",
+      "keyword": [
+        "Skills Building",
+        "Networking",
+        "Community"
+      ],
+      "latitude": 43.4733300812522,
+      "longitude": -80.54400061514196,
+      "timeline": 2
+    },
+    {
+      "buildingId": "12",
+      "resourceName": "Map The System",
+      "buildingName": "Conrad Grebel University College",
+      "organizer": "Kindred Credit Union Centre for Peace Advancement",
+      "Description": "Tackling global challenges starts with understanding a problem and its wider context, rather than jumping straight into a business plan or an idea for a quick fix. This global competition asks students to select a social or environmental issue and to use systems thinking to explore, probe, and research all the connecting elements and factors around it.",
+      "keyword": [
+        "Competition",
+        "Award",
+        "Social Justice",
+        "Environmental"
+      ],
+      "latitude": 43.466664934202805,
+      "longitude": -80.54515323048694,
+      "timeline": 2
+    },
+    {
+      "buildingId": "13",
+      "resourceName": "Social Innovators In Training",
+      "buildingName": "St. Paul's United College Main Building",
+      "organizer": "GreenHouse",
+      "Description": "Work with other like-minded innovators interested in creating social or environmental change through projects and ventures. This is a great opportunity for students who know they want to start their own business or initiative. The program can be done within a course or as a co-curricular activity. \n Social Innovators in Training is a unique experience where students are given milestones to move ideas into action, access core mentors including the professional networks at GreenHouse, and access to funding opportunities to move  ideas forward.",
+      "keyword": [
+        "Social Justice",
+        "Environmental",
+        "Coaching/Mentorship"
+      ],
+      "latitude": 43.467908776390694,
+      "longitude": -80.54645374397837,
+      "timeline": 3
+    },
+    {
+      "buildingId": "14",
+      "resourceName": "Quantum Valley Investments ® Problem Pitch Competition",
+      "buildingName": "Mathematics 3 (M3)",
+      "organizer": "Problem Lab",
+      "Description": "Each term, students are invited to pitch an important industry problem to compete for up to $30,000 in R&D funding.",
+      "keyword": [
+        "Pitch Competition",
+        "Funding",
+        "Research"
+      ],
+      "latitude": 43.4733388812522,
+      "longitude": 43.4733388812522,
+      "timeline": 3
+    },
+    {
+      "buildingId": "15",
+      "resourceName": "Concept Working Sessions",
+      "buildingName": "South Campus Hall",
+      "organizer": "Concept by Velocity",
+      "Description": "These small sessions will allow you to work with a Concept Coach and dive deeper into a wide variety of topics. These will go beyond the information provided in Intro Sessions and allow a more hands on approach to further engage, ask questions, and take a closer look into a wide range topics.",
+      "keyword": [
+        "Skills Building",
+        "Coaching/Mentorship"
+      ],
+      "latitude": 43.469406992955704,
+      "longitude": -80.54033671699549,
+      "timeline": 3
+    },
+    {
+      "buildingId": "16",
+      "resourceName": "Concept Coaches",
+      "buildingName": "South Campus Hall",
+      "organizer": "Concept by Velocity",
+      "Description": "Meet with coaches who to work you one-on-one on your entrepreneurial ideas. These coaches are either founders themselves or were one of the very first startup employees–so they have been there and done that. \n This is a unique opportunity for you to learn from someone with hands-on experience.",
+      "keyword": [
+        "Coaching/Mentorship"
+      ],
+      "latitude": 43.469446992955704,
+      "longitude": -80.54037671699549,
+      "timeline": 3
+    },
+    {
+      "buildingId": "17",
+      "resourceName": "GH Workplace Innovation",
+      "buildingName": "St. Paul's United College Main Building",
+      "organizer": "GreenHouse",
+      "Description": "Workplace Innovation is a program where change makers work with a host organization to solve real problems. Teams are trained through an innovation framework to identify opportunities and design for the most impactful solutions. \n This program is great for students who want to work on a project but don’t know what problem to focus on or who are interested in working with an organization and a team.",
+      "keyword": [
+        "Skills Building",
+        "Coaching/Mentorship",
+        "Networking",
+        "Community"
+      ],
+      "latitude": 43.467848776390694,
+      "longitude": -80.54639374397837,
+      "timeline": 3
+    },
+    {
+      "buildingId": "18",
+      "resourceName": "Norman Esch Entrepreneurship Award",
+      "buildingName": "Engineering 7 (E7)",
+      "organizer": "Conrad School of Entrepreneurship and Business",
+      "Description": "The Norman Esch Entrepreneurship Award provides a minimum of six awards, ranging in value from $5,000-$10,000 each, for student teams enrolled in the Faculty of Engineering's Fourth-Year Capstone Design Project. The awards are open to student teams from all departments within the Faculty of Engineering.",
+      "keyword": [
+        "Award",
+        "Competition",
+        "Linked to Academics"
+      ],
+      "latitude": 43.47277498478385,  
+      "longitude": -80.53974410749571,
+      "timeline": 3
+    },
+    {
+      "buildingId": "19",
+      "resourceName": "HULT Prize",
+      "buildingName": "Engineering 7 (E7)",
+      "organizer": "Other",
+      "Description": "The Hult Prize is a social entrepreneurship competition which challenges student teams around the globe to develop sustainable social ventures to address the world's most pressing issues—with a global grand prize of $1 million USD!",
+      "keyword": [
+        "Social Justice",
+        "Environmental",
+        "Competition",
+        "Award"
+      ],
+      "latitude": 43.47275498478385,  
+      "longitude": -80.53972410749571,
+      "timeline": 3
+    },
+   
+    {
+      "buildingId": "21",
+      "resourceName": "Bridging Entrepreners to Students (BETS) ",
+      "buildingName": "Engineering 7 (E7)",
+      "organizer": "Conrad School of Entrepreneurship and Business",
+      "Description": "The Bridging Entrepreneurs to Students (BETS) program is a specialized co-op program established to support two key groups: junior engineering, mathematics and SAF co-op students, and seed and early-stage startup companies who would not otherwise have the resources to hire full-time staff or co-op students for 16 weeks. The BETS program brings these groups together by pairing teams of two entrepreneurial co-op students with companies for a 12-week project placement.",
+      "keyword": [
+        "Small Business",
+        "Linked to Academics",
+        "Intrapreneurship"
+      ],
+      "latitude": 43.47279498478385,  
+      "longitude": -80.53976410749571,
+      "timeline": 3
+    },
+    {
+      "buildingId": "22",
+      "resourceName": "Social Impact Showcase",
+      "buildingName": "St. Paul's United College Main Building",
+      "organizer": "GreenHouse",
+      "Description": "The Social Impact Showcase is a virtual event that occurs every term which celebrates the amazing work GreenHouse students accomplish through their journeys of social innovation and entrepreneurship. \n At the end of the event, we announce grants for some early stage, high-potential ideas as well as the winner of the People’s Choice Award.",
+      "keyword": [
+        "Events",
+        "Environmental",
+        "Networking",
+        "Social Justice"
+      ],
+      "latitude": 43.467928776390694,
+      "longitude": -80.54647374397837,
+      "timeline": 4
+    },
+    {
+      "buildingId": "23",
+      "resourceName": "Enterprise Co-op",
+      "buildingName": "Engineering 7 (E7)",
+      "organizer": "Conrad School of Entrepreneurship and Business",
+      "Description": "Waterloo is world-renowned for its strength in innovation and co-operative education. A signature program at Waterloo, Enterprise Co-op (E Co-op) allows students to pursue an entrepreneurial co-op option in which students start their own business while earning a co-op credit. \n After graduation, E Co-op students continue with their venture, begin a new one, or use their E Co-op know-how to obtain employment. E Co-op is a great experience that builds business knowledge, capabilities, and independence that employers value. ",
+      "keyword": [
+        "Skills Building",
+        "Linked to Academics",
+        "Small Business"
+      ],
+      "latitude": 43.47273498478385,  
+      "longitude": -80.53970410749571,
+      "timeline": 4
+    },
+    {
+      "buildingId": "24",
+      "resourceName": "Conrad E-Launch Awards",
+      "buildingName": "Engineering 7 (E7)",
+      "organizer": "Conrad School of Entrepreneurship and Business",
+      "Description": "The E-Launch Awards are awarded to the winners of a pitch competition among students in the Enterprise Co-op (E Co-op) program. Up to five scholarships of $5,000 are awarded each term.",
+      "keyword": [
+        "Award"
+      ],
+      "latitude": 43.47281498478385,  
+      "longitude": -80.53978410749571,
+      "timeline": 4
+    },
+    {
+      "buildingId": "25",
+      "resourceName": "Concept $5K",
+      "buildingName": "South Campus Hall",
+      "organizer": "Concept by Velocity",
+      "Description": "The Concept $5K Pitch Competition runs every semester and provides early stage funding to student led teams with promising start up ideas. Winning teams will receive $5,000, guidance, and additional support to help turn their concept into a reality.",
+      "keyword": [
+        "Funding",
+        "Pitch Competition",
+        "Events"
+      ],
+      "latitude": 43.469386992955704,
+      "longitude": -80.54031671699549,
+      "timeline": 4
+    },
+    {
+      "buildingId": "26",
+      "resourceName": "Mitacs",
+      "buildingName": "East Campus 5",
+      "organizer": "Other",
+      "Description": "Mitacs offers a variety of programs and funding to help student entrepreneurs develop their research and build their ideas. They also offer programs to help enhance your future career by developing important skills and making meaningful connections.",
+      "keyword": [
+        "Skills Building",
+        "Funding"
+      ],
+      "latitude": 43.47536448515866,
+      "longitude":  -80.54076567104693,
+      "timeline": 4
+    },
+    {
+      "buildingId": "27",
+      "resourceName": "Concept Cornerstone",
+      "buildingName": "South Campus Hall",
+      "organizer": "Concept by Velocity",
+      "Description": "Accelerate your venture with the Concept Pre-Cornerstone. Students will explore customer discovery and validation while creating a network of founders to share knowledge and resources.",
+      "keyword": [
+        "Coaching/Mentorship",
+        "Networking",
+        "Skills Building"
+      ],
+      "latitude": 43.469466992955704,
+      "longitude": -80.54039671699549,
+      "timeline": 4
+    },
+    {
+      "buildingId": "28",
+      "resourceName": "Epp Peace Incubator",
+      "buildingName": "Conrad Grebel University College",
+      "organizer": "Kindred Credit Union Centre for Peace Advancement",
+      "Description": "Supports social impact start-ups focused on peace and justice by providing co-working space, mentorship, and seed funding.",
+      "keyword": [
+        "Social Justice",
+        "Coaching/Mentorship",
+        "Funding"
+      ],
+      "latitude": 43.466624934202805,
+      "longitude": -80.54511323048694,
+      "timeline": 5
+    },
+    {
+      "buildingId": "29",
+      "resourceName": "Velocity Incubator",
+      "buildingName": "South Campus Hall",
+      "organizer": "Concept by Velocity",
+      "Description": "Velocity is an incubator for early-stage, pre-seed technology startups from the University of Waterloo and around the world.",
+      "keyword": [
+        "Community",
+        "Coaching/Mentorship"
+      ],
+      "latitude": 43.469486992955704,
+      "longitude": -80.54041671699549,
+      "timeline": 5
+    },
+    {
+      "buildingId": "30",
+      "resourceName": "Waterloo Commercialization Office",
+      "buildingName": "East Campus 5",
+      "organizer": "University of Waterloo Research",
+      "Description": "Transferring research innovations into the marketplace can have transformative societal impacts on improving quality of life as well as enhancing business productivity and job creation.",
+      "keyword": [
+        "Research",
+        "Legal"
+      ],
+      "latitude": 43.47538448515866,
+      "longitude":  -80.54078567104693,
+      "timeline": 5
+    }
+
+  ]
+}

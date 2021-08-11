@@ -1,0 +1,20 @@
+.Timeline-title {
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+  font-family: "Barlow-Thin", sans-serif;
+  
+font-size: 40px;
+margin-top: 70px;
+}
+
+.timeline-button-group {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  margin-top: 70px;
+  position: relative;
+  font-family: "Barlow-Thin", sans-serif;
+  font-weight: 700;
+}
