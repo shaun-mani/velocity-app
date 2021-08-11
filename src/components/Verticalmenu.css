@@ -1,0 +1,50 @@
+/*********** NO LONGER USING THIS CSS FILE.  *************/
+
+.Verticalmenu {
+  width: 280px;
+  position: absolute;
+  top: 19%;
+  left: 72%;
+}
+
+.top {
+  background-color: black;
+  color: white;
+  display: block;
+  padding: 0px;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.top:hover {
+  cursor: pointer;
+  color: yellow;
+}
+
+/* .Categories {
+  text-align: left;
+} */
+
+/* .Verticalmenu h1 {
+  background-color: yellow;
+  color: white;
+  display: block;
+  padding: 0px;
+  font-size: 25px;
+  text-decoration: none;
+} */
+
+.top:hover {
+  cursor: pointer;
+  color: yellow;
+}
+
+.Verticalmenu a:hover {
+  background-color: #ccc;
+}
+
+.Verticalmenu h4 {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}

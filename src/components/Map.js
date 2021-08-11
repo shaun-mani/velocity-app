@@ -1,9 +1,15 @@
+// ******** WE ARE NOT USING THIS FILE. BUT IT WORKS IN CASE WE NEED TO COME
+// BACK TO IT. *******
+
+
 import React from "react";
 import { useState } from "react";
 import "./Map.css";
 import "./image_follow.css";
 import Zoom from "./zoom.jsx";
 //import Image from 'react-bootstrap/Image'
+
+
 
 
 const getCursorPositionInElement = (evt) => {
@@ -101,8 +107,7 @@ const Map = () => {
             </Row>
           </Container> */}
 
-          <div
-            className="ImageFollow"
+      <div className='ImageFollow'
             //onMouseMove={handleMouseMove}
             //onMouseDown={handleMouseDown}
             //onMouseUp={handleMouseUp}
@@ -122,8 +127,10 @@ const Map = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+        </div>
+        </div>
+      
+    
 
     //const handleMouseDown = () => {
     //setIsMouseDown(true);

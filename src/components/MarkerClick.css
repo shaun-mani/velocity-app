@@ -1,0 +1,17 @@
+/* ******** WE ARE NOT USING THIS FILE. BUT IT WORKS IN CASE WE NEED TO COME
+BACK TO IT. ******* */
+
+.border {
+  background-color: aliceblue;
+  color: black;
+  margin-top: 475px;
+  margin-right: 31px;
+  width: 350px;
+  height: 700px;
+  border: 2px solid black !important;
+  right: 0px;
+  top: 100px;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+}
