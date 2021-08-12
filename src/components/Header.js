@@ -7,10 +7,10 @@ import Concept_logo from '../images/concept_velocity_logo.png'
 function Header() {
   return (
       <div className="Bar">
-    <p> Visit the University of Waterloo &nbsp;
+    Visit the University of Waterloo &thinsp;    
       <a className = "link" href = "https://uwaterloo.ca/coronavirus/">COVID-19 information website</a>
-      &nbsp; to learn about affected campus activities.
-      </p>
+      &thinsp; to learn about affected campus activities. 
+      
     <div className="TitleBar">
       <a href = "https://uwaterloo.ca/">
       <img  className="uw_image" src={University_logo} width="189" height="75.78"  alt="c-v-uw-logo"  />

@@ -11,6 +11,9 @@
   font-style: normal;
   margin-bottom: 50px;
 }
+
+
+
 .Bar {
   box-sizing: border-box;
   width: 100%;
@@ -19,6 +22,9 @@
   background-position: 170px -220px;
   text-align: center;
   color: white;
+  font-family: 'Times New Roman', Times, sans-serif;
+
+  font-size: 18px;
 }
 
 
