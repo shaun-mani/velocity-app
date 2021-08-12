@@ -111,7 +111,7 @@ document.body.style.zoom = "80%"
         <DescriptionMap />
         <VerticalMenu setKeynum={setKeynum} currentKeynum={currentKeynum} 
         setKeyword={setKeyword} currentKeyword={currentKeyword} />
-          <div style={{ marginBottom: "50px", marginTop: "-800px", marginLeft: "300px", width: "100vw", height: "110vh" }}>
+          <div style={{ marginBottom: "50px", marginTop: "-800px", marginLeft: "300px", width: "100vw", height: "106vh" }}>
             
             <WrappedMap className="googlemap"
               currentKeyword={currentKeyword}
