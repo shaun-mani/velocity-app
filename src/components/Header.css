@@ -11,12 +11,27 @@
   font-style: normal;
   margin-bottom: 50px;
 }
+.Bar {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0em;
+  margin-top: -100;
+  background-color: rgb(205, 20, 67);
+  background-position: 170px -170px;
+  text-align: center;
+  color: white;
+}
 
 .uw_image {
   align-items: left;
   justify-content: left;
   margin-left: 0px;
   text-align: left;
+}
+
+.link {
+  color:white;
+  background-color: transparent;
 }
 
 .concept_image {
@@ -27,7 +42,7 @@
 }
 
 .Title {
-  margin-top: 70px;
+  margin-top: 50px;
   padding: 0em;
   color: white;
   font-family: "Barlow-Medium", sans-serif;
