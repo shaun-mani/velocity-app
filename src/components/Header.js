@@ -7,8 +7,9 @@ import Concept_logo from '../images/concept_velocity_logo.png'
 function Header() {
   return (
       <div className="Bar">
-    <p>
-      <a className = "link" href = "https://uwaterloo.ca/coronavirus/">Visit the University of Waterloo COVID-19 information website to learn about affected campus activities. </a>
+    <p> Visit the University of Waterloo &nbsp;
+      <a className = "link" href = "https://uwaterloo.ca/coronavirus/">COVID-19 information website</a>
+      &nbsp; to learn about affected campus activities.
       </p>
     <div className="TitleBar">
       <a href = "https://uwaterloo.ca/">
