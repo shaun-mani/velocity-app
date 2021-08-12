@@ -3,6 +3,7 @@ import './Timeline.css';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import Badge from 'react-bootstrap/Badge'
+import journeylogo from '../route.png'
 
 const Timeline = (props) => {
 
@@ -10,14 +11,16 @@ const Timeline = (props) => {
     <div>
 
       <h2 className="Timeline-title">
-        <Badge bg="primary">
+        <Badge bg="warning" text="dark">
           What stage are you in your entrepreneurial journey?
+          <img  className="journeylogoclass" src={journeylogo} width="35" height="35"  alt="j-l"  />
+
         </Badge>
       </h2>
 
       <ButtonGroup size="lg" className="timeline-button-group" >
         {/* <div className="text-center"> */}
-          <Button variant="success" onClick={() => {
+          <Button variant="dark" onClick={() => {
           window.scrollTo(0, 180);
             props.setKeyword(null);
             if (props.currentKeynum === 1) {
@@ -28,7 +31,7 @@ const Timeline = (props) => {
           }}>
             1. Getting Started
           </Button>
-          <Button variant="success" onClick={() => {
+          <Button variant="dark" onClick={() => {
               window.scrollTo(0, 180);
             props.setKeyword(null);
             if (props.currentKeynum === 2) {
@@ -39,7 +42,7 @@ const Timeline = (props) => {
           }}>
             2. Early Stage & Problem Identification
           </Button>
-          <Button variant="success" onClick={() => {
+          <Button variant="dark" onClick={() => {
               window.scrollTo(0, 180);
             props.setKeyword(null);
             if (props.currentKeynum === 3) {
@@ -50,7 +53,7 @@ const Timeline = (props) => {
           }}>
             3. Building & Testing Your Idea
           </Button>
-          <Button variant="success" onClick={() => {
+          <Button variant="dark" onClick={() => {
               window.scrollTo(0, 180);
             props.setKeyword(null);
             if (props.currentKeynum === 4) {
@@ -61,7 +64,7 @@ const Timeline = (props) => {
           }}>
             4. Funding & Competitions
           </Button>
-          <Button variant="success" onClick={() => {
+          <Button variant="dark" onClick={() => {
               window.scrollTo(0, 180);
             props.setKeyword(null);
             if (props.currentKeynum === 5) {
