@@ -9,7 +9,7 @@ import Header from "./components/Header";
 // import ButtonClickTest1 from './components/ButtonClickTest1';
 import Footer from "./components/Footer";
 import Timeline from "./components/Timeline";
-import VerticalMenu0 from "./components/VerticalMenu0"
+import VerticalMenu from "./components/VerticalMenu"
 import DescriptionMap from "./components/DescriptionMap"
 
 import {
@@ -108,7 +108,7 @@ const [height, setHeight] = React.useState(window.innerHeight);
       
         <Header />
         <DescriptionMap />
-        <VerticalMenu0 setKeynum={setKeynum} currentKeynum={currentKeynum} 
+        <VerticalMenu setKeynum={setKeynum} currentKeynum={currentKeynum} 
         setKeyword={setKeyword} currentKeyword={currentKeyword} />
           <div style={{ marginBottom: "50px", marginTop: "-800px", marginLeft: "300px", width: "70vw", height: "85vh" }}>
             
