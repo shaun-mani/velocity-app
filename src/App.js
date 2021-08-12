@@ -80,6 +80,7 @@ function Map(props, level) {
 }
 
 function App() {
+  
 
 const [width, setWidth] = React.useState(window.innerWidth);
 const [height, setHeight] = React.useState(window.innerHeight);
@@ -100,7 +101,7 @@ const [height, setHeight] = React.useState(window.innerHeight);
 
     return () => window.removeEventListener("resize", updateWidthAndHeight);
 });
-
+document.body.style.zoom = "80%"
   return (
     
     <div className="page-container">
@@ -110,7 +111,7 @@ const [height, setHeight] = React.useState(window.innerHeight);
         <DescriptionMap />
         <VerticalMenu setKeynum={setKeynum} currentKeynum={currentKeynum} 
         setKeyword={setKeyword} currentKeyword={currentKeyword} />
-          <div style={{ marginBottom: "50px", marginTop: "-800px", marginLeft: "300px", width: "70vw", height: "85vh" }}>
+          <div style={{ marginBottom: "50px", marginTop: "-800px", marginLeft: "300px", width: "100vw", height: "110vh" }}>
             
             <WrappedMap className="googlemap"
               currentKeyword={currentKeyword}

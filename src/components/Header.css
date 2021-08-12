@@ -1,3 +1,18 @@
+.Title {
+  margin-top: 20px;
+  color: white;
+  font-family: "Barlow-Medium", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+  text-align: center;
+  position: relative;
+  margin-right: auto;
+  margin-left:auto;
+  padding-right: 14%;
+}
+
+
 .TitleBar {
   box-sizing: border-box;
   width: 100%;
@@ -13,6 +28,9 @@
 }
 
 
+
+
+
 .Bar {
   box-sizing: border-box;
   width: 100%;
@@ -23,6 +41,8 @@
   color: white;
   font-family: 'Times New Roman', Times, sans-serif;
   font-size: 18px;
+  margin-right: auto;
+  margin-left:auto;
 }
 
 
@@ -49,17 +69,5 @@
   justify-content: left;
   margin-left: -26px;
   text-align: left;
-}
 
-.Title {
-  margin-top: 20px;
-  margin-left: 100px;
-  padding: 0em;
-  color: white;
-  font-family: "Barlow-Medium", sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  font-style: normal;
-  align-items: center;
-  position: relative;
 }
