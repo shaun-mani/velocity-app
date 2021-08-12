@@ -14,13 +14,15 @@
 .Bar {
   box-sizing: border-box;
   width: 100%;
-  padding: 0em;
-  margin-top: -100;
   background-color: rgb(205, 20, 67);
-  background-position: 170px -170px;
+  margin-top: 0px;
+  background-position: 170px -220px;
   text-align: center;
   color: white;
 }
+
+
+
 
 .uw_image {
   align-items: left;
@@ -31,6 +33,11 @@
 
 .link {
   color:white;
+  background-color: transparent;
+}
+
+.link:hover {
+  color:rgb(202, 199, 199);
   background-color: transparent;
 }
 

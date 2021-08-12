@@ -6,9 +6,10 @@ import Concept_logo from '../images/concept_velocity_logo.png'
 
 function Header() {
   return (
-    <div className="Bar">
-    
+      <div className="Bar">
+    <p>
       <a className = "link" href = "https://uwaterloo.ca/coronavirus/">Visit the University of Waterloo COVID-19 information website to learn about affected campus activities. </a>
+      </p>
     <div className="TitleBar">
       <a href = "https://uwaterloo.ca/">
       <img  className="uw_image" src={University_logo} width="189" height="75.78"  alt="c-v-uw-logo"  />
@@ -19,9 +20,9 @@ function Header() {
       <h1 className="Title">ENTREPRENEURSHIP ECOSYSTEM MAP</h1>
         {/* <img className="uw-image" src={Uwlogo} width="100" height="100" alt="uwlogo" /> */}
       
-  
+        </div>
     </div>
-    </div>
+    
   )
 }
 
