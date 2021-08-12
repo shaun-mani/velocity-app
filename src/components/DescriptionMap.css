@@ -1,4 +1,22 @@
 .full-card {
   margin-bottom: 50px;
-  color: black;
+}
+table { border-collapse: collapse; }
+td{
+   width: 700px;
+   height: 20px;
+   padding: 0px;
+   position: relative;
+}
+.color1{
+  background-color: #FFFFAA;
+}
+.color2{
+  background-color: #FFEA3D;
+}
+.color3{
+   background-color: #FFD54F;
+}
+.color4{
+  background-color: #E4B429;
 }

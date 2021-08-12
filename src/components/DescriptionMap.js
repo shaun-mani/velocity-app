@@ -5,6 +5,14 @@ import './DescriptionMap.css'
 function DescriptionMap() {
     return (
         <div>
+            <table>
+    <tr> 
+        <td class="color1"></td>
+        <td class="color2"></td>
+        <td class="color3"></td>
+        <td class="color4"></td>
+    </tr>
+        </table>    
            <Card className="full-card" bg='success' text='light' >
            <Card.Body>
                 <Card.Title> Welcome to the Entrepreneurship Ecosystem Map: Your Home for All Your Entrepreneurial Needs!</Card.Title>

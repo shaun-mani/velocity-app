@@ -9,7 +9,7 @@
   color: white;
   font-family: "Calibri", sans-serif;
   font-style: normal;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 
@@ -52,7 +52,7 @@
 }
 
 .Title {
-  margin-top: 50px;
+  margin-top: 15px;
   padding: 0em;
   color: white;
   font-family: "Barlow-Medium", sans-serif;
