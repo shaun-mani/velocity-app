@@ -1,16 +1,19 @@
 import React from 'react';
 import './Header.css';
-import Uwlogo from '../imageuwlogo.png'
-import concept_velocity_uw_img from '../concept_velocity_uw_img.png'
+import University_logo from '../images/UniversityOfWaterloo_logo.png'
+import Concept_logo from '../images/concept_velocity_logo.png'
 
 
 function Header() {
   return (
     <div className="TitleBar">
       <a href = "https://uwaterloo.ca/">
-      <img  className="concept_v_uw_image" src={concept_velocity_uw_img} width="492" height="100"  alt="c-v-uw-logo"  />
+      <img  className="uw_image" src={University_logo} width="189" height="75.78"  alt="c-v-uw-logo"  />
       </a>
-      <h1 className="Title">Entrepreneurship EcoSystem Map</h1>
+      <a href = "https://concept.uwaterloo.ca/">
+      <img  className="concept_image" src={Concept_logo} width="189" height="75.78"  alt="c-v-uw-logo"  />
+      </a>
+      <h1 className="Title">ENTREPRENEURSHIP ECOSYSTEM MAP</h1>
         {/* <img className="uw-image" src={Uwlogo} width="100" height="100" alt="uwlogo" /> */}
       
   

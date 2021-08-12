@@ -1,6 +1,6 @@
 import React from 'react';
 import './Title.css';
-import Uwlogo from '../imageuwlogo.png'
+import Uwlogo from '../images/imageuwlogo.png'
 
 
 function Title() {

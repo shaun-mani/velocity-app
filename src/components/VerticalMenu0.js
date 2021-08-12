@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./VerticalMenu0.css";
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
-import allcategories from '../placeholders.png'
+import allcategories from '../images/placeholders.png'
 
 
 const VerticalMenu0 = (props) => {

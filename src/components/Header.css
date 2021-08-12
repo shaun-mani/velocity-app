@@ -4,29 +4,36 @@
   display: flex;
   padding: 0.5em;
   margin-top: 0;
-  background: url("../headerBackground.png");
+  background-color: black;
   background-position: 170px -570px;
-  color: rgba(10, 10, 10, 0.815);
+  color: white;
   font-family: "Calibri", sans-serif;
   font-style: normal;
   margin-bottom: 50px;
 }
 
-.concept_v_uw_image {
+.uw_image {
   align-items: left;
   justify-content: left;
   margin-left: 0px;
   text-align: left;
 }
 
+.concept_image {
+  align-items: left;
+  justify-content: left;
+  margin-left: -26px;
+  text-align: left;
+}
+
 .Title {
-  margin-top: 80px;
+  margin-top: 70px;
   padding: 0em;
-  color: #000000;
-  font-family: BarlowCondensed;
+  color: white;
+  font-family: "Barlow-Medium", sans-serif;
   font-weight: 700;
-  font-size: 60px;
-  font-style: bold;
+  font-size: 40px;
+  font-style: normal;
   align-items: center;
   position: relative;
 }
