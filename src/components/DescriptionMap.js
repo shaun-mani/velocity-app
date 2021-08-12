@@ -10,7 +10,7 @@ function DescriptionMap() {
         <td class="color2"></td>
         <td class="color3"></td>
         <td class="color4"></td>
-        </table>  <br/><br/>
+        </table>  <br/>
          
            <Card className="full-card" bg='success' text='light' >
            <Card.Body>

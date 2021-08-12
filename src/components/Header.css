@@ -52,12 +52,13 @@
 }
 
 .Title {
-  margin-top: 15px;
+  margin-top: 20px;
+  margin-left: 100px;
   padding: 0em;
   color: white;
   font-family: "Barlow-Medium", sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   font-style: normal;
   align-items: center;
   position: relative;

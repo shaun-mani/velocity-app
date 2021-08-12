@@ -10,3 +10,13 @@
   font-size: 15px;
   font-weight: 500;
 }
+
+.link-F {
+  color:#FFD54F;
+  background-color: transparent;
+}
+
+.link-F:hover {
+  color:#E4B429;
+  background-color: transparent;
+}
