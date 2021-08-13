@@ -59,7 +59,7 @@ function Map(props, level) {
           />
         ))}
         
-
+      
       {selectedPark && (
         <InfoWindow
           position={{ lat: selectedPark.latitude, lng: selectedPark.longitude }}
@@ -68,9 +68,11 @@ function Map(props, level) {
           }}
         >
           <div>
-            <h3>{selectedPark.resourceName}</h3>
-            <h6>Organizer: {selectedPark.organizer}</h6>
-            <h6>Location: {selectedPark.buildingName}</h6>
+            <h6>Currently Viewing: {props.currentKeyword} (All Categories)</h6>
+            <h6>At Stage: {props.currentKeynum} (Timeline Journey)</h6>
+            <h2>{selectedPark.resourceName}</h2>
+            <h5>Organizer: {selectedPark.organizer}</h5>
+            <h5>Location: {selectedPark.buildingName}</h5>
             <p>{selectedPark.Description}</p>
           </div>
         </InfoWindow>
@@ -111,8 +113,7 @@ document.body.style.zoom = "80%"
         <DescriptionMap />
         <VerticalMenu setKeynum={setKeynum} currentKeynum={currentKeynum} 
         setKeyword={setKeyword} currentKeyword={currentKeyword} />
-          <div style={{ marginBottom: "50px", marginTop: "-800px", marginLeft: "300px", width: "100vw", height: "106vh" }}>
-            
+          <div style={{ marginBottom: "50px", marginTop: "-800px", marginLeft: "300px", width: "100vw", height: "106vh" }}>            
             <WrappedMap className="googlemap"
               currentKeyword={currentKeyword}
               currentKeynum={currentKeynum}
