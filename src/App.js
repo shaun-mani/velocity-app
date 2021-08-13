@@ -10,7 +10,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Timeline from "./components/Timeline";
 import VerticalMenu0 from "./components/VerticalMenu0"
-
+import DescriptionMap from "./components/DescriptionMap"
 
 import {
   GoogleMap,
@@ -107,6 +107,7 @@ const [height, setHeight] = React.useState(window.innerHeight);
       <div className="content-wrap">
       
         <Header />
+        <DescriptionMap />
         <VerticalMenu0 setKeynum={setKeynum} currentKeynum={currentKeynum} 
         setKeyword={setKeyword} currentKeyword={currentKeyword} />
           <div style={{ marginBottom: "50px", marginTop: "-750px", marginLeft: "300px", width: "70vw", height: "85vh" }}>

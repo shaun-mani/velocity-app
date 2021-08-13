@@ -11,15 +11,15 @@ const Footer = () => {
                         <h4>Concept by Velocity</h4>
                         <ul className="list-unstyled">
                             <li>South Campus Hall, 200 University Ave W 2nd Floor</li>
-                            <li>Waterloo, Ontario</li>
-                            <li>N2L 3G1</li>
+                            <li>Waterloo, ON, N2L 3G1</li>
                             <a href="https://concept.uwaterloo.ca/"> Concept Website</a>
                         </ul>
                     </div>
                     {/* Column 2 */}
                     <div className="col">
-                        <h4>University of Waterloo</h4>
+                        <h4>Credits</h4>
                         <ul className="list-unstyled">
+                        <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
                             
                         </ul>
                     </div>
@@ -30,6 +30,7 @@ const Footer = () => {
                         <a href="https://concept.uwaterloo.ca/about-us/contact-concept/">Contact Us</a>
                             <li>Help</li>
                             <a href="http://maps.google.com">Google Maps</a>
+                            
                         </ul>
                     </div>
                     <hr />

@@ -4,11 +4,12 @@
   display: flex;
   padding: 0.5em;
   margin-top: 0;
-  background: url('../headerBackground.png');
-  background-position: 170px -570px ;
+  background: url("../headerBackground.png");
+  background-position: 170px -570px;
   color: rgba(10, 10, 10, 0.815);
   font-family: "Calibri", sans-serif;
   font-style: normal;
+  margin-bottom: 50px;
 }
 
 .concept_v_uw_image {
@@ -16,7 +17,6 @@
   justify-content: left;
   margin-left: 0px;
   text-align: left;
-
 }
 
 .Title {
@@ -29,5 +29,4 @@
   font-style: bold;
   align-items: center;
   position: relative;
-
 }

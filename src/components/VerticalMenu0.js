@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./VerticalMenu0.css";
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
+import allcategories from '../placeholders.png'
 
 
 const VerticalMenu0 = (props) => {
@@ -27,15 +28,16 @@ const VerticalMenu0 = (props) => {
 
   return (
     <ButtonGroup size="lg" vertical className="vertical-menu-css" >
-      <Button variant="primary" className="menu-categories"
+      <Button variant="warning" className="menu-categories"
           onClick={() => {
             props.setKeynum(null);
             props.setKeyword(null);
           }}>
-          All Categories
+          All Categories 
+          <img  className="allcategoriesclass" src={allcategories} width="30" height="30"  alt="a-c"  />
       </Button>
       {words.map((word) => (
-        <Button variant="success" className="menu-words"
+        <Button variant="dark" className="menu-words"
           onClick={() => {
             props.setKeynum(null);
             if (props.currentKeyword === word) {
