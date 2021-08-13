@@ -28,12 +28,12 @@ function DescriptionMap() {
            <Card.Body>
                     <Card.Text>
                         <h4>
-                            It is a comprehensive, interactive map of all the entrepreneurship resources the University of Waterloo offers on-campus. This map individually targets your needs, whether it is searching under a specific category or displaying the resources that align with the stage you're in your entrepreneurial journey. 
+                            This is a comprehensive, interactive map of all the entrepreneurial resources offered by the University of Waterloo on-campus. The map below individually targets your needs, whether you search under a specific category or use our timeline to display the resources that align with each stage in your entrepreneurial journey. 
                         </h4>
                     </Card.Text>
                     <Card.Text>
                         <h4>
-                            This website is a great place to discover new and upcoming resources and learning about where they reside on campus! 
+                            This website is a great place to discover new and upcoming resources and learn about where they reside on campus! 
                         </h4>
                     </Card.Text>
             </Card.Body>

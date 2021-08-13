@@ -16,7 +16,7 @@ function Header() {
       <img  className="uw_image" src={University_logo} width="189" height="75.78"  alt="c-v-uw-logo"  />
       </a>
       <a href = "https://concept.uwaterloo.ca/">
-      <img  className="concept_image" src={Concept_logo} width="189" height="75.78"  alt="c-v-uw-logo"  />
+      <img  className="concept_image" src={Concept_logo} width="182.72" height="48.2"  alt="c-v-uw-logo"  />
       </a>
       <h1 className="Title">ENTREPRENEURSHIP ECOSYSTEM MAP</h1>
         {/* <img className="uw-image" src={Uwlogo} width="100" height="100" alt="uwlogo" /> */}

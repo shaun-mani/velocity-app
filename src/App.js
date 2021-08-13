@@ -68,8 +68,8 @@ function Map(props, level) {
           }}
         >
           <div>
-            <h6>Currently Viewing: {props.currentKeyword} (All Categories)</h6>
-            <h6>At Stage: {props.currentKeynum} (Timeline Journey)</h6>
+            <h6>Currently Viewing: {props.currentKeyword}</h6>
+            <h6>At Stage: {props.currentKeynum} </h6>
             <h2>{selectedPark.resourceName}</h2>
             <h5>Organizer: {selectedPark.organizer}</h5>
             <h5>Location: {selectedPark.buildingName}</h5>
