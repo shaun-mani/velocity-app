@@ -12,15 +12,31 @@ function DescriptionMap() {
         <td class="color4"></td>
         </table>  <br/>
          
-           <Card className="full-card" bg='success' text='light' >
+
+        <Card className="full-card-title" bg='warning' text='dark' >
            <Card.Body>
-                <Card.Title> Welcome to the Entrepreneurship Ecosystem Map: Your Home for All Your Entrepreneurial Needs!</Card.Title>
+                <Card.Title> 
+                    <h2>
+                    Welcome to the Entrepreneurship Ecosystem Map: Your Home for All Your UW Entrepreneurial Needs!
+                    </h2>
+                </Card.Title>
+            </Card.Body>
+        </Card>            
+
+
+           <Card className="full-card" bg='dark' text='light' >
+           <Card.Body>
                     <Card.Text>
-                        *Add map description here that tells the user what this website does and how to use it* @team
-                        (talk about clicking the markers for info, the filtering by keyword, and also how the timeline works) 
-                        if someone can do this that'd be much appreciated!!!
+                        <h4>
+                            It is a comprehensive, interactive map of all the entrepreneurship resources the University of Waterloo offers on-campus. This map individually targets your needs, whether it is searching under a specific category or displaying the resources that align with the stage you're in your entrepreneurial journey. 
+                        </h4>
                     </Card.Text>
-  </Card.Body>
+                    <Card.Text>
+                        <h4>
+                            This website is a great place to discover new and upcoming resources and learning about where they reside on campus! 
+                        </h4>
+                    </Card.Text>
+            </Card.Body>
            </Card>
         </div>
     )
