@@ -9,7 +9,7 @@ import Header from "./components/Header";
 // import ButtonClickTest1 from './components/ButtonClickTest1';
 import Footer from "./components/Footer";
 import Timeline from "./components/Timeline";
-import VerticalMenu0 from "./components/VerticalMenu0"
+import VerticalMenu from "./components/VerticalMenu"
 import DescriptionMap from "./components/DescriptionMap"
 
 import {
@@ -59,7 +59,7 @@ function Map(props, level) {
           />
         ))}
         
-
+      
       {selectedPark && (
         <InfoWindow
           position={{ lat: selectedPark.latitude, lng: selectedPark.longitude }}
@@ -68,9 +68,11 @@ function Map(props, level) {
           }}
         >
           <div>
-            <h3>{selectedPark.resourceName}</h3>
-            <h6>Organizer: {selectedPark.organizer}</h6>
-            <h6>Location: {selectedPark.buildingName}</h6>
+            <h6>Currently Viewing: {props.currentKeyword}</h6>
+            <h6>At Stage: {props.currentKeynum} </h6>
+            <h2>{selectedPark.resourceName}</h2>
+            <h5>Organizer: {selectedPark.organizer}</h5>
+            <h5>Location: {selectedPark.buildingName}</h5>
             <p>{selectedPark.Description}</p>
           </div>
         </InfoWindow>
@@ -80,6 +82,7 @@ function Map(props, level) {
 }
 
 function App() {
+  
 
 const [width, setWidth] = React.useState(window.innerWidth);
 const [height, setHeight] = React.useState(window.innerHeight);
@@ -100,7 +103,7 @@ const [height, setHeight] = React.useState(window.innerHeight);
 
     return () => window.removeEventListener("resize", updateWidthAndHeight);
 });
-
+document.body.style.zoom = "80%"
   return (
     
     <div className="page-container">
@@ -108,16 +111,14 @@ const [height, setHeight] = React.useState(window.innerHeight);
       
         <Header />
         <DescriptionMap />
-        <VerticalMenu0 setKeynum={setKeynum} currentKeynum={currentKeynum} 
+        <VerticalMenu setKeynum={setKeynum} currentKeynum={currentKeynum} 
         setKeyword={setKeyword} currentKeyword={currentKeyword} />
-          <div style={{ marginBottom: "50px", marginTop: "-750px", marginLeft: "300px", width: "70vw", height: "85vh" }}>
-            
+          <div style={{ marginBottom: "50px", marginTop: "-800px", marginLeft: "300px", width: "100vw", height: "106vh" }}>            
             <WrappedMap className="googlemap"
               currentKeyword={currentKeyword}
               currentKeynum={currentKeynum}
-              googleMapURL={
-                "https://maps.googleapis.com/maps/api/js?key=AIzaSyD0LW50_GtYuB0nlw5-YhW5i1uBCGNe3XA&v=3.exp&libraries=geometry,drawing,places"
-              }
+              // googleMapURL={ INSERT API KEY
+              // }
               loadingElement={<div style={{ height: "100%" }} />}
               containerElement={<div style={{ height: "100%" }} />}
               mapElement={<div style={{ height: "100%" }} />}

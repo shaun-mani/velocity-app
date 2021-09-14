@@ -1,32 +1,74 @@
+.Title {
+  margin-top: 20px;
+  color: white;
+  font-family: "Barlow-Medium", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+  text-align: center;
+  position: relative;
+  margin-right: auto;
+  margin-left:auto;
+  padding-right: 19%;
+}
+
+
 .TitleBar {
   box-sizing: border-box;
   width: 100%;
   display: flex;
   padding: 0.5em;
   margin-top: 0;
-  background: url("../headerBackground.png");
+  background-color: black;
   background-position: 170px -570px;
-  color: rgba(10, 10, 10, 0.815);
+  color: white;
   font-family: "Calibri", sans-serif;
   font-style: normal;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
-.concept_v_uw_image {
+
+
+
+
+.Bar {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgb(205, 20, 67);
+  margin-top: 0px;
+  background-position: 170px -220px;
+  text-align: center;
+  color: white;
+  font-family: 'Times New Roman', Times, sans-serif;
+  font-size: 20px;
+  margin-right: auto;
+  margin-left:auto;
+}
+
+
+
+.uw_image {
   align-items: left;
   justify-content: left;
   margin-left: 0px;
   text-align: left;
 }
 
-.Title {
-  margin-top: 80px;
-  padding: 0em;
-  color: #000000;
-  font-family: BarlowCondensed;
-  font-weight: 700;
-  font-size: 60px;
-  font-style: bold;
-  align-items: center;
-  position: relative;
+.link {
+  color:white;
+  background-color: transparent;
+}
+
+.link:hover {
+  color:rgb(202, 199, 199);
+  background-color: transparent;
+}
+
+.concept_image {
+  align-items: left;
+  justify-content: left;
+  margin-left: -15px;
+  text-align: left;
+  margin-top: 8%;
+
 }

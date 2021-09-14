@@ -1,3 +1,41 @@
+.full-card-title {
+  margin-bottom: 0px;
+  /* margin-left: 350px; */
+  text-align: center;
+  font-family: "Barlow-Medium", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+}
+
 .full-card {
-  margin-bottom: 50px;
+  margin-bottom: 55px;
+  /* margin-left: 350px; */
+  text-align: center;
+  font-family: "Barlow-Medium", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+}
+
+table {
+  border-collapse: collapse;
+}
+td {
+  width: 2000px;
+  height: 20px;
+  padding: 0px;
+  position: relative;
+}
+.color1 {
+  background-color: #ffffaa;
+}
+.color2 {
+  background-color: #ffea3d;
+}
+.color3 {
+  background-color: #ffd54f;
+}
+.color4 {
+  background-color: #e4b429;
 }

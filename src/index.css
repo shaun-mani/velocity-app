@@ -19,3 +19,8 @@ code {
   font-family: 'BarlowThin';
   src: local('BarlowCondensed-Thin'), url(./fonts/BarlowCondensed-Thin.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'BarlowMedium';
+  src: local('BarlowCondensed-Medium'), url(./fonts/BarlowCondensed-Medium.ttf) format('truetype');
+}
