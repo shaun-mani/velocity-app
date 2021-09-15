@@ -1,15 +1,18 @@
+/* positioning for vertical menu */
 .vertical-menu-css {
   text-align: right;
   justify-content: center;
-
   position: relative;
 }
+
+/* css for menu categories */
 .menu-categories {
   font-family: "Barlow-Thin", sans-serif;
   font-weight: 700;
   position: relative;
 }
 
+/* css for menu words */
 .menu-words {
   color: white;
   font-family: "Barlow-Thin", sans-serif;
@@ -17,6 +20,7 @@
   position: relative;
 }
 
+/* css for menu */
 .allcategoriesclass {
   margin-left: 10px;
 }

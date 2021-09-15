@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from "react";
-//import { useState } from "react";
 import "./App.css";
-//import Map from "./components/Map";
-//import NavBar from "./components/NavBar";
 import Header from "./components/Header";
-// import FunctionClickTest0 from './components/FunctionClickTest0'
-// import Test from './components/Test'
-// import ButtonClickTest1 from './components/ButtonClickTest1';
 import Footer from "./components/Footer";
 import Timeline from "./components/Timeline";
 import VerticalMenu from "./components/VerticalMenu"
 import DescriptionMap from "./components/DescriptionMap"
 
+// importing Google Maps API
 import {
   GoogleMap,
   withScriptjs,
@@ -19,17 +14,27 @@ import {
   Marker,
   InfoWindow,
 } from "react-google-maps";
+
+// importing Buildings.json file as parks data to enter into Google Maps API
 import * as parksData from "./data/Buildings.json";
 
+// this is the main google maps function
+// it is written inline in the App.js file unfortunately,
+// however it should be able to be put in a seperate file and import it
 function Map(props, level) {
   const [selectedPark, setSelectedPark] = useState(null);
   console.log(props.currentKeyword);
   console.log(props.currentKeynum);
   return (
     <GoogleMap
+      // this is where the maps starting location and zoom is set when
+      // opening the website
       defaultZoom={16}
       defaultCenter={{ lat: 43.47110427132252, lng: -80.5448679188489 }}
     >
+      {/* this is part of the marker filtering by setting the props 
+      to null  to filter trhough the data files and matching with 
+      the expected markers. */}
       {parksData.buildings
         .filter(
           (building) => {
@@ -49,6 +54,8 @@ function Map(props, level) {
             }
           }
         )
+        // setting the markers on the map with the data
+        // provided in buildings.json file
         .map((park) => (
           <Marker
             key={park.buildingId}
@@ -67,6 +74,8 @@ function Map(props, level) {
             setSelectedPark(null);
           }}
         >
+          {/* this is the pop-up window that appears when you 
+          select a marker */}
           <div>
             <h6>Currently Viewing: {props.currentKeyword}</h6>
             <h6>At Stage: {props.currentKeynum} </h6>
@@ -74,6 +83,7 @@ function Map(props, level) {
             <h5>Organizer: {selectedPark.organizer}</h5>
             <h5>Location: {selectedPark.buildingName}</h5>
             <p>{selectedPark.Description}</p>
+            <a className = "link-F" href="https://www.linkedin.com/in/lcabreraortiz/">Leonardo Cabrera Ortiz</a>
           </div>
         </InfoWindow>
       )}
@@ -81,8 +91,8 @@ function Map(props, level) {
   );
 }
 
+// this is the function that displays the google maps window
 function App() {
-  
 
 const [width, setWidth] = React.useState(window.innerWidth);
 const [height, setHeight] = React.useState(window.innerHeight);
@@ -98,12 +108,19 @@ const [height, setHeight] = React.useState(window.innerHeight);
     setHeight(window.innerHeight);
   };
 
+  // this feature helps properly resize the objects on the map with zooming
+  // and dragging
   React.useEffect(() => {
     window.addEventListener("resize", updateWidthAndHeight);
 
     return () => window.removeEventListener("resize", updateWidthAndHeight);
 });
+
+// zoom of the web application when you open it
 document.body.style.zoom = "80%"
+
+
+// this is the main return fuction of App.js (the structure of the app)
   return (
     
     <div className="page-container">
@@ -113,12 +130,18 @@ document.body.style.zoom = "80%"
         <DescriptionMap />
         <VerticalMenu setKeynum={setKeynum} currentKeynum={currentKeynum} 
         setKeyword={setKeyword} currentKeyword={currentKeyword} />
+          {/* this is where the map is located in the website */}
           <div style={{ marginBottom: "50px", marginTop: "-800px", marginLeft: "300px", width: "100vw", height: "106vh" }}>            
             <WrappedMap className="googlemap"
               currentKeyword={currentKeyword}
               currentKeynum={currentKeynum}
-              // googleMapURL={ INSERT API KEY
-              // }
+              // THIS IS WHERE YOU HAVE TO ADD THE GOOGLE MAPS API KEY
+              // THE KEY IS A URL THAT YOU PASTE IN THE BRACKETS BELOW
+              // (UNCOMMENT LINE BELOW AND ENTER GOOGLE MAPS API KEY)
+
+              // googleMapURL= {}
+              
+              // some zoom parameters for the map
               loadingElement={<div style={{ height: "100%" }} />}
               containerElement={<div style={{ height: "100%" }} />}
               mapElement={<div style={{ height: "100%" }} />}

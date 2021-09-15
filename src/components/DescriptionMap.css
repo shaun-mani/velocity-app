@@ -1,23 +1,24 @@
+/* CSS for DescriptionMap */
+
+/* css for position of the description card */
 .full-card-title {
   margin-bottom: 0px;
-  /* margin-left: 350px; */
   text-align: center;
   font-family: "Barlow-Medium", sans-serif;
   font-weight: 700;
   font-size: 30px;
   font-style: normal;
 }
-
+/* css for position of the description card */
 .full-card {
   margin-bottom: 55px;
-  /* margin-left: 350px; */
   text-align: center;
   font-family: "Barlow-Medium", sans-serif;
   font-weight: 700;
   font-size: 30px;
   font-style: normal;
 }
-
+/* this is for the UWaterloo header-border colour scheme */
 table {
   border-collapse: collapse;
 }

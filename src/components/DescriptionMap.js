@@ -2,9 +2,12 @@ import React from 'react'
 import Card from 'react-bootstrap/Card'
 import './DescriptionMap.css'
 
+// function DescriptionMap is the description of the website, explaining
+// the functionality and way to use the website
 function DescriptionMap() {
     return (
         <div>
+            {/* this is for the UWaterloo header-border colour scheme */}
             <table>
         <td class="color1"></td>
         <td class="color2"></td>
@@ -12,7 +15,7 @@ function DescriptionMap() {
         <td class="color4"></td>
         </table>  <br/>
          
-
+        {/* This is the title card for the Website Description */}
         <Card className="full-card-title" bg='warning' text='dark' >
            <Card.Body>
                 <Card.Title> 
@@ -23,7 +26,7 @@ function DescriptionMap() {
             </Card.Body>
         </Card>            
 
-
+            {/* This is the text card for the Website Description */}
            <Card className="full-card" bg='dark' text='light' >
            <Card.Body>
                     <Card.Text>

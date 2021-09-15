@@ -1,3 +1,5 @@
+/* CSS for Footer.js */
+/* css for position of the footer */
 .main-footer {
   color: white;
   background-color: black;
@@ -10,13 +12,13 @@
   font-size: 15px;
   font-weight: 500;
 }
-
+/* css for links mentioned */
 .link-F {
-  color:#FFD54F;
+  color: #ffd54f;
   background-color: transparent;
 }
-
+/* css for links being hovered over */
 .link-F:hover {
-  color:#E4B429;
+  color: #e4b429;
   background-color: transparent;
 }

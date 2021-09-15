@@ -1,3 +1,4 @@
+/* css for timeline title badge */
 .Timeline-title {
   justify-content: center;
   text-align: center;
@@ -8,6 +9,12 @@
   margin-top: 70px;
 }
 
+/* css for logo beside timeline title */
+.journeylogoclass {
+  margin-left: 20px;
+}
+
+/* css for timeline button group (stages) */
 .timeline-button-group {
   justify-content: center;
   text-align: center;
@@ -18,8 +25,4 @@
   position: relative;
   font-family: "Barlow-Thin", sans-serif;
   font-weight: 700;
-}
-
-.journeylogoclass {
-  margin-left: 20px;
 }

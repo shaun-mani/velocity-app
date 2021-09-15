@@ -3,9 +3,9 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-// bootstrap below
+// bootstrap import
 import { Navbar, Nav, NavDropdown, Button, Image, ButtonGroup, Badge, Card } from "react-bootstrap";
-// Hello
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

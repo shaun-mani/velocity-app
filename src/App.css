@@ -1,13 +1,17 @@
+/* css for the App */
 .App {
   text-align: center;
   font-family: "Karla", sans-serif;
   font-weight: bold;
 }
 
+/* css for the google map */
 .googlemap {
   margin-left: 100px;
   margin-top: 100px;
 }
+
+/* css for the pop-up info window for when a marker is selected */
 .gm-style .gm-style-iw-c {
   padding-right: 10px !important;
   padding-bottom: 0px !important;
@@ -25,18 +29,10 @@
   box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3);
 }
 
-body {
-  /* official UW color */
-  background-color: #dfdfdf;
-  /* background-color: rgb(255, 255, 170); */
-}
-
 .page-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
-  /* text-align: center; */
 }
 
 .content-wrap {

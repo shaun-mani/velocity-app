@@ -1,3 +1,4 @@
+/* css for the title (position on website) */
 .Title {
   margin-top: 20px;
   color: white;
@@ -8,11 +9,10 @@
   text-align: center;
   position: relative;
   margin-right: auto;
-  margin-left:auto;
+  margin-left: auto;
   padding-right: 19%;
 }
-
-
+/* css for title bar in header */
 .TitleBar {
   box-sizing: border-box;
   width: 100%;
@@ -26,11 +26,7 @@
   font-style: normal;
   margin-bottom: 0px;
 }
-
-
-
-
-
+/* css for bar in header*/
 .Bar {
   box-sizing: border-box;
   width: 100%;
@@ -39,36 +35,34 @@
   background-position: 170px -220px;
   text-align: center;
   color: white;
-  font-family: 'Times New Roman', Times, sans-serif;
+  font-family: "Times New Roman", Times, sans-serif;
   font-size: 20px;
   margin-right: auto;
-  margin-left:auto;
+  margin-left: auto;
 }
-
-
-
+/* css for UW logo position in header */
 .uw_image {
   align-items: left;
   justify-content: left;
   margin-left: 0px;
   text-align: left;
 }
-
+/* css for link */
 .link {
-  color:white;
+  color: white;
   background-color: transparent;
 }
-
+/* css for link hovering*/
 .link:hover {
-  color:rgb(202, 199, 199);
+  color: rgb(202, 199, 199);
   background-color: transparent;
 }
 
+/* css for concept logo position in header */
 .concept_image {
   align-items: left;
   justify-content: left;
   margin-left: -15px;
   text-align: left;
   margin-top: 8%;
-
 }
