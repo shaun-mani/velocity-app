@@ -26,6 +26,7 @@ const Footer = () => {
                             <a className = "link-F" href="https://www.linkedin.com/in/shaun-mani-8428a7218/">Shaun Mani</a>
                             <a className = "link-F" href="https://www.linkedin.com/in/jaylon-laidlaw-04485b203/">Jaylon Laidlaw</a>
                             <a className = "link-F" href="https://www.linkedin.com/in/mukund-rana-2938051b1/">Mukund Rana</a>
+                            <a className = "link-F" href="https://www.linkedin.com/in/shiguang-gu-69144b1aa/">Shiguang Gu</a>
                             <a className = "link-F" href="https://www.linkedin.com/in/jackieliu-uwaterloo/">Jackie Liu</a>
                             {/* icons need to be cited (the one next to 'all categories' and the one next to 'what stage are you in your entrepreneural journey?') */}
                             <div>Icons made by <a className = "link-F" href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a className = "link-F" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
