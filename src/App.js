@@ -139,7 +139,9 @@ document.body.style.zoom = "80%"
               // THE KEY IS A URL THAT YOU PASTE IN THE BRACKETS BELOW
               // (UNCOMMENT LINE BELOW AND ENTER GOOGLE MAPS API KEY)
 
-              // googleMapURL= {}
+              googleMapURL= {
+                "https://maps.googleapis.com/maps/api/js?key=AIzaSyBQJJBkUgz_4QacnF9vJa9yaD95CvY5r58&callback=initMap"
+              }
               
               // some zoom parameters for the map
               loadingElement={<div style={{ height: "100%" }} />}
